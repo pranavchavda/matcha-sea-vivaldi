@@ -324,6 +324,9 @@ body {
 .settings-sidebar .settings-navigation .navigation-category.category-selected .button-category.category-full-selected svg {
     transition: initial !important;
 }
+.vivaldi-settings .settings-sidebar .settings-navigation-header {
+    padding: 10px 12px 15px 12px;
+}
 .settings-search {
     background: #292E39;
     border-width: 0 !important;
