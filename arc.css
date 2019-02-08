@@ -59,10 +59,6 @@ body {
 #browser.theme-light .bookmark-bar button:hover {
     background: var(--colorAccentBgFadedMore); !important;
 }
-/* Remove highlight on bookmark toolbar separator hover */
-#browser.theme-light .bookmark-bar button:hover:not([title]) {
-    background: none; !important;
-}
 #browser.theme-light.acc-dark.color-behind-tabs-on .button-toolbar:hover,
 #browser.theme-light.acc-dark.color-behind-tabs-on .bookmark-bar button:hover,
 #browser.theme-light.acc-dark.color-behind-tabs-on #footer button:hover {
@@ -71,6 +67,11 @@ body {
 #browser.theme-dark .button-toolbar:hover,
 #browser.theme-dark .bookmark-bar button:hover {
     background: var(--colorAccentBgFaded) !important;
+}
+/* Remove highlight on bookmark toolbar separator hover */
+#browser.theme-light .bookmark-bar button:hover:not([title]),
+#browser.theme-dark .bookmark-bar button:hover:not([title]) {
+    background: none; !important;
 }
 /* reset animations of buttons that aren't on toolbars */
 #panels .panel-group .panel .button-toolbar:hover,
