@@ -27,21 +27,21 @@ Now, to **integrate with Arc,** save `arc.css` in the style folder (you should b
 Then open `resources/vivaldi/browser.html` in a text and add the following to `<head>`  
 `<link rel="stylesheet" href="style/arc.css" />`
 
-#### Opera Panel Addon
+### Opera Panel Addon
 
 If you want to **use the opera panel addon,** save `opera-panel.css` in the same folder as `arc.css` and then open `browser.html` again and add `<link rel="stylesheet" href="style/opera-panel.css" />` under the code from the first step.
 
-#### Arc Window Buttons
+### Arc Window Buttons
 
 If you want to **use the Arc window buttons** instead of Vivaldi's default window buttons, save the `arc` folder in `style` as well.
 
 **Note:** *You may like the way this theme generally looks but not want to use Arc's window buttons. If you'd prefer not to use Arc's window buttons, open `arc.css` in a text editor and find line 173 for instructions on how to not use them.*
 
-#### Arc Scrollbars
+### Arc Scrollbars
 
 Arc's scrollbars only get applied to internal pages and, as far as I know, there's nothing I can do about that from within a custom css file for Vivaldi. A userstyle that you can use to apply the scrollbars on websites can be found [here](https://userstyles.org/styles/142645/arc-scrollbars).
 
-#### Arc Theme Colors
+### Arc Theme Colors
 
 Because Vivaldi features a built-in theme editor, it is easier to create a custom Arc theme and then to use this CSS on top of that theme. This custom CSS is necessary to integrate with Arc because you cannot currently customize every aspect of Vivaldi from the editor.
 
