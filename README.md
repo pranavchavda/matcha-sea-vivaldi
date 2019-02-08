@@ -54,6 +54,13 @@ If you want to **use the Arc window buttons** instead of Vivaldi's default windo
 - [Create an issue here on GitHub](https://github.com/Tiamarth/Arc-for-Vivaldi/issues/new)
 - [Email me](mailto:tiabusy@gmail.com)
 
+## Todo
+
+- [ ] Redo bookmark toolbar button hover/active states
+- [ ] Fix extension toolbar buttons/badges
+- [ ] Addressbar + dropdown fonts/colors
+- [ ] Redo window buttons (zoom + spacing)
+
 ## Screenshots:
 
 Imgur Album: https://imgur.com/a/jMSWq
