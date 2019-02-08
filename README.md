@@ -1,10 +1,6 @@
 # Arc-for-Vivaldi  
 
-Arc for Vivaldi is a custom css file that integrates Vivaldi's UI with [Arc](https://github.com/NicoHood/arc-theme) (or [Arc Grey](https://github.com/eti0/arc-grey-theme)), a popular GTK theme.
-
-07/30/18 There are a few bugs in this skin right now, but I'm in between computers for a little while at the moment and can't dedicate sufficient time to any of my projects. I'm building a new computer and will be back to updating this and my other stuff once I've done so. Sorry for any inconvenience.
-
-01/20/18 I'm now considering this project "complete." I'll probably only update it in the future if a Vivaldi update breaks something, or if someone finds a bug in AFV that I didn't know about.
+Arc for Vivaldi is a custom css file that integrates Vivaldi's UI with [Arc](https://github.com/NicoHood/arc-theme), a popular GTK theme.
 
 ## Features:
 
@@ -18,7 +14,6 @@ Arc for Vivaldi is a custom css file that integrates Vivaldi's UI with [Arc](htt
 - Hide Vivaldi's built-in titlebar when GUI is hidden
 - When tabs are not at the top of the window, merge address bar with header
 - Optionally make the panel appear to merge with the Vivaldi menu icon, similar to Opera's panel
-- Optionally integrate with [Arc Grey](https://github.com/eti0/arc-grey-theme) instead of vanilla Arc
 
 ## Installation
 
@@ -33,8 +28,6 @@ Now,
 If you just want to **integrate with Arc,** save `arc.css` in the style folder. (You should be left with a folder structure like this: `resources/vivaldi/style/arc.css`)  
 Then open `resources/vivaldi/browser.html` in a text and add the following to `<head>`  
 `<link rel="stylesheet" href="style/arc.css" />`
-
-If you want to **integrate with arc-grey instead of Arc,** save `arc-grey.css` in the same folder as `arc.css` and then open `browser.html` again and add `<link rel="stylesheet" href="style/arc-grey.css" />` under the code from the last step.
 
 If you want to **use the opera panel addon,** save `opera-panel.css` in the same folder as `arc.css` and then open `browser.html` again and add `<link rel="stylesheet" href="style/opera-panel.css" />` under the code from the first step.
 
@@ -55,16 +48,6 @@ If you want to **use the Arc window buttons** instead of Vivaldi's default windo
 | [x] Apply Accent Color to Window | [ ] Apply Accent Color to Window | [x] Apply Accent Color to Window |
 | [x] Transparent Tabs             | [x] Transparent Tabs             | [x] Transparent Tabs             |
 | Corner Rounding: 3px             | Corner Rounding: 3px             | Corner Rounding: 3px             |
-
-| Arc Grey theme settings:         | Arc Grey Dark theme settings:    | Arc Grey Darker theme settings:  |
-| -------------------------------- | -------------------------------- | -------------------------------- |
-| Background: #e8e8e8              | Background: #383838              | Background: #f5f5f5              |
-| Foreground: #757575              | Foreground: #dbdbdb              | Foreground: #6b6b6b              |
-| Highlight: #999999               | Highlight: #999999               | Highlight: #999999               |
-| Accent: #f5f5f5                  | Accent: #4a4a4a                  | Accent: #4a4a4a                  |
-| [ ] Apply Accent Color to Window | [ ] Apply Accent Color to Window | [x] Apply Accent Color to Window |
-| [x] Transparent Tabs             | [x] Transparent Tabs             | [x] Transparent Tabs             |
-| Corner Rounding: 2px             | Corner Rounding: 2px             | Corner Rounding: 2px             |
 
 **Need more help?** Get in touch!
 - add me on Discord: Tiamarth#6729
