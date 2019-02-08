@@ -71,7 +71,7 @@ body {
 /* Remove highlight on bookmark toolbar separator hover */
 #browser.theme-light .bookmark-bar button:hover:not([title]),
 #browser.theme-dark .bookmark-bar button:hover:not([title]) {
-    background: none; !important;
+    background: none !important;
 }
 /* reset animations of buttons that aren't on toolbars */
 #panels .panel-group .panel .button-toolbar:hover,
