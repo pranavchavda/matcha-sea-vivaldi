@@ -316,12 +316,12 @@ body {
     border-top-color: transparent;
     border-bottom-color: transparent;
     background-color: #5294e2;
-		color: #ffffff;
+    color: #ffffff;
 }
-/* .settings-search {
+.settings-search {
     background: #292E39;
     border-width: 0 !important;
-} */
+}
 .button-category:focus:not([tabindex='-1']),
 .button-category:focus:not([tabindex='-1']) svg,
 .settings-sidebar .settings-navigation .navigation-category.category-selected .button-category.category-full-selected,
