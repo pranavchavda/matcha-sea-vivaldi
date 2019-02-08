@@ -255,6 +255,17 @@ body {
     border: 1px rgba(0,0,0,0.5);
     border-style: inset none inset none;
 }
+/* remove border from add web panel button */
+.left #switch .addwebpanel-wrapper > button:hover:not(.active),
+.left #switch .addwebpanel-wrapper > button:focus:not(.active),
+.left #switch .addwebpanel-wrapper > button:active:not(.active) {
+    box-shadow: none;
+}
+.right #switch .addwebpanel-wrapper > button:hover:not(.active),
+.right #switch .addwebpanel-wrapper > button:focus:not(.active),
+.right #switch .addwebpanel-wrapper > button:active:not(.active) {
+    box-shadow: none;
+}
 .theme-dark #switch .webviewbtn img,#switch button {background: transparent !important;}
 #panel_switch:hover,#switch button:hover {background: #494D5A !important;}
 /* remove black border on panel button hover */
