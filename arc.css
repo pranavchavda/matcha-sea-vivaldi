@@ -318,15 +318,15 @@ body {
     background-color: #5294e2;
     color: #ffffff;
 }
-.settings-search {
-    background: #292E39;
-    border-width: 0 !important;
-}
 .button-category:focus:not([tabindex='-1']),
 .button-category:focus:not([tabindex='-1']) svg,
 .settings-sidebar .settings-navigation .navigation-category.category-selected .button-category.category-full-selected,
 .settings-sidebar .settings-navigation .navigation-category.category-selected .button-category.category-full-selected svg {
     transition: initial !important;
+}
+.settings-search {
+    background: #292E39;
+    border-width: 0 !important;
 }
 /* arc style scrollbars, for these scrollbars universally: https://userstyles.org/styles/142645/arc-scrollbars */
 #browser ::-webkit-scrollbar {
