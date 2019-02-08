@@ -294,24 +294,38 @@ body {
     background: #5294e2;
 }
 /* use arc sidebar color in vivaldi's settings dialog */
-.button-category:hover {background: #494D5A !important;}
-.settings-search {
-    background: #292E39;
-    border-width: 0 !important;
-}
 .vivaldi-settings .settings-sidebar {
     color: #d3dae3;
     background: #353945 !important;
-		box-shadow: none;
+    box-shadow: none;
 }
 .vivaldi-settings .settings-sidebar svg {fill: #fff;}
+.button-category:hover:not(.category-selected) {background: #494D5A !important;}
+.vivaldi-settings .settings-sidebar .settings-navigation:focus-within .tree-row[data-selected] .button-category:not(:active) {
+    background: #5294e2;
+    box-shadow: none;
+    border-color: transparent;
+    color: #ffffff;
+}
+.vivaldi-settings .settings-sidebar svg {fill: #fff;}
+.button-category:hover:not(.category-selected) {background: #494D5A !important;}
+.vivaldi-settings .settings-sidebar .settings-navigation:focus-within .tree-row[data-selected] .button-category:not(:active):hover {
+    background: #5294e2 !important;
+}
+.vivaldi-settings .settings-sidebar .button-category.category-selected {
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    background-color: #5294e2;
+		color: #ffffff;
+}
+/* .settings-search {
+    background: #292E39;
+    border-width: 0 !important;
+} */
 .button-category:focus:not([tabindex='-1']),
 .button-category:focus:not([tabindex='-1']) svg,
 .settings-sidebar .settings-navigation .navigation-category.category-selected .button-category.category-full-selected,
 .settings-sidebar .settings-navigation .navigation-category.category-selected .button-category.category-full-selected svg {
-    color: var(--colorFg);
-    fill: var(--colorHighlightBg);
-    background: var(--colorBgLightIntense) !important;
     transition: initial !important;
 }
 /* arc style scrollbars, for these scrollbars universally: https://userstyles.org/styles/142645/arc-scrollbars */
