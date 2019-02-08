@@ -48,13 +48,13 @@ If you want to **use the Arc window buttons** instead of Vivaldi's default windo
 
 | Arc theme settings:              | Arc Dark theme settings:         | Arc Darker theme settings:       |
 | -------------------------------- | -------------------------------- | -------------------------------- |
-| Background: #e7e8eb              | Background: #2f343f              | Background: #f5f6f7              |
-| Foreground: #7a8b94              | Foreground: #d3dae3              | Foreground: #7a8b94              |
+| Background: #f6f7f8              | Background: #2f343f              | Background: #f5f6f7              |
+| Foreground: #333333              | Foreground: #d3dae3              | Foreground: #7a8b94              |
 | Highlight: #5294e2               | Highlight: #5294e2               | Highlight: #5294e2               |
-| Accent: #f9f9fa                  | Accent: #383c4a                  | Accent: #2f343f                  |
-| [ ] Apply Accent Color to Window | [ ] Apply Accent Color to Window | [x] Apply Accent Color to Window |
+| Accent: #e7e8eb                  | Accent: #383c4a                  | Accent: #2f343f                  |
+| [x] Apply Accent Color to Window | [ ] Apply Accent Color to Window | [x] Apply Accent Color to Window |
 | [x] Transparent Tabs             | [x] Transparent Tabs             | [x] Transparent Tabs             |
-| Corner Rounding: 2px             | Corner Rounding: 2px             | Corner Rounding: 2px             |
+| Corner Rounding: 3px             | Corner Rounding: 3px             | Corner Rounding: 3px             |
 
 | Arc Grey theme settings:         | Arc Grey Dark theme settings:    | Arc Grey Darker theme settings:  |
 | -------------------------------- | -------------------------------- | -------------------------------- |
