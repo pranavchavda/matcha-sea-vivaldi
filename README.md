@@ -63,7 +63,7 @@ Because Vivaldi features a built-in theme editor, it is easier to create a custo
 - [x] Redo bookmark toolbar button hover/active states
 - [x] Fix extension toolbar buttons/badges
 - [ ] Addressbar + dropdown fonts/colors
-- [ ] Redo window buttons (zoom + spacing)
+- [x] Redo window buttons (zoom + spacing)
 - [ ] Check window button line references in README
 
 ## Screenshots:
