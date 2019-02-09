@@ -293,7 +293,8 @@ body {
     border: 1px rgba(0,0,0,0.5);
     border-style: inset none inset none;
 }
-/* remove border from add web panel button */
+/* remove border from panel buttons */
+#switch > button,
 #switch .addwebpanel-wrapper > button {
     box-shadow: none !important;
 }
