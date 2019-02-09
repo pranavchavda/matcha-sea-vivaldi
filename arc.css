@@ -28,7 +28,7 @@ body {
     padding-left: 1px;
 }
 #browser.maximized,#browser.fullscreen {padding: 0;}
-#browser.address-off.tabs-off.bookmark-bar-off {padding-top: 1px;}
+/* #browser.address-off.tabs-off.bookmark-bar-off {padding-top: 1px;} */
 /* hide title bar when GUI is hidden */
 #browser.minimal-ui.address-off.tabs-off.bookmark-bar-off #header {display: none;}
 /* small animation when buttons get hovered */
