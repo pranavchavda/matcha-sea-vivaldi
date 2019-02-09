@@ -31,47 +31,79 @@ body {
 /* #browser.address-off.tabs-off.bookmark-bar-off {padding-top: 1px;} */
 /* hide title bar when GUI is hidden */
 #browser.minimal-ui.address-off.tabs-off.bookmark-bar-off #header {display: none;}
-/* small animation when buttons get hovered */
-.button-toolbar,
-.button-toolbar:hover,
-.button-category,
-.button-category:hover,
-.bookmark-bar button,
-.bookmark-bar button:hover,
-#panel_switch,
-#panel_switch:hover,
-#switch button,
-#switch button:hover,
-#footer button,
-#footer button:hover {
-    transition: 0.1s !important;
+/* Toolbar buttons */
+#browser.theme-light .button-toolbar,
+#browser.theme-light .bookmark-bar button,
+#browser.theme-dark .button-toolbar,
+#browser.theme-dark .bookmark-bar button {
+    border: 1px solid transparent !important;
+    border-radius: 2px;
 }
-.button-toolbar,
-.button-category,
-.bookmark-bar button,
-#panel_switch,
-#switch button,
-#footer button {
-    transition-delay: 0.1s !important;
-}
-.bookmark-bar button:hover {border: initial !important;}
 #browser.theme-light .button-toolbar:hover,
 #browser.theme-light .bookmark-bar button:hover {
-    background: var(--colorAccentBgFadedMore); !important;
+    background: #ffffff !important;
+    border-color: #cfd6e6 !important;
+}
+#browser.theme-dark .button-toolbar:hover,
+#browser.theme-dark .bookmark-bar button:hover {
+    background: #505666 !important;
+    border-color: #2b2e39 !important;
+}
+#browser.theme-light .button-toolbar:active,
+#browser.theme-light .bookmark-bar button:active {
+    background: #5294e2 !important;
+    border-color: #5294e2 !important;
+    color: #ffffff !important;
+}
+#browser.theme-dark .button-toolbar:active,
+#browser.theme-dark .bookmark-bar button:active {
+    background: #5294e2 !important;
+    border-color: 2b2e39 !important;
+    color: #ffffff !important;
+}
+/* Fix folder icon color on hover/active states */
+#browser.theme-light .bookmark-bar button:hover svg.folder-icon {
+    fill: #f0f0f0 !important;
+}
+#browser.theme-light .bookmark-bar button:active svg.folder-icon {
+    fill: rgba(246, 246, 246, 0.25) !important;
+    stroke: rgb(246, 246, 246) !important;
+}
+#browser.theme-dark .bookmark-bar button:hover svg.folder-icon {
+    fill: #596071 !important;
+    stroke: #ffffff !important;
+}
+#browser.theme-dark .bookmark-bar button:active svg.folder-icon {
+    fill: rgba(246, 246, 246, 0.25) !important;
+    stroke: rgb(246, 246, 246) !important;
+}
+.toolbar-addressbar .button-toolbar:active svg, .toolbar-mailbar .button-toolbar:active svg {
+    fill: white !important;
+}
+/* Remove highlight on bookmark toolbar separator hover */
+#browser.theme-light .bookmark-bar button:hover:not([title]),
+#browser.theme-dark .bookmark-bar button:hover:not([title]) {
+    background: none !important;
+    border-color: transparent !important;
+}
+/* Fix icon/text alignment on bookmark toolbar buttons */
+.bookmark-bar button img, .bookmark-bar button svg {
+    margin: 5px 0 7px;
+}
+.bookmark-bar button img + span, .bookmark-bar button svg + span {
+    margin-bottom: 2px;
+}
+.bookmark-bar button img + span:empty, .bookmark-bar button svg + span:empty {
+    margin-left: 0;
 }
 #browser.theme-light.acc-dark.color-behind-tabs-on .button-toolbar:hover,
 #browser.theme-light.acc-dark.color-behind-tabs-on .bookmark-bar button:hover,
 #browser.theme-light.acc-dark.color-behind-tabs-on #footer button:hover {
     background: var(--colorBgInverser);
 }
-#browser.theme-dark .button-toolbar:hover,
-#browser.theme-dark .bookmark-bar button:hover {
-    background: var(--colorAccentBgFaded) !important;
-}
-/* Remove highlight on bookmark toolbar separator hover */
-#browser.theme-light .bookmark-bar button:hover:not([title]),
-#browser.theme-dark .bookmark-bar button:hover:not([title]) {
-    background: none !important;
+/* Extension button badges */
+.extensions-wrapper .button-badge {
+    background-color: rgb(120, 120, 120) !important;
 }
 /* reset animations of buttons that aren't on toolbars */
 #panels .panel-group .panel .button-toolbar:hover,
