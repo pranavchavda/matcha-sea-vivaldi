@@ -38,6 +38,7 @@ body {
 #browser.theme-dark .bookmark-bar button {
     border: 1px solid transparent !important;
     border-radius: 2px;
+    font-size: 1.05em;
 }
 #browser.theme-light .button-toolbar:hover,
 #browser.theme-light .bookmark-bar button:hover {
@@ -91,7 +92,7 @@ body {
     margin: 5px 0 7px;
 }
 .bookmark-bar button img + span, .bookmark-bar button svg + span {
-    margin-bottom: 2px;
+    margin-bottom: 0px;
 }
 .bookmark-bar button img + span:empty, .bookmark-bar button svg + span:empty {
     margin-left: 0;
