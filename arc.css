@@ -110,6 +110,31 @@ body {
     transition: initial !important;
     transition-delay: initial !important;
 }
+/***********************************************************************
+ ADDRESS BAR
+***********************************************************************/
+input.url.vivaldi-addressfield {
+    font-size: 1.05em;
+}
+.addressfield .addressfield-siteinfo .siteinfo-text {
+    font-size: 0.95em;
+}
+.urlSearch section > div {
+    height: 28px;
+    font-size: 1.05em;
+}
+.urlSearch section .url {
+    padding-right: 20px;
+}
+.urlSearch section .url span,
+.urlSearch section .url b {
+    opacity: 1;
+    color: #888888;
+}
+.urlSearch section .highlight .url span,
+.urlSearch section .highlight .url b {
+    color: #ffffff;
+}
 /* reduce white space above tabs */
 #tabs-container.top {padding-top: 4px;}
 .normal #tabs-container.top {padding-top: 5px !important;}
