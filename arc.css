@@ -15,6 +15,9 @@
  *
  */
 
+/***********************************************************************
+ MAIN WINDOW
+***********************************************************************/
 /* remove vivaldi's header gradient and make splash use arc bg color */
 body {
     background-color: #2f343f !important;
@@ -22,16 +25,16 @@ body {
 }
 /* add a 1px window border that persists when native window is disabled */
 #browser {
-    padding-top: 0;
-    padding-right: 1px;
-    padding-bottom: 1px;
-    padding-left: 1px;
+    border: 1px solid rgb(203, 203, 203);
+    border-width: 1px 1.2px 1.2px 1px;
 }
-#browser.maximized,#browser.fullscreen {padding: 0;}
-/* #browser.address-off.tabs-off.bookmark-bar-off {padding-top: 1px;} */
+#browser.minimal-ui.address-off.tabs-off.bookmark-bar-off {border: none;}
+#browser.maximized,#browser.fullscreen {border: none;}
 /* hide title bar when GUI is hidden */
 #browser.minimal-ui.address-off.tabs-off.bookmark-bar-off #header {display: none;}
-/* Toolbar buttons */
+/***********************************************************************
+ TOOLBAR BUTTONS
+***********************************************************************/
 #browser.theme-light .button-toolbar,
 #browser.theme-light .bookmark-bar button,
 #browser.theme-dark .button-toolbar,
@@ -78,6 +81,7 @@ body {
     fill: rgba(246, 246, 246, 0.25) !important;
     stroke: rgb(246, 246, 246) !important;
 }
+/* Fix icon color in active addressbar buttons */
 .toolbar-addressbar .button-toolbar:active svg, .toolbar-mailbar .button-toolbar:active svg {
     fill: white !important;
 }
