@@ -62,9 +62,10 @@ Because Vivaldi features a built-in theme editor, it is easier to create a custo
 
 - [x] Redo bookmark toolbar button hover/active states
 - [x] Fix extension toolbar buttons/badges
-- [ ] Addressbar + dropdown fonts/colors
+- [x] Addressbar + dropdown fonts/colors
 - [x] Redo window buttons (zoom + spacing)
 - [ ] Check window button line references in README
+- [ ] Check tab stack/selection formatting
 
 ## Screenshots:
 
@@ -72,4 +73,4 @@ Imgur Album: https://imgur.com/a/jMSWq
 
 ----
 
-[pre-github changelog](https://github.com/Tiamarth/Arc-for-Vivaldi/blob/master/changelog.txt) | [AFV thread on the Vivaldi forums](https://forum.vivaldi.net/post/137297)  
+[AFV thread on the Vivaldi forums](https://forum.vivaldi.net/post/137297)  

@@ -119,6 +119,9 @@ input.url.vivaldi-addressfield {
 .addressfield .addressfield-siteinfo .siteinfo-text {
     font-size: 0.95em;
 }
+.urlSearch {
+	background-color: #ffffff;
+}
 .urlSearch section > div {
     height: 28px;
     font-size: 1.05em;
