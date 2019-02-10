@@ -207,14 +207,20 @@ body {
 #browser:not(.tabs-top).address-bottom .toolbar-addressbar {padding: 0;}
 /* remove from this line down to line 239 if you don't want to use arc's window buttons */
 /* better positioning on window buttons */
-.linux .window-buttongroup {margin-top: 6px;}
+.linux .window-buttongroup {margin-top: 7px;}
+.linux.alt .window-buttongroup {margin-top: 6px;}
 .linux .maximized .window-buttongroup {margin: initial;}
 .linux #browser:not(.tabs-top) .window-buttongroup {margin-top: 4px;}
 .linux #browser:not(.tabs-top).address-off .window-buttongroup,
 .linux #browser:not(.tabs-top).address-bottom .window-buttongroup {margin-top: -1px;}
 /* .linux .window-minimize {margin-right: 5px !important;} */
-.linux .window-maximize {margin-left: -45px !important;}
+.linux .window-maximize {margin-left: 14px !important;}
 .linux .window-close {
+    margin-left: 13px !important;
+    margin-right: 4px !important;
+}
+.linux.alt .window-maximize {margin-left: -45px !important;}
+.linux.alt .window-close {
     margin-left: 3px !important;
     margin-right: 41px !important;
 }
