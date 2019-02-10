@@ -23,13 +23,6 @@ body {
     background-color: #2f343f !important;
     --colorAccentBgDark: transparent !important;
 }
-/* add a 1px window border that persists when native window is disabled */
-#browser {
-    border: 1px solid rgb(203, 203, 203);
-    border-width: 1px 1.2px 1.2px 1px;
-}
-#browser.minimal-ui.address-off.tabs-off.bookmark-bar-off {border: none;}
-#browser.maximized,#browser.fullscreen {border: none;}
 /* hide title bar when GUI is hidden */
 #browser.minimal-ui.address-off.tabs-off.bookmark-bar-off #header {display: none;}
 /***********************************************************************
