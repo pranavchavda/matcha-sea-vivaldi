@@ -120,7 +120,7 @@ input.url.vivaldi-addressfield {
     font-size: 0.95em;
 }
 .theme-light .urlSearch {
-	background-color: #ffffff;
+    background-color: #ffffff;
 }
 .urlSearch section > div {
     height: 28px;
@@ -342,6 +342,12 @@ input.url.vivaldi-addressfield {
 .vivaldi-tree .tree-row[data-selected][data-nofocus] {
     color: white;
     background: var(--colorHighlightBg);
+}
+.theme-light .startpage {
+    background-color: #ffffff !important;
+}
+.theme-dark .startpage {
+    background-color: #353945 !important;
 }
 /* make speed dial navigation smaller */
 .startpage-navigation {min-height: 34px !important;}
