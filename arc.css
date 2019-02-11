@@ -119,7 +119,7 @@ input.url.vivaldi-addressfield {
 .addressfield .addressfield-siteinfo .siteinfo-text {
     font-size: 0.95em;
 }
-.urlSearch {
+.theme-light .urlSearch {
 	background-color: #ffffff;
 }
 .urlSearch section > div {
