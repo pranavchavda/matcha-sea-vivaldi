@@ -185,6 +185,16 @@ input.url.vivaldi-addressfield {
     background-color: #88B7F0 !important;
 }
 .tabs-top.tabs-at-edge.maximized.stacks-on .tab-strip .tab .tab-group-indicator .tab-indicator.active {padding-bottom: 0;}
+/* tab selection border*/
+.tab-position .tab.marked:after {
+    bottom: 0;
+    border: 2px solid rgba(82, 148, 226, 0.5);
+    border-image: none;
+    background-color: rgba(82, 148, 226, 0.2);
+}
+.tab-position .tab.marked.active:after {
+    background-color: rgba(82, 148, 226, 0.2);
+}
 /* no border radius on new tab button */
 .newtab:hover,.acc-dark.color-behind-tabs-on .newtab:hover {border-radius: 0;}
 .newtab svg {border-radius: 0 !important;}
