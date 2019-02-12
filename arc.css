@@ -430,6 +430,12 @@ input.url.vivaldi-addressfield {
 #browser.theme-dark ::-webkit-scrollbar-track:horizontal:hover {
     border-top: 1px solid #2b2e39 !important;
 }
+#browser .settings-sidebar ::-webkit-scrollbar-track:vertical:hover {
+    border-left: 1px solid #2b2e39 !important;
+}
+#browser .settings-sidebar ::-webkit-scrollbar-track:horizontal:hover {
+    border-top: 1px solid #2b2e39 !important;
+}
 #browser ::-webkit-scrollbar-thumb {
     background-clip: padding-box !important;
     border: 2px solid transparent !important;
