@@ -138,6 +138,9 @@ input.url.vivaldi-addressfield {
 .urlSearch section .highlight .url b {
     color: #ffffff;
 }
+/***********************************************************************
+ TABS
+***********************************************************************/
 /* reduce white space above tabs */
 #tabs-container.top {padding-top: 4px;}
 .normal #tabs-container.top {padding-top: 5px !important;}
@@ -226,6 +229,9 @@ input.url.vivaldi-addressfield {
     top: -2px;
 }
 #browser:not(.tabs-top).address-bottom .toolbar-addressbar {padding: 0;}
+/***********************************************************************
+ WINDOW BUTTONS
+***********************************************************************/
 /* remove from this line down to line 239 if you don't want to use arc's window buttons */
 /* better positioning on window buttons */
 .linux .window-buttongroup {margin-top: 7px;}
@@ -309,6 +315,9 @@ input.url.vivaldi-addressfield {
 /* make small black border under address bar more subtle */
 .toolbar-addressbar.toolbar:after {background-color: rgba(23,27,35,0.2) !important;}
 .theme-dark .toolbar-addressbar.toolbar:after {background-color: rgba(23, 27, 35, 0.5) !important;}
+/***********************************************************************
+ PANEL
+***********************************************************************/
 /* dark panel on all themes */
 #panel_switch,#switch {box-shadow: inset -1px 0 #353945 !important;}
 #panel_switch,#switch,#panels-container:after {background: #353945;}
@@ -370,6 +379,9 @@ input.url.vivaldi-addressfield {
     color: #fff;
     background: #5294e2;
 }
+/***********************************************************************
+ SETTINGS PAGE
+***********************************************************************/
 /* use arc sidebar color in vivaldi's settings dialog */
 .vivaldi-settings .settings-sidebar {
     color: #d3dae3;
@@ -408,6 +420,9 @@ input.url.vivaldi-addressfield {
     background: #292E39;
     border-width: 0 !important;
 }
+/***********************************************************************
+ SCROLLBARS
+***********************************************************************/
 /* arc style scrollbars, for these scrollbars universally: https://userstyles.org/styles/142645/arc-scrollbars */
 #browser ::-webkit-scrollbar {
     width: 11px !important;
