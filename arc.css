@@ -319,7 +319,8 @@ input.url.vivaldi-addressfield {
  PANEL
 ***********************************************************************/
 /* dark panel on all themes */
-#switch {
+#switch,
+#panel_switch {
     background-color: #353945;
     box-shadow: none !important;
 }
@@ -330,14 +331,16 @@ input.url.vivaldi-addressfield {
     box-shadow: none !important;
 }
 #switch > button svg,
-#switch .addwebpanel-wrapper > button svg {
+#switch .addwebpanel-wrapper > button svg,
+#panel_switch svg polygon {
     fill: #d3dae3 !important;
 }
 .theme-dark #switch .webviewbtn img {
     background: transparent !important;
 }
 #switch > button:hover:not(.active),
-#switch .addwebpanel-wrapper > button:hover:not(.active) {
+#switch .addwebpanel-wrapper > button:hover:not(.active),
+#panel_switch:hover {
     background-color: #494D5A;
 }
 #switch > button:focus:not(.active),
