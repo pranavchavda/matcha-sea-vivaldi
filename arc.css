@@ -445,30 +445,30 @@ button.button-startpage:after {background: none !important};
 ***********************************************************************/
 /* arc style scrollbars, for these scrollbars universally: https://userstyles.org/styles/142645/arc-scrollbars */
 #browser ::-webkit-scrollbar {
-    width: 11px !important;
-    height: 11px !important;
+    width: 10px !important;
+    height: 10px !important;
 }
 #browser ::-webkit-scrollbar-button {display: none !important;}
 #browser ::-webkit-scrollbar-track {
     background-color: transparent !important;
     border-color: transparent !important;
 }
-#browser.theme-light ::-webkit-scrollbar-track:vertical:hover {
+#browser.theme-light ::-webkit-scrollbar-track:vertical {
     border-left: 1px solid #dcdfe3 !important;
 }
-#browser.theme-light ::-webkit-scrollbar-track:horizontal:hover {
+#browser.theme-light ::-webkit-scrollbar-track:horizontal {
     border-top: 1px solid #dcdfe3 !important;
 }
-#browser.theme-dark ::-webkit-scrollbar-track:vertical:hover {
+#browser.theme-dark ::-webkit-scrollbar-track:vertical {
     border-left: 1px solid #2b2e39 !important;
 }
-#browser.theme-dark ::-webkit-scrollbar-track:horizontal:hover {
+#browser.theme-dark ::-webkit-scrollbar-track:horizontal {
     border-top: 1px solid #2b2e39 !important;
 }
-#browser .settings-sidebar ::-webkit-scrollbar-track:vertical:hover {
+#browser .settings-sidebar ::-webkit-scrollbar-track:vertical {
     border-left: 1px solid #2b2e39 !important;
 }
-#browser .settings-sidebar ::-webkit-scrollbar-track:horizontal:hover {
+#browser .settings-sidebar ::-webkit-scrollbar-track:horizontal {
     border-top: 1px solid #2b2e39 !important;
 }
 #browser ::-webkit-scrollbar-thumb {
