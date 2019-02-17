@@ -328,18 +328,11 @@ button.button-startpage:after {background: none !important};
     background: #353945 !important;
     box-shadow: none;
 }
-.vivaldi-settings .settings-sidebar svg {fill: #fff;}
-.button-category:hover:not(.category-selected) {background: #494D5A !important;}
-.vivaldi-settings .settings-sidebar .settings-navigation:focus-within .tree-row[data-selected] .button-category:not(:active) {
-    background: #5294e2;
-    box-shadow: none;
-    border-color: transparent;
-    color: #ffffff;
+.vivaldi-settings .settings-sidebar svg {
+    fill: #fff;
 }
-.vivaldi-settings .settings-sidebar svg {fill: #fff;}
-.button-category:hover:not(.category-selected) {background: #494D5A !important;}
-.vivaldi-settings .settings-sidebar .settings-navigation:focus-within .tree-row[data-selected] .button-category:not(:active):hover {
-    background: #5294e2 !important;
+.vivaldi-settings .settings-sidebar .button-category:hover:not(.category-selected) {
+    background: #494D5A;
 }
 .vivaldi-settings .settings-sidebar .button-category.category-selected {
     border-top-color: transparent;
@@ -347,11 +340,19 @@ button.button-startpage:after {background: none !important};
     background-color: #5294e2;
     color: #ffffff;
 }
-.button-category:focus:not([tabindex='-1']),
-.button-category:focus:not([tabindex='-1']) svg,
-.settings-sidebar .settings-navigation .navigation-category.category-selected .button-category.category-full-selected,
-.settings-sidebar .settings-navigation .navigation-category.category-selected .button-category.category-full-selected svg {
-    transition: initial !important;
+.vivaldi-settings .settings-sidebar .settings-navigation:focus-within .tree-row:not([data-selected]) .button-category.category-selected {
+    background: transparent;
+    color: #d3dae3;
+}
+.vivaldi-settings .settings-sidebar .settings-navigation:focus-within .tree-row:not([data-selected]) .button-category.category-selected:hover {
+    background: #494D5A;
+    color: #d3dae3;
+}
+.vivaldi-settings .settings-sidebar .settings-navigation:focus-within .tree-row[data-selected] .button-category:not(.category-selected) {
+    background: #5294e2;
+    box-shadow: none;
+    border-color: transparent;
+    color: #ffffff;
 }
 .vivaldi-settings .settings-sidebar .settings-navigation-header {
     padding: 10px 12px 15px 12px;
