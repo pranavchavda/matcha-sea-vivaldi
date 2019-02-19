@@ -2,6 +2,12 @@
 
 Arc for Vivaldi is a set of custom css files that integrate Vivaldi's UI with [Arc](https://github.com/NicoHood/arc-theme), a popular GTK theme. Rework of Tiamarth's [original theme](https://github.com/Tiamarth/Arc-for-Vivaldi) for Vivaldi.
 
+## Screenshots:
+
+<div align="left"><img src="screenshots/screen-light.png" alt="Preview" /></div>
+<br>
+<div align="left"><img src="screenshots/screen-dark.png" alt="Preview" /></div>
+
 ## Features:
 
 - Use Arc's window buttons even when Native Window is disabled in the settings (optional)
@@ -63,10 +69,6 @@ Arc's scrollbars only get applied to internal pages and, as far as I know, there
 - [x] Redo window buttons (zoom + spacing)
 - [ ] Check tab stack/selection formatting
 - [ ] Check window button overlap with addressbar when tabs not on top
-
-## Screenshots:
-
-Imgur Album: https://imgur.com/a/jMSWq
 
 ----
 
