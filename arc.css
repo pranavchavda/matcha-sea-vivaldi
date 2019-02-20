@@ -198,6 +198,10 @@ input.url.vivaldi-addressfield {
 .tab-position .tab.marked.active:after {
     background-color: rgba(82, 148, 226, 0.2);
 }
+/* tab title right fade */
+.tab-position .tab .title {
+    -webkit-mask-image: -webkit-linear-gradient(180deg, transparent 8px, #fff 16px);
+}
 /* no border radius on new tab button */
 .newtab:hover,.acc-dark.color-behind-tabs-on .newtab:hover {border-radius: 0;}
 .newtab svg {border-radius: 0 !important;}
