@@ -207,7 +207,7 @@ input.url.vivaldi-addressfield {
 #browser:not(.tabs-top) #titlebar {z-index: 1;}
 #browser:not(.tabs-top) #titlebar #pagetitle {display: none;}
 #browser:not(.tabs-top) #main {margin-top: -25px;}
-#browser:not(.tabs-top) .toolbar-addressbar {padding: 0 100px 0 35px;}
+#browser:not(.tabs-top) .toolbar-addressbar {padding: 0 60px 0 90px;}
 #browser:not(.tabs-top) .vivaldi {top: 2px;}
 #browser.address-top.tabs-off .vivaldi {top: 5.5px;}
 /* when tabs are not standard and address bar is bottom, redisplay titlebar and reset address bar margins */
