@@ -20,25 +20,17 @@
 /* Tab strip on top */
 #tabs-container.top {
 	background-image: none !important;
-	box-shadow: inset 0 -1px 0.2px rgba(0,0,0,0.1);
 	padding-top: 5px !important;
-}
-
-.address-bottom #tabs-container.top, .address-off #tabs-container.top {
-	border-bottom-width: 0px;
+	border-bottom: 1px solid #d4d5db !important;
 }
 
 /* Tab strip on bottom */
 #tabs-container.bottom {
-	box-shadow: inset 0 1px 0.2px rgba(0,0,0,0.1);
 	padding-bottom: 5px !important;
+	border-top: 1px solid #d4d5db !important;
 }
 
-.address-top #tabs-container.bottom, .address-off #tabs-container.bottom {
-	border-top-width: 0px;
-}
-
-/* Shadow around active tab (tabs top) */
+/* Border around active tab (tabs top) */
 #tabs-container.top .tab-position .tab {
 	border: 1px solid transparent;
 	border-bottom-width: 0 !important;
@@ -46,10 +38,14 @@
 
 #tabs-container.top .tab-position .tab:hover,
 #tabs-container.top .tab-position .tab.active {
-	border: 1px solid rgba(0,0,0,0.2);
+	border: 1px solid #d4d5db;
 }
 
-/* Shadow around active tab (tabs bottom) */
+#tabs-container.top .tab-position .tab.active {
+	margin-bottom: -1px;
+}
+
+/* Border around active tab (tabs bottom) */
 #tabs-container.bottom .tab-position .tab {
 	border: 1px solid transparent;
 	border-top-width: 0 !important;
@@ -57,7 +53,11 @@
 
 #tabs-container.bottom .tab-position .tab:hover,
 #tabs-container.bottom .tab-position .tab.active {
-	border: 1px solid rgba(0,0,0,0.2);
+	border: 1px solid #d4d5db;
+}
+
+#tabs-container.bottom .tab-position .tab.active {
+	margin-top: -1px;
 }
 
 /***********************************************************************
