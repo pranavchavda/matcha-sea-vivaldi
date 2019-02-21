@@ -14,9 +14,9 @@
  * LICENSE: GNU General Public License v3.0 | https://github.com/Tiamarth/Arc-for-Vivaldi/blob/master/LICENSE
  *
  */
- /***********************************************************************
-  TABS
- ***********************************************************************/
+/***********************************************************************
+	TABS
+***********************************************************************/
 /* Tab strip on top */
 #tabs-container.top {
 	background-image: none !important;
@@ -58,4 +58,45 @@
 #tabs-container.bottom .tab-position .tab:hover,
 #tabs-container.bottom .tab-position .tab.active {
 	border: 1px solid rgba(0,0,0,0.2);
+}
+
+/***********************************************************************
+	ADDRESS BAR
+***********************************************************************/
+/* Address bar top */
+#browser.address-top:not(.tabs-top) .toolbar-addressbar.toolbar {
+	background: var(--colorAccentBg);
+}
+
+/* Merge address bar top with header */
+#browser.address-top:not(.tabs-top) #main {
+	margin-top: -24px;
+}
+
+#browser.address-top:not(.tabs-top) #titlebar {
+	z-index: 1;
+}
+
+#browser.address-top:not(.tabs-top) .toolbar-addressbar {
+	padding: 0 40px 0 90px;
+}
+
+#browser.address-top:not(.tabs-top) #titlebar #pagetitle {
+	display: none;
+}
+
+/* Address bar bottom */
+#browser.address-bottom:not(.tabs-bottom) .toolbar-addressbar.toolbar {
+	background: var(--colorAccentBg);
+}
+
+/***********************************************************************
+	HEADER
+***********************************************************************/
+#browser:not(.tabs-top) #header {
+	background: var(--colorAccentBg);
+}
+
+#browser:not(.address-top):not(.tabs-top) #header {
+	border-bottom: 1px solid #d5d6db;
 }
