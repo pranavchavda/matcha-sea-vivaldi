@@ -21,7 +21,7 @@
 /* remove vivaldi's header gradient and make splash use arc bg color */
 body {
     background-color: #2f343f !important;
-    --colorAccentBgDark: transparent !important;
+    /* --colorAccentBgDark: transparent !important; */
 }
 /* hide title bar when GUI is hidden */
 #browser.minimal-ui.address-off.tabs-off.bookmark-bar-off #header {display: none;}
@@ -243,13 +243,13 @@ input.url.vivaldi-addressfield {
  PANEL
 ***********************************************************************/
 /* dark panel on all themes */
-#switch,
+/* #switch,
 #panel_switch {
     background-color: #353945;
     box-shadow: none !important;
-}
+} */
 /* panel buttons */
-#switch > button,
+/* #switch > button,
 #switch .addwebpanel-wrapper > button {
     border: none !important;
     box-shadow: none !important;
@@ -277,7 +277,7 @@ input.url.vivaldi-addressfield {
 }
 #switch > button.active svg {
     fill: var(--colorFg) !important;
-}
+} */
 /* active tab in windows panel uses theme highlight color */
 .vivaldi-tree .tree-row[data-selected],
 .vivaldi-tree .tree-row[data-selected][data-nofocus] {

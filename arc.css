@@ -100,3 +100,43 @@
 #browser:not(.address-top):not(.tabs-top) #header {
 	border-bottom: 1px solid #d4d5db;
 }
+
+/***********************************************************************
+ PANEL
+***********************************************************************/
+/* Panel background */
+#switch,
+#panel_switch {
+	background-color: #353945;
+	box-shadow: none !important;
+}
+/* Panel buttons */
+#switch > button,
+#switch .addwebpanel-wrapper > button {
+	border: none !important;
+	box-shadow: none !important;
+}
+#switch > button svg,
+#switch .addwebpanel-wrapper > button svg,
+#panel_switch svg polygon {
+	fill: #d3dae3 !important;
+}
+.theme-dark #switch .webviewbtn img {
+	background: transparent !important;
+}
+#switch > button:hover:not(.active),
+#switch .addwebpanel-wrapper > button:hover:not(.active),
+#panel_switch:hover {
+	background-color: #494D5A;
+}
+#switch > button:focus:not(.active),
+#switch .addwebpanel-wrapper > button:focus:not(.active) {
+	background-color: #353945 !important;
+}
+#switch > button.active,
+#switch > button.active:hover {
+	background-color: var(--colorBgLightIntense) !important;
+}
+#switch > button.active svg {
+	fill: var(--colorFg) !important;
+}
