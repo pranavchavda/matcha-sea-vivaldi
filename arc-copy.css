@@ -1,0 +1,418 @@
+/* I wrote this CSS to make Vivaldi integrate with
+ * the arc theme for Linux, but I have had few issues
+ * running it with other themes so far.
+ *
+ * Author: Tiamarth
+ *
+ * - tiabusy@gmail.com
+ * - https://github.com/Tiamarth
+ * - Discord: Tiamarth#6729
+ * - http://tiamarth.com/
+ *
+ * CURRENT VERSION: 4.3.3
+ *
+ * LICENSE: GNU General Public License v3.0 | https://github.com/Tiamarth/Arc-for-Vivaldi/blob/master/LICENSE
+ *
+ */
+
+/***********************************************************************
+ MAIN WINDOW
+***********************************************************************/
+/* remove vivaldi's header gradient and make splash use arc bg color */
+body {
+    background-color: #2f343f !important;
+    --colorAccentBgDark: transparent !important;
+}
+/* hide title bar when GUI is hidden */
+#browser.minimal-ui.address-off.tabs-off.bookmark-bar-off #header {display: none;}
+/***********************************************************************
+ TOOLBAR BUTTONS
+***********************************************************************/
+#browser.theme-light .button-toolbar,
+#browser.theme-light .bookmark-bar button,
+#browser.theme-dark .button-toolbar,
+#browser.theme-dark .bookmark-bar button {
+    border: 1px solid transparent !important;
+    border-radius: 2px;
+    font-size: 1.05em;
+}
+#browser.theme-light .button-toolbar:hover,
+#browser.theme-light .bookmark-bar button:hover {
+    background: #ffffff !important;
+    border-color: #cfd6e6 !important;
+}
+#browser.theme-dark .button-toolbar:hover,
+#browser.theme-dark .bookmark-bar button:hover {
+    background: #505666 !important;
+    border-color: #2b2e39 !important;
+}
+#browser.theme-light .button-toolbar:active,
+#browser.theme-light .bookmark-bar button:active {
+    background: #5294e2 !important;
+    border-color: #5294e2 !important;
+    color: #ffffff !important;
+}
+#browser.theme-dark .button-toolbar:active,
+#browser.theme-dark .bookmark-bar button:active {
+    background: #5294e2 !important;
+    border-color: 2b2e39 !important;
+    color: #ffffff !important;
+}
+/* Fix folder icon color on hover/active states */
+#browser.theme-light .bookmark-bar button:hover svg.folder-icon {
+    fill: #f0f0f0 !important;
+}
+#browser.theme-light .bookmark-bar button:active svg.folder-icon {
+    fill: rgba(246, 246, 246, 0.25) !important;
+    stroke: rgb(246, 246, 246) !important;
+}
+#browser.theme-dark .bookmark-bar button:hover svg.folder-icon {
+    fill: #596071 !important;
+    stroke: #ffffff !important;
+}
+#browser.theme-dark .bookmark-bar button:active svg.folder-icon {
+    fill: rgba(246, 246, 246, 0.25) !important;
+    stroke: rgb(246, 246, 246) !important;
+}
+/* Fix icon color in active addressbar buttons */
+.toolbar-addressbar .button-toolbar:active svg, .toolbar-mailbar .button-toolbar:active svg {
+    fill: white !important;
+}
+/* Remove highlight on bookmark toolbar separator hover */
+#browser.theme-light .bookmark-bar button:hover:not([title]),
+#browser.theme-dark .bookmark-bar button:hover:not([title]) {
+    background: none !important;
+    border-color: transparent !important;
+}
+/* Fix icon/text alignment on bookmark toolbar buttons */
+.bookmark-bar button img, .bookmark-bar button svg {
+    margin: 5px 0 7px;
+}
+.bookmark-bar button img + span, .bookmark-bar button svg + span {
+    margin-bottom: 0px;
+}
+.bookmark-bar button img + span:empty, .bookmark-bar button svg + span:empty {
+    margin-left: 0;
+}
+#browser.theme-light.acc-dark.color-behind-tabs-on .button-toolbar:hover,
+#browser.theme-light.acc-dark.color-behind-tabs-on .bookmark-bar button:hover,
+#browser.theme-light.acc-dark.color-behind-tabs-on #footer button:hover {
+    background: var(--colorBgInverser);
+}
+/* Extension button badges */
+.extensions-wrapper .button-badge {
+    background-color: rgb(120, 120, 120) !important;
+}
+/* reset animations of buttons that aren't on toolbars */
+#panels .panel-group .panel .button-toolbar:hover,
+#webpage-stack .active.internal.visible.webpageview .internal-page .settings-content .button-toolbar:hover {
+    background: var(--colorBg) !important;
+    transition: initial !important;
+    transition-delay: initial !important;
+}
+/***********************************************************************
+ ADDRESS BAR
+***********************************************************************/
+input.url.vivaldi-addressfield {
+    font-size: 1.05em;
+}
+.addressfield .addressfield-siteinfo .siteinfo-text {
+    font-size: 0.95em;
+}
+.theme-light .urlSearch {
+    background-color: #ffffff;
+}
+.urlSearch section > div {
+    height: 28px;
+    font-size: 1.05em;
+}
+.urlSearch section .url {
+    padding-right: 20px;
+}
+.urlSearch section .url span,
+.urlSearch section .url b {
+    opacity: 1;
+    color: #888888;
+}
+.urlSearch section .highlight .url span,
+.urlSearch section .highlight .url b {
+    color: #ffffff;
+}
+/***********************************************************************
+ TABS
+***********************************************************************/
+/* reduce white space above tabs */
+/* #tabs-container.top {padding-top: 4px;} */
+/* .normal #tabs-container.top {padding-top: 5px !important;} */
+/* reduce white space below tabs when tabs are bottom */
+/* .normal #tabs-container.bottom {padding-bottom: 5px !important;} */
+.stacks-on #tabs-container.bottom {padding-bottom: 3px;}
+/* less obnoxious top border on bottom tabs */
+/* .address-top #tabs-container.bottom {
+    border-top-width: 1px;
+    border-color: rgba(23,27,35,0.1);
+} */
+/* shadow above navigation bar */
+/* #tabs-container {box-shadow: inset 0 -10px 1.7px -10px rgba(0,0,0,0.2);} */
+.theme-dark #tabs-container {box-shadow: inset 0 -10px 3px -10px rgba(0,0,0,0.4);}
+#browser:not(.tabs-top) #tabs-container {box-shadow: none;}
+#browser:not(.tabs-top).theme-dark #tabs-container {box-shadow: none;}
+/* build shadow around active tab */
+/* .tab-position .tab.active {
+    box-shadow: 0 -2px 2px rgba(0,0,0,0),
+    -1px -1px 0.2px rgba(0,0,0,0.1),
+    1px -1px 0.2px rgba(0,0,0,0.1);
+} */
+.theme-dark .tab-position .tab.active {
+    box-shadow: 0px -2px 2px rgba(0,0,0,0),
+    -1px -1px 0.2px rgba(0,0,0,0.2),
+    1px -1px 0.2px rgba(0,0,0,0.2);
+}
+#browser:not(.tabs-top) .tab-position .tab.active {box-shadow: none;}
+#browser:not(.tabs-top).theme-dark .tab-position .tab.active {box-shadow: none;}
+/* blue tab stack indicators */
+.tab-group-indicator {background: var(--colorBg);}
+.color-behind-tabs-on .tab-group-indicator {background: var(--colorAccentBg);}
+
+.stacks-on .tab-strip .tab .tab-group-indicator .tab-indicator,
+.color-behind-tabs-on.stacks-on .tab-strip .tab .tab-group-indicator .tab-indicator {
+    border-top: none;
+    margin-bottom: -2px;
+    background-color: #5294e2 !important;
+}
+.stacks-on .tab-strip .tab .tab-group-indicator .tab-indicator:hover {background-color: #bcd6f5 !important;}
+.stacks-on .tab-strip .tab .tab-group-indicator .tab-indicator.active,
+.stacks-on .tab-strip .tab.active .tab-group-indicator .tab-indicator.active,
+.stacks-on .tab-strip .tab:hover:not(.active) .tab-group-indicator .tab-indicator.active,
+.color-behind-tabs-on.stacks-on .tab-strip .tab .tab-group-indicator .tab-indicator.active {
+    background-color: #88B7F0 !important;
+}
+.tabs-top.tabs-at-edge.maximized.stacks-on .tab-strip .tab .tab-group-indicator .tab-indicator.active {padding-bottom: 0;}
+/* tab selection border*/
+.tab-position .tab.marked:after {
+    bottom: 0;
+    border: 2px solid rgba(82, 148, 226, 0.5);
+    border-image: none;
+    background-color: rgba(82, 148, 226, 0.2);
+}
+.tab-position .tab.marked.active:after {
+    background-color: rgba(82, 148, 226, 0.2);
+}
+/* tab title right fade */
+.tab-position .tab .title {
+    -webkit-mask-image: -webkit-linear-gradient(180deg, transparent 8px, #fff 16px);
+}
+/* no border radius on new tab button */
+.newtab:hover,.acc-dark.color-behind-tabs-on .newtab:hover {border-radius: 0;}
+.newtab svg {border-radius: 0 !important;}
+.synced-tabs-button {margin: auto 5px auto -10px;}
+#browser:not(.tabs-top) .toggle-trash {margin: -10px auto auto auto;}
+/* when tabs are not standard, merge address bar with header */
+#browser:not(.tabs-top) #titlebar {z-index: 1;}
+#browser:not(.tabs-top) #titlebar #pagetitle {display: none;}
+#browser:not(.tabs-top) #main {margin-top: -25px;}
+#browser:not(.tabs-top) .toolbar-addressbar {padding: 0 60px 0 90px;}
+#browser:not(.tabs-top) .vivaldi {top: 2px;}
+#browser.address-top.tabs-off .vivaldi {top: 5.5px;}
+/* when tabs are not standard and address bar is bottom, redisplay titlebar and reset address bar margins */
+#browser.address-off.tabs-off #header {display: flex;}
+#browser:not(.tabs-top).address-off #titlebar #pagetitle,
+#browser:not(.tabs-top).address-bottom #titlebar #pagetitle {
+    display: flex;
+}
+#browser:not(.tabs-off).address-off.bookmark-bar-top .toolbar-addressbar,
+#browser.address-off.tabs-off.bookmark-bar-top .toolbar-addressbar {
+    display: none;
+}
+#browser:not(.tabs-top).address-off #main,
+#browser:not(.tabs-top).address-bottom #main {
+    margin-top: 0;
+}
+#browser:not(.tabs-top).address-off .vivaldi,
+#browser:not(.tabs-top).address-bottom .vivaldi {
+    top: -2px;
+}
+#browser:not(.tabs-top).address-bottom .toolbar-addressbar {padding: 0;}
+/* make expanded extensions wrapper blend better */
+.toolbar-addressbar .button-toolbar.browserAction-button {background-color: var(--colorAccentBg);}
+#browser.color-behind-tabs-on .toolbar-addressbar .button-toolbar.browserAction-button {background-color: var(--colorBg);}
+/* make small black border under address bar more subtle */
+.toolbar-addressbar.toolbar:after {background-color: rgba(23,27,35,0.2) !important;}
+.theme-dark .toolbar-addressbar.toolbar:after {background-color: rgba(23, 27, 35, 0.5) !important;}
+/***********************************************************************
+ PANEL
+***********************************************************************/
+/* dark panel on all themes */
+#switch,
+#panel_switch {
+    background-color: #353945;
+    box-shadow: none !important;
+}
+/* panel buttons */
+#switch > button,
+#switch .addwebpanel-wrapper > button {
+    border: none !important;
+    box-shadow: none !important;
+}
+#switch > button svg,
+#switch .addwebpanel-wrapper > button svg,
+#panel_switch svg polygon {
+    fill: #d3dae3 !important;
+}
+.theme-dark #switch .webviewbtn img {
+    background: transparent !important;
+}
+#switch > button:hover:not(.active),
+#switch .addwebpanel-wrapper > button:hover:not(.active),
+#panel_switch:hover {
+    background-color: #494D5A;
+}
+#switch > button:focus:not(.active),
+#switch .addwebpanel-wrapper > button:focus:not(.active) {
+    background-color: #353945 !important;
+}
+#switch > button.active,
+#switch > button.active:hover {
+    background-color: var(--colorBgLightIntense) !important;
+}
+#switch > button.active svg {
+    fill: var(--colorFg) !important;
+}
+/* active tab in windows panel uses theme highlight color */
+.vivaldi-tree .tree-row[data-selected],
+.vivaldi-tree .tree-row[data-selected][data-nofocus] {
+    color: white;
+    background: var(--colorHighlightBg);
+}
+/***********************************************************************
+ START PAGE
+***********************************************************************/
+.theme-light .startpage {
+    background-color: #ffffff !important;
+}
+.theme-dark .startpage {
+    background-color: #353945 !important;
+}
+/* make speed dial navigation smaller */
+.startpage-navigation {min-height: 34px !important;}
+.button-startpage {box-shadow: none !important;}
+/* remove white left border in speed dial navigation */
+.startpage .startpage-navigation .startpage-navigation-group:last-of-type {border-left: none;}
+/* Remove gradient on active navigation button */
+button.button-startpage:after {background: none !important};
+/* dark speed dial navigation unless light theme with light accent */
+.acc-dark button.button-startpage.active,
+.acc-dark .startpage .startpage-navigation,
+.theme-dark button.button-startpage.active,
+.theme-dark .startpage .startpage-navigation {
+    color: #cdd6db;
+    background: #353945;
+}
+.acc-dark .startpage .startpage-navigation,
+.theme-dark .startpage .startpage-navigation {
+    box-shadow: inset 0 -2px 0 #2f343f;
+}
+/* use arc colors for stats info overlay */
+#footer.footer > #status_info > span {
+    border: initial;
+    color: var(--colorFg);
+    background: initial;
+}
+#status_info > span {
+    border: 0;
+    color: #fff;
+    background: #5294e2;
+}
+/***********************************************************************
+ SETTINGS PAGE
+***********************************************************************/
+/* use arc sidebar color in vivaldi's settings dialog */
+.vivaldi-settings .settings-sidebar {
+    color: #d3dae3;
+    background: #353945 !important;
+    box-shadow: none;
+}
+.vivaldi-settings .settings-sidebar svg {
+    fill: #fff;
+}
+.vivaldi-settings .settings-sidebar .button-category:hover:not(.category-selected) {
+    background: #494D5A;
+}
+.vivaldi-settings .settings-sidebar .button-category.category-selected {
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    background-color: #5294e2;
+    color: #ffffff;
+}
+.vivaldi-settings .settings-sidebar .settings-navigation:focus-within .tree-row:not([data-selected]) .button-category.category-selected {
+    background: transparent;
+    color: #d3dae3;
+}
+.vivaldi-settings .settings-sidebar .settings-navigation:focus-within .tree-row:not([data-selected]) .button-category.category-selected:hover {
+    background: #494D5A;
+    color: #d3dae3;
+}
+.vivaldi-settings .settings-sidebar .settings-navigation:focus-within .tree-row[data-selected] .button-category:not(.category-selected) {
+    background: #5294e2;
+    box-shadow: none;
+    border-color: transparent;
+    color: #ffffff;
+}
+.vivaldi-settings .settings-sidebar .settings-navigation-header {
+    padding: 10px 12px 15px 12px;
+}
+.settings-search {
+    background: #292E39;
+    border-width: 0 !important;
+}
+/***********************************************************************
+ SCROLLBARS
+***********************************************************************/
+/* arc style scrollbars, for these scrollbars universally: https://userstyles.org/styles/142645/arc-scrollbars */
+#browser ::-webkit-scrollbar {
+    width: 10px !important;
+    height: 10px !important;
+}
+#browser ::-webkit-scrollbar-button {display: none !important;}
+#browser ::-webkit-scrollbar-track {
+    background-color: transparent !important;
+    border-color: transparent !important;
+}
+#browser.theme-light ::-webkit-scrollbar-track:vertical {
+    border-left: 1px solid #dcdfe3 !important;
+}
+#browser.theme-light ::-webkit-scrollbar-track:horizontal {
+    border-top: 1px solid #dcdfe3 !important;
+}
+#browser.theme-dark ::-webkit-scrollbar-track:vertical {
+    border-left: 1px solid #2b2e39 !important;
+}
+#browser.theme-dark ::-webkit-scrollbar-track:horizontal {
+    border-top: 1px solid #2b2e39 !important;
+}
+#browser .settings-sidebar ::-webkit-scrollbar-track:vertical {
+    border-left: 1px solid #2b2e39 !important;
+}
+#browser .settings-sidebar ::-webkit-scrollbar-track:horizontal {
+    border-top: 1px solid #2b2e39 !important;
+}
+#browser ::-webkit-scrollbar-thumb {
+    background-clip: padding-box !important;
+    border: 2px solid transparent !important;
+    -webkit-border-radius: 20px !important;
+}
+#browser ::-webkit-scrollbar-thumb:vertical {
+    border-width: 2px 2px 2px 3px !important;
+}
+#browser ::-webkit-scrollbar-thumb:horizontal {
+    border-width: 3px 2px 2px 2px !important;
+}
+#browser.theme-light ::-webkit-scrollbar-thumb {background-color: #cacaca !important;}
+#browser.theme-light ::-webkit-scrollbar-thumb:hover {background-color: #bebebe !important;}
+#browser.theme-light ::-webkit-scrollbar-thumb:active {background-color: #5294e2 !important;}
+#browser.theme-dark ::-webkit-scrollbar-thumb {background-color: #666666 !important;}
+#browser.theme-dark ::-webkit-scrollbar-thumb:hover {background-color: #757575 !important;}
+#browser.theme-dark ::-webkit-scrollbar-thumb:active {background-color: #5294e2 !important;}
+#browser .settings-sidebar ::-webkit-scrollbar-thumb {background-color: #666666 !important;}
+#browser .settings-sidebar ::-webkit-scrollbar-thumb:hover {background-color: #757575 !important;}
+#browser .settings-sidebar ::-webkit-scrollbar-thumb:active {background-color: #5294e2 !important;}
