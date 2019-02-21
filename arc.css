@@ -24,10 +24,18 @@
 	border-bottom: 1px solid #d4d5db !important;
 }
 
+.theme-dark #tabs-container.top {
+	border-bottom: 1px solid #262a33 !important;
+}
+
 /* Tab strip on bottom */
 #tabs-container.bottom {
 	padding-bottom: 5px !important;
 	border-top: 1px solid #d4d5db !important;
+}
+
+.theme-dark #tabs-container.bottom {
+	border-top: 1px solid #262a33 !important;
 }
 
 /* Border around active tab (tabs top) */
@@ -39,6 +47,11 @@
 #tabs-container.top .tab-position .tab:hover,
 #tabs-container.top .tab-position .tab.active {
 	border: 1px solid #d4d5db;
+}
+
+.theme-dark #tabs-container.top .tab-position .tab:hover,
+.theme-dark #tabs-container.top .tab-position .tab.active {
+	border: 1px solid #262a33;
 }
 
 #tabs-container.top .tab-position .tab.active {
@@ -54,6 +67,11 @@
 #tabs-container.bottom .tab-position .tab:hover,
 #tabs-container.bottom .tab-position .tab.active {
 	border: 1px solid #d4d5db;
+}
+
+.theme-dark #tabs-container.bottom .tab-position .tab:hover,
+.theme-dark #tabs-container.bottom .tab-position .tab.active {
+	border: 1px solid #262a33;
 }
 
 #tabs-container.bottom .tab-position .tab.active {
@@ -99,6 +117,10 @@
 
 #browser:not(.address-top):not(.tabs-top) #header {
 	border-bottom: 1px solid #d4d5db;
+}
+
+#browser.theme-dark:not(.address-top):not(.tabs-top) #header {
+	border-bottom: 1px solid #262a33;
 }
 
 /***********************************************************************
