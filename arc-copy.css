@@ -19,10 +19,10 @@
  MAIN WINDOW
 ***********************************************************************/
 /* remove vivaldi's header gradient and make splash use arc bg color */
-body {
-    background-color: #2f343f !important;
+/* body {
+    background-color: #2f343f !important; */
     /* --colorAccentBgDark: transparent !important; */
-}
+?}
 /* hide title bar when GUI is hidden */
 #browser.minimal-ui.address-off.tabs-off.bookmark-bar-off #header {display: none;}
 /***********************************************************************
