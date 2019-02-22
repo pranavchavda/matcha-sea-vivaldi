@@ -304,6 +304,11 @@
 	margin-left: 0;
 }
 
+/* Hidden extension button background (when expanded) */
+.extensions-wrapper .actionVisibility-hidden {
+	background-color: transparent !important;
+}
+
 /* Extension button badges */
 .extensions-wrapper .button-badge {
 	background-color: rgb(120, 120, 120) !important;

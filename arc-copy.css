@@ -232,10 +232,10 @@ input.url.vivaldi-addressfield {
 #browser:not(.tabs-top).address-bottom .vivaldi {
     top: -2px;
 } */
-#browser:not(.tabs-top).address-bottom .toolbar-addressbar {padding: 0;}
+/* #browser:not(.tabs-top).address-bottom .toolbar-addressbar {padding: 0;} */
 /* make expanded extensions wrapper blend better */
-.toolbar-addressbar .button-toolbar.browserAction-button {background-color: var(--colorAccentBg);}
-#browser.color-behind-tabs-on .toolbar-addressbar .button-toolbar.browserAction-button {background-color: var(--colorBg);}
+/* .toolbar-addressbar .button-toolbar.browserAction-button {background-color: var(--colorAccentBg);}
+#browser.color-behind-tabs-on .toolbar-addressbar .button-toolbar.browserAction-button {background-color: var(--colorBg);} */
 /* make small black border under address bar more subtle */
 /* .toolbar-addressbar.toolbar:after {background-color: rgba(23,27,35,0.2) !important;}
 .theme-dark .toolbar-addressbar.toolbar:after {background-color: rgba(23, 27, 35, 0.5) !important;} */
