@@ -131,6 +131,10 @@
 }
 
 #browser.address-top:not(.tabs-top) .toolbar-addressbar {
+	padding: 0 90px 0 40px;
+}
+
+#browser.alt.address-top:not(.tabs-top) .toolbar-addressbar {
 	padding: 0 40px 0 90px;
 }
 
