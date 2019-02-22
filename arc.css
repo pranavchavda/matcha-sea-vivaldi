@@ -98,6 +98,19 @@
 	background: var(--colorAccentBg);
 }
 
+/* Remove thick border under address bar (top) */
+#browser.address-top .toolbar-addressbar.toolbar {
+	border-bottom: 1px solid #d4d5db;
+}
+
+#browser.theme-dark.address-top .toolbar-addressbar.toolbar {
+	border-bottom: 1px solid #262a33;
+}
+
+.toolbar-addressbar:after {
+	display: none !important;
+}
+
 /* Merge address bar top with header */
 #browser.address-top:not(.tabs-top) #main {
 	margin-top: -24px;

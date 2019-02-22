@@ -237,8 +237,8 @@ input.url.vivaldi-addressfield {
 .toolbar-addressbar .button-toolbar.browserAction-button {background-color: var(--colorAccentBg);}
 #browser.color-behind-tabs-on .toolbar-addressbar .button-toolbar.browserAction-button {background-color: var(--colorBg);}
 /* make small black border under address bar more subtle */
-.toolbar-addressbar.toolbar:after {background-color: rgba(23,27,35,0.2) !important;}
-.theme-dark .toolbar-addressbar.toolbar:after {background-color: rgba(23, 27, 35, 0.5) !important;}
+/* .toolbar-addressbar.toolbar:after {background-color: rgba(23,27,35,0.2) !important;}
+.theme-dark .toolbar-addressbar.toolbar:after {background-color: rgba(23, 27, 35, 0.5) !important;} */
 /***********************************************************************
  PANEL
 ***********************************************************************/
