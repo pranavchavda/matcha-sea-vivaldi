@@ -320,3 +320,43 @@ body {
 .extensions-wrapper .button-badge {
 	background-color: rgb(120, 120, 120) !important;
 }
+
+/***********************************************************************
+ START PAGE
+***********************************************************************/
+/* Start page background */
+.startpage {
+	background-color: var(--colorBg) !important;
+}
+
+/* Start page toolbar */
+.startpage-navigation {
+	background-color: var(--colorBg) !important;
+	min-height: 34px !important;
+	box-shadow: none !important;
+	border-bottom: 1px solid #d4d5db;
+}
+
+.theme-dark .startpage-navigation {
+	border-bottom: 1px solid #262a33;
+}
+
+/* Remove left border in speed dial navigation */
+.startpage .startpage-navigation .startpage-navigation-group:last-of-type {
+	border-left: none !important;
+}
+
+/* Navigation button */
+button.button-startpage:hover {
+	background-color: var(--colorBgLighter);
+	border-color: var(--colorHighlightBg);
+}
+
+button.button-startpage:focus:not([tabindex='-1']) {
+	background-color: transparent;
+}
+
+/* Remove gradient on active navigation button */
+button.button-startpage:after {
+	background: none !important
+};

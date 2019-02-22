@@ -22,7 +22,7 @@
 /* body {
     background-color: #2f343f !important; */
     /* --colorAccentBgDark: transparent !important; */
-?}
+/* } */
 /* hide title bar when GUI is hidden */
 #browser.minimal-ui.address-off.tabs-off.bookmark-bar-off #header {display: none;}
 /***********************************************************************
@@ -287,31 +287,31 @@ input.url.vivaldi-addressfield {
 /***********************************************************************
  START PAGE
 ***********************************************************************/
-.theme-light .startpage {
+/* .theme-light .startpage {
     background-color: #ffffff !important;
 }
 .theme-dark .startpage {
     background-color: #353945 !important;
-}
+} */
 /* make speed dial navigation smaller */
-.startpage-navigation {min-height: 34px !important;}
-.button-startpage {box-shadow: none !important;}
+/* .startpage-navigation {min-height: 34px !important;} */
+/* .button-startpage {box-shadow: none !important;} */
 /* remove white left border in speed dial navigation */
-.startpage .startpage-navigation .startpage-navigation-group:last-of-type {border-left: none;}
+/* .startpage .startpage-navigation .startpage-navigation-group:last-of-type {border-left: none;} */
 /* Remove gradient on active navigation button */
-button.button-startpage:after {background: none !important};
+/* button.button-startpage:after {background: none !important}; */
 /* dark speed dial navigation unless light theme with light accent */
-.acc-dark button.button-startpage.active,
+/* .acc-dark button.button-startpage.active,
 .acc-dark .startpage .startpage-navigation,
 .theme-dark button.button-startpage.active,
 .theme-dark .startpage .startpage-navigation {
     color: #cdd6db;
     background: #353945;
-}
-.acc-dark .startpage .startpage-navigation,
+} */
+/* .acc-dark .startpage .startpage-navigation,
 .theme-dark .startpage .startpage-navigation {
     box-shadow: inset 0 -2px 0 #2f343f;
-}
+} */
 /* use arc colors for stats info overlay */
 #footer.footer > #status_info > span {
     border: initial;
