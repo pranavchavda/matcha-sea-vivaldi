@@ -203,8 +203,8 @@ input.url.vivaldi-addressfield {
     -webkit-mask-image: -webkit-linear-gradient(180deg, transparent 8px, #fff 16px);
 }
 /* no border radius on new tab button */
-.newtab:hover,.acc-dark.color-behind-tabs-on .newtab:hover {border-radius: 0;}
-.newtab svg {border-radius: 0 !important;}
+/* .newtab:hover,.acc-dark.color-behind-tabs-on .newtab:hover {border-radius: 0;}
+.newtab svg {border-radius: 0 !important;} */
 .synced-tabs-button {margin: auto 5px auto -10px;}
 /* #browser:not(.tabs-top) .toggle-trash {margin: -10px auto auto auto;} */
 /* when tabs are not standard, merge address bar with header */

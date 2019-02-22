@@ -90,6 +90,10 @@
 	margin-top: -3px !important;
 	margin-bottom: 3px !important;
 }
+
+/* No border radius on new tab button */
+.newtab svg {border-radius: 0 !important;}
+
 /***********************************************************************
 	ADDRESS BAR
 ***********************************************************************/
