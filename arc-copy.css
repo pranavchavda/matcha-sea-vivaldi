@@ -212,7 +212,7 @@ input.url.vivaldi-addressfield {
 #browser:not(.tabs-top) #titlebar #pagetitle {display: none;}
 #browser:not(.tabs-top) #main {margin-top: -25px;}
 #browser:not(.tabs-top) .toolbar-addressbar {padding: 0 60px 0 90px;} */
-#browser:not(.tabs-top) .vivaldi {top: 2px;}
+/* #browser:not(.tabs-top) .vivaldi {top: 2px;} */
 #browser.address-top.tabs-off .vivaldi {top: 5.5px;}
 /* when tabs are not standard and address bar is bottom, redisplay titlebar and reset address bar margins */
 /* #browser.address-off.tabs-off #header {display: flex;}
@@ -228,10 +228,10 @@ input.url.vivaldi-addressfield {
 #browser:not(.tabs-top).address-bottom #main {
     margin-top: 0;
 } */
-#browser:not(.tabs-top).address-off .vivaldi,
+/* #browser:not(.tabs-top).address-off .vivaldi,
 #browser:not(.tabs-top).address-bottom .vivaldi {
     top: -2px;
-}
+} */
 #browser:not(.tabs-top).address-bottom .toolbar-addressbar {padding: 0;}
 /* make expanded extensions wrapper blend better */
 .toolbar-addressbar .button-toolbar.browserAction-button {background-color: var(--colorAccentBg);}

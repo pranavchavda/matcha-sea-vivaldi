@@ -124,6 +124,19 @@
 	border-bottom: 1px solid #262a33;
 }
 
+/* Vivaldi menu button position */
+#browser.address-top:not(.tabs-top) .vivaldi {
+	top: 2px;
+}
+
+#browser.address-top.tabs-off .vivaldi {
+	top: 5.5px;
+}
+
+#browser:not(.address-top).tabs-off .vivaldi {
+	top: 2px;
+}
+
 /***********************************************************************
  PANEL
 ***********************************************************************/
