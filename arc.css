@@ -31,7 +31,8 @@
 /* Tab strip on bottom */
 #tabs-container.bottom {
 	padding-bottom: 5px !important;
-	padding-left: 3px;
+	padding-left: 4px;
+	padding-right: 4px;
 	border-top: 1px solid #d4d5db !important;
 }
 
