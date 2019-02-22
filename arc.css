@@ -94,6 +94,12 @@
 /* No border radius on new tab button */
 .newtab svg {border-radius: 0 !important;}
 
+/* Tab title (right fade and vertical position) */
+.tab-position .tab .title {
+	-webkit-mask-image: -webkit-linear-gradient(180deg, transparent 8px, #fff 16px);
+	margin-top: 1px !important;
+}
+
 /***********************************************************************
 	ADDRESS BAR
 ***********************************************************************/
