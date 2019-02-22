@@ -50,10 +50,10 @@
 #browser.theme-dark .window-maximize:hover { background: url('arc/titlebutton-maximize-hover-dark.png') no-repeat !important; }
 #browser.theme-dark .window-maximize:hover:active { background: url('arc/titlebutton-maximize-active-dark.png') no-repeat !important; }
 #browser.theme-dark .isblurred .window-maximize { background: url('arc/titlebutton-maximize-backdrop-dark.png') no-repeat; }
-#browser.theme-dark .maximized .window-maximize { background: url('arc/titlebutton-unmaximize-dark.png') no-repeat; }
-#browser.theme-dark .maximized .window-maximize:hover { background: url('arc/titlebutton-unmaximize-hover-dark.png') no-repeat !important; }
-#browser.theme-dark .maximized .window-maximize:hover:active { background: url('arc/titlebutton-unmaximize-active-dark.png') no-repeat !important; }
-#browser.theme-dark .maximized.isblurred .window-maximize { background: url('arc/titlebutton-unmaximize-backdrop-dark.png') no-repeat; }
+#browser.theme-dark.maximized .window-maximize { background: url('arc/titlebutton-unmaximize-dark.png') no-repeat; }
+#browser.theme-dark.maximized .window-maximize:hover { background: url('arc/titlebutton-unmaximize-hover-dark.png') no-repeat !important; }
+#browser.theme-dark.maximized .window-maximize:hover:active { background: url('arc/titlebutton-unmaximize-active-dark.png') no-repeat !important; }
+#browser.theme-dark.maximized.isblurred .window-maximize { background: url('arc/titlebutton-unmaximize-backdrop-dark.png') no-repeat; }
 
 /* Close button */
 .linux .window-close {
