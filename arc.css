@@ -80,6 +80,16 @@
 	margin-top: -1px;
 }
 
+/* Tab trash icon vertical position */
+#browser.tabs-top button.button-tabbar.toggle-trash {
+	margin-top: -1px !important;
+	margin-bottom: 1px !important;
+}
+
+#browser.maximized.tabs-top button.button-tabbar.toggle-trash {
+	margin-top: -3px !important;
+	margin-bottom: 3px !important;
+}
 /***********************************************************************
 	ADDRESS BAR
 ***********************************************************************/
