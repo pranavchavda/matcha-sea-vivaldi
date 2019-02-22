@@ -349,7 +349,7 @@ body {
 /* Navigation button */
 button.button-startpage:hover {
 	background-color: var(--colorBgLighter);
-	border-color: var(--colorHighlightBg);
+	border-color: var(--colorBorderHighlight);
 }
 
 button.button-startpage:focus:not([tabindex='-1']) {
