@@ -369,7 +369,7 @@ input.url.vivaldi-addressfield {
  SCROLLBARS
 ***********************************************************************/
 /* arc style scrollbars, for these scrollbars universally: https://userstyles.org/styles/142645/arc-scrollbars */
-#browser ::-webkit-scrollbar {
+/* #browser ::-webkit-scrollbar {
     width: 10px !important;
     height: 10px !important;
 }
@@ -389,14 +389,14 @@ input.url.vivaldi-addressfield {
 }
 #browser.theme-dark ::-webkit-scrollbar-track:horizontal {
     border-top: 1px solid #2b2e39 !important;
-}
+} */
 #browser .settings-sidebar ::-webkit-scrollbar-track:vertical {
     border-left: 1px solid #2b2e39 !important;
 }
 #browser .settings-sidebar ::-webkit-scrollbar-track:horizontal {
     border-top: 1px solid #2b2e39 !important;
 }
-#browser ::-webkit-scrollbar-thumb {
+/* #browser ::-webkit-scrollbar-thumb {
     background-clip: padding-box !important;
     border: 2px solid transparent !important;
     -webkit-border-radius: 20px !important;
@@ -412,7 +412,7 @@ input.url.vivaldi-addressfield {
 #browser.theme-light ::-webkit-scrollbar-thumb:active {background-color: #5294e2 !important;}
 #browser.theme-dark ::-webkit-scrollbar-thumb {background-color: #666666 !important;}
 #browser.theme-dark ::-webkit-scrollbar-thumb:hover {background-color: #757575 !important;}
-#browser.theme-dark ::-webkit-scrollbar-thumb:active {background-color: #5294e2 !important;}
+#browser.theme-dark ::-webkit-scrollbar-thumb:active {background-color: #5294e2 !important;} */
 #browser .settings-sidebar ::-webkit-scrollbar-thumb {background-color: #666666 !important;}
 #browser .settings-sidebar ::-webkit-scrollbar-thumb:hover {background-color: #757575 !important;}
 #browser .settings-sidebar ::-webkit-scrollbar-thumb:active {background-color: #5294e2 !important;}
