@@ -24,7 +24,7 @@
     /* --colorAccentBgDark: transparent !important; */
 /* } */
 /* hide title bar when GUI is hidden */
-#browser.minimal-ui.address-off.tabs-off.bookmark-bar-off #header {display: none;}
+/* #browser.minimal-ui.address-off.tabs-off.bookmark-bar-off #header {display: none;} */
 /***********************************************************************
  TOOLBAR BUTTONS
 ***********************************************************************/
@@ -205,7 +205,7 @@
 /* no border radius on new tab button */
 /* .newtab:hover,.acc-dark.color-behind-tabs-on .newtab:hover {border-radius: 0;}
 .newtab svg {border-radius: 0 !important;} */
-.synced-tabs-button {margin: auto 5px auto -10px;}
+/* .synced-tabs-button {margin: auto 5px auto -10px;} */
 /* #browser:not(.tabs-top) .toggle-trash {margin: -10px auto auto auto;} */
 /* when tabs are not standard, merge address bar with header */
 /* #browser:not(.tabs-top) #titlebar {z-index: 1;}

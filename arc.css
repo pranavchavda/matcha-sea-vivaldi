@@ -275,6 +275,10 @@ input.url.vivaldi-addressfield {
 	border-bottom: 1px solid #d4d5db;
 }
 
+#browser.theme-dark.address-off.tabs-off.bookmark-bar-off #header {
+	border-bottom: 1px solid #262a33;
+}
+
 /* Vivaldi menu button position */
 #browser.address-top:not(.tabs-top) .vivaldi {
 	top: 2px;
