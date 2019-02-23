@@ -61,6 +61,8 @@
 ***********************************************************************/
 body {
 	background-color: #2f343f !important;
+	--colorArcBorderLight: #d4d5db;
+	--colorArcBorderDark: #262a33;
 }
 
 /***********************************************************************
@@ -70,11 +72,11 @@ body {
 #tabs-container.top {
 	background-image: none !important;
 	padding-top: 5px !important;
-	border-bottom: 1px solid #d4d5db !important;
+	border-bottom: 1px solid var(--colorArcBorderLight) !important;
 }
 
 .theme-dark #tabs-container.top {
-	border-bottom: 1px solid #262a33 !important;
+	border-bottom: 1px solid var(--colorArcBorderDark) !important;
 }
 
 /* Tab strip on bottom */
@@ -82,11 +84,11 @@ body {
 	padding-bottom: 5px !important;
 	padding-left: 4px;
 	padding-right: 4px;
-	border-top: 1px solid #d4d5db !important;
+	border-top: 1px solid var(--colorArcBorderLight) !important;
 }
 
 .theme-dark #tabs-container.bottom {
-	border-top: 1px solid #262a33 !important;
+	border-top: 1px solid var(--colorArcBorderDark) !important;
 }
 
 /* Border around active tab (tabs top) */
@@ -97,12 +99,12 @@ body {
 
 #tabs-container.top .tab-position .tab:hover,
 #tabs-container.top .tab-position .tab.active {
-	border: 1px solid #d4d5db;
+	border: 1px solid var(--colorArcBorderLight);
 }
 
 .theme-dark #tabs-container.top .tab-position .tab:hover,
 .theme-dark #tabs-container.top .tab-position .tab.active {
-	border: 1px solid #262a33;
+	border: 1px solid var(--colorArcBorderDark);
 }
 
 #tabs-container.top .tab-position .tab.active {
@@ -117,12 +119,12 @@ body {
 
 #tabs-container.bottom .tab-position .tab:hover,
 #tabs-container.bottom .tab-position .tab.active {
-	border: 1px solid #d4d5db;
+	border: 1px solid var(--colorArcBorderLight);
 }
 
 .theme-dark #tabs-container.bottom .tab-position .tab:hover,
 .theme-dark #tabs-container.bottom .tab-position .tab.active {
-	border: 1px solid #262a33;
+	border: 1px solid var(--colorArcBorderDark);
 }
 
 #tabs-container.bottom .tab-position .tab.active {
@@ -185,11 +187,11 @@ body {
 
 /* Remove thick border under address bar (top) */
 #browser.address-top .toolbar-addressbar.toolbar {
-	border-bottom: 1px solid #d4d5db;
+	border-bottom: 1px solid var(--colorArcBorderLight);
 }
 
 #browser.theme-dark.address-top .toolbar-addressbar.toolbar {
-	border-bottom: 1px solid #262a33;
+	border-bottom: 1px solid var(--colorArcBorderDark);
 }
 
 .toolbar-addressbar:after {
@@ -263,20 +265,20 @@ input.url.vivaldi-addressfield {
 }
 
 #browser:not(.address-top):not(.tabs-top) #header {
-	border-bottom: 1px solid #d4d5db;
+	border-bottom: 1px solid var(--colorArcBorderLight);
 }
 
 #browser.theme-dark:not(.address-top):not(.tabs-top) #header {
-	border-bottom: 1px solid #262a33;
+	border-bottom: 1px solid var(--colorArcBorderDark);
 }
 
 #browser.address-off.tabs-off.bookmark-bar-off #header {
 	background-color: var(--colorAccentBg);
-	border-bottom: 1px solid #d4d5db;
+	border-bottom: 1px solid var(--colorArcBorderLight);
 }
 
 #browser.theme-dark.address-off.tabs-off.bookmark-bar-off #header {
-	border-bottom: 1px solid #262a33;
+	border-bottom: 1px solid var(--colorArcBorderDark);
 }
 
 /* Vivaldi menu button position */
@@ -448,11 +450,11 @@ input.url.vivaldi-addressfield {
 	background-color: var(--colorBg) !important;
 	min-height: 34px !important;
 	box-shadow: none !important;
-	border-bottom: 1px solid #d4d5db;
+	border-bottom: 1px solid var(--colorArcBorderLight);
 }
 
 .theme-dark .startpage-navigation {
-	border-bottom: 1px solid #262a33;
+	border-bottom: 1px solid var(--colorArcBorderDark);
 }
 
 /* Remove left border in speed dial navigation */
