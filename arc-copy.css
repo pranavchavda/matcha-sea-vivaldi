@@ -146,7 +146,7 @@ input.url.vivaldi-addressfield {
 /* .normal #tabs-container.top {padding-top: 5px !important;} */
 /* reduce white space below tabs when tabs are bottom */
 /* .normal #tabs-container.bottom {padding-bottom: 5px !important;} */
-.stacks-on #tabs-container.bottom {padding-bottom: 3px;}
+/* .stacks-on #tabs-container.bottom {padding-bottom: 3px;} */
 /* less obnoxious top border on bottom tabs */
 /* .address-top #tabs-container.bottom {
     border-top-width: 1px;
@@ -171,10 +171,10 @@ input.url.vivaldi-addressfield {
 #browser:not(.tabs-top) .tab-position .tab.active {box-shadow: none;}
 #browser:not(.tabs-top).theme-dark .tab-position .tab.active {box-shadow: none;} */
 /* blue tab stack indicators */
-.tab-group-indicator {background: var(--colorBg);}
-.color-behind-tabs-on .tab-group-indicator {background: var(--colorAccentBg);}
+/* .tab-group-indicator {background: var(--colorBg);}
+.color-behind-tabs-on .tab-group-indicator {background: var(--colorAccentBg);} */
 
-.stacks-on .tab-strip .tab .tab-group-indicator .tab-indicator,
+/* .stacks-on .tab-strip .tab .tab-group-indicator .tab-indicator,
 .color-behind-tabs-on.stacks-on .tab-strip .tab .tab-group-indicator .tab-indicator {
     border-top: none;
     margin-bottom: -2px;
@@ -187,9 +187,9 @@ input.url.vivaldi-addressfield {
 .color-behind-tabs-on.stacks-on .tab-strip .tab .tab-group-indicator .tab-indicator.active {
     background-color: #88B7F0 !important;
 }
-.tabs-top.tabs-at-edge.maximized.stacks-on .tab-strip .tab .tab-group-indicator .tab-indicator.active {padding-bottom: 0;}
+.tabs-top.tabs-at-edge.maximized.stacks-on .tab-strip .tab .tab-group-indicator .tab-indicator.active {padding-bottom: 0;} */
 /* tab selection border*/
-.tab-position .tab.marked:after {
+/* .tab-position .tab.marked:after {
     bottom: 0;
     border: 2px solid rgba(82, 148, 226, 0.5);
     border-image: none;
@@ -197,7 +197,7 @@ input.url.vivaldi-addressfield {
 }
 .tab-position .tab.marked.active:after {
     background-color: rgba(82, 148, 226, 0.2);
-}
+} */
 /* tab title right fade */
 /* .tab-position .tab .title {
     -webkit-mask-image: -webkit-linear-gradient(180deg, transparent 8px, #fff 16px);

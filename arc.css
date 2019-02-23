@@ -107,6 +107,32 @@ body {
 	margin-top: 1px !important;
 }
 
+/* Tab stack indicators */
+.stacks-on .tab-strip .tab .tab-group-indicator .tab-indicator {
+	background-color: #88B7F0 !important;
+	border-top-left-radius: var(--radiusHalf) !important;
+	border-top-right-radius: var(--radiusHalf) !important;
+}
+
+.stacks-on .tab-strip .tab .tab-group-indicator .tab-indicator:hover {
+	background-color: var(--colorHighlightBg) !important;
+}
+
+.stacks-on .tab-strip .tab .tab-group-indicator .tab-indicator.active {
+	background-color: var(--colorHighlightBg) !important;
+}
+
+/* Selected tab borders */
+.tab-position .tab.marked:after {
+	background-color: transparent;
+	border-width: 2px;
+	border-image: repeating-linear-gradient(-45deg, transparent, transparent 5px, rgba(82, 148, 226, 0.8) 5px, rgba(82, 148, 226, 0.8) 10px) 3;
+}
+
+.tab-position .tab .tab-indicator.marked {
+	background-image: repeating-linear-gradient(-45deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5) 5px, rgba(82, 148, 226, 0.8) 5px, rgba(82, 148, 226, 0.8) 10px);
+}
+
 /***********************************************************************
 	ADDRESS BAR
 ***********************************************************************/
