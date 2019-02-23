@@ -113,7 +113,7 @@
 /***********************************************************************
  ADDRESS BAR
 ***********************************************************************/
-input.url.vivaldi-addressfield {
+/* input.url.vivaldi-addressfield {
     font-size: 1.05em;
 }
 .addressfield .addressfield-siteinfo .siteinfo-text {
@@ -137,7 +137,7 @@ input.url.vivaldi-addressfield {
 .urlSearch section .highlight .url span,
 .urlSearch section .highlight .url b {
     color: #ffffff;
-}
+} */
 /***********************************************************************
  TABS
 ***********************************************************************/

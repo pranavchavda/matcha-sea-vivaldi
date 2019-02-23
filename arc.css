@@ -222,6 +222,39 @@ body {
 	background: var(--colorAccentBg);
 }
 
+/* Address bar + dropdown fonts and colors */
+input.url.vivaldi-addressfield {
+	font-size: 1.05em;
+}
+
+.addressfield .addressfield-siteinfo .siteinfo-text {
+	font-size: 0.95em;
+}
+
+.theme-light .urlSearch {
+	background-color: #ffffff;
+}
+
+.urlSearch section > div {
+	height: 28px;
+	font-size: 1.05em;
+}
+
+.urlSearch section .url {
+	padding-right: 20px;
+}
+
+.urlSearch section .url span,
+.urlSearch section .url b {
+	opacity: 1;
+	color: #888888;
+}
+
+.urlSearch section .highlight .url span,
+.urlSearch section .highlight .url b {
+	color: #ffffff;
+}
+
 /***********************************************************************
 	HEADER
 ***********************************************************************/
