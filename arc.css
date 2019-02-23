@@ -417,6 +417,10 @@ input.url.vivaldi-addressfield {
 	background-color: transparent !important;
 }
 
+.toolbar-addressbar .button-toolbar.browserAction-button.popup-visible {
+	background-color: transparent !important;
+}
+
 /* Extension button badges */
 .extensions-wrapper .button-badge {
 	background-color: rgb(120, 120, 120) !important;
