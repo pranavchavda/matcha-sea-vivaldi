@@ -52,7 +52,7 @@ If you want to **use the Arc window buttons** instead of Vivaldi's default windo
 
 - [ ] Arc-Darker theme and colors
 - [ ] Tab strip (tabs left/right)
-- [ ] Settings page
+- [x] Settings page
 
 ----
 

@@ -44,6 +44,9 @@ SCROLLBARS
 #browser.theme-light ::-webkit-scrollbar-track:horizontal { border-top: 1px solid #dcdfe3 !important; }
 #browser.theme-dark ::-webkit-scrollbar-track:vertical { border-left: 1px solid #2b2e39 !important; }
 #browser.theme-dark ::-webkit-scrollbar-track:horizontal { border-top: 1px solid #2b2e39 !important; }
+#browser .settings-sidebar ::-webkit-scrollbar-track:vertical { border-left: 1px solid #2b2e39 !important; }
+#browser .settings-sidebar ::-webkit-scrollbar-track:horizontal { border-top: 1px solid #2b2e39 !important; }
+}
 
 ::-webkit-scrollbar-thumb {
 	background-clip: padding-box !important;
@@ -65,6 +68,9 @@ SCROLLBARS
 #browser.theme-dark ::-webkit-scrollbar-thumb { background-color: #666666 !important; }
 #browser.theme-dark ::-webkit-scrollbar-thumb:hover { background-color: #757575 !important; }
 #browser.theme-dark ::-webkit-scrollbar-thumb:active { background-color: #5294e2 !important; }
+#browser .settings-sidebar ::-webkit-scrollbar-thumb { background-color: #666666 !important; }
+#browser .settings-sidebar ::-webkit-scrollbar-thumb:hover { background-color: #757575 !important; }
+#browser .settings-sidebar ::-webkit-scrollbar-thumb:active { background-color: #5294e2 !important; }
 
 /***********************************************************************
 	TABS
@@ -436,6 +442,69 @@ input.url.vivaldi-addressfield {
 /* Extension button badges */
 .extensions-wrapper .button-badge {
 	background-color: rgb(120, 120, 120) !important;
+}
+
+/***********************************************************************
+ SETTINGS PAGE
+***********************************************************************/
+/* Category sidebar */
+.vivaldi-settings .settings-sidebar {
+	color: #d3dae3;
+	background: var(--colorArcSidebar) !important;
+	box-shadow: none;
+}
+
+.vivaldi-settings .settings-sidebar svg {
+	fill: #d3dae3;
+}
+
+/* Category buttons */
+.vivaldi-settings .settings-sidebar .button-category:hover:not(.category-selected) {
+	background: #494D5A;
+}
+
+.vivaldi-settings .settings-sidebar .button-category.category-selected {
+	border-top-color: transparent;
+	border-bottom-color: transparent;
+	background-color: #5294e2;
+	color: #ffffff;
+}
+
+.vivaldi-settings .settings-sidebar .button-category.category-selected svg {
+	fill: #ffffff;
+}
+
+.vivaldi-settings .settings-sidebar .settings-navigation:focus-within .tree-row:not([data-selected]) .button-category.category-selected {
+	background: transparent;
+	color: #d3dae3;
+}
+
+.vivaldi-settings .settings-sidebar .settings-navigation:focus-within .tree-row:not([data-selected]) .button-category.category-selected svg {
+	fill: #d3dae3;
+}
+
+.vivaldi-settings .settings-sidebar .settings-navigation:focus-within .tree-row:not([data-selected]) .button-category.category-selected:hover {
+	background: #494D5A;
+}
+
+.vivaldi-settings .settings-sidebar .settings-navigation:focus-within .tree-row[data-selected] .button-category:not(.category-selected) {
+	background: #5294e2;
+	box-shadow: none;
+	border-color: transparent;
+	color: #ffffff;
+}
+
+.vivaldi-settings .settings-sidebar .settings-navigation:focus-within .tree-row[data-selected] .button-category:not(.category-selected) svg {
+	fill: #ffffff;
+}
+
+/* Search header */
+.vivaldi-settings .settings-sidebar .settings-navigation-header {
+	padding: 10px 12px 15px 12px;
+}
+
+.settings-search {
+	background: #2c303e;
 }
 
 /***********************************************************************

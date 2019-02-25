@@ -327,7 +327,7 @@
  SETTINGS PAGE
 ***********************************************************************/
 /* use arc sidebar color in vivaldi's settings dialog */
-.vivaldi-settings .settings-sidebar {
+/* .vivaldi-settings .settings-sidebar {
     color: #d3dae3;
     background: #353945 !important;
     box-shadow: none;
@@ -347,24 +347,24 @@
 .vivaldi-settings .settings-sidebar .settings-navigation:focus-within .tree-row:not([data-selected]) .button-category.category-selected {
     background: transparent;
     color: #d3dae3;
-}
-.vivaldi-settings .settings-sidebar .settings-navigation:focus-within .tree-row:not([data-selected]) .button-category.category-selected:hover {
+} */
+/* .vivaldi-settings .settings-sidebar .settings-navigation:focus-within .tree-row:not([data-selected]) .button-category.category-selected:hover {
     background: #494D5A;
     color: #d3dae3;
-}
-.vivaldi-settings .settings-sidebar .settings-navigation:focus-within .tree-row[data-selected] .button-category:not(.category-selected) {
+} */
+/* .vivaldi-settings .settings-sidebar .settings-navigation:focus-within .tree-row[data-selected] .button-category:not(.category-selected) {
     background: #5294e2;
     box-shadow: none;
     border-color: transparent;
     color: #ffffff;
-}
-.vivaldi-settings .settings-sidebar .settings-navigation-header {
+} */
+/* .vivaldi-settings .settings-sidebar .settings-navigation-header {
     padding: 10px 12px 15px 12px;
 }
 .settings-search {
     background: #292E39;
     border-width: 0 !important;
-}
+} */
 /***********************************************************************
  SCROLLBARS
 ***********************************************************************/
@@ -390,12 +390,12 @@
 #browser.theme-dark ::-webkit-scrollbar-track:horizontal {
     border-top: 1px solid #2b2e39 !important;
 } */
-#browser .settings-sidebar ::-webkit-scrollbar-track:vertical {
+/* #browser .settings-sidebar ::-webkit-scrollbar-track:vertical {
     border-left: 1px solid #2b2e39 !important;
 }
 #browser .settings-sidebar ::-webkit-scrollbar-track:horizontal {
     border-top: 1px solid #2b2e39 !important;
-}
+} */
 /* #browser ::-webkit-scrollbar-thumb {
     background-clip: padding-box !important;
     border: 2px solid transparent !important;
@@ -413,6 +413,6 @@
 #browser.theme-dark ::-webkit-scrollbar-thumb {background-color: #666666 !important;}
 #browser.theme-dark ::-webkit-scrollbar-thumb:hover {background-color: #757575 !important;}
 #browser.theme-dark ::-webkit-scrollbar-thumb:active {background-color: #5294e2 !important;} */
-#browser .settings-sidebar ::-webkit-scrollbar-thumb {background-color: #666666 !important;}
+/* #browser .settings-sidebar ::-webkit-scrollbar-thumb {background-color: #666666 !important;}
 #browser .settings-sidebar ::-webkit-scrollbar-thumb:hover {background-color: #757575 !important;}
-#browser .settings-sidebar ::-webkit-scrollbar-thumb:active {background-color: #5294e2 !important;}
+#browser .settings-sidebar ::-webkit-scrollbar-thumb:active {background-color: #5294e2 !important;} */
