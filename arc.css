@@ -507,6 +507,10 @@ input.url.vivaldi-addressfield {
 	background: #2c303e;
 }
 
+.settings-search:not(:focus) {
+	border-color: #222734 !important;
+}
+
 /***********************************************************************
  START PAGE
 ***********************************************************************/
