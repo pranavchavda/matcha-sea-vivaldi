@@ -14,18 +14,19 @@
  * LICENSE: GNU General Public License v3.0 | https://github.com/Tiamarth/Arc-for-Vivaldi/blob/master/LICENSE
  *
  */
- /***********************************************************************
- 	SPLASH SCREEN
- ***********************************************************************/
- body {
- 	background-color: #2f343f !important;
- 	--colorArcBorderLight: #d4d5db;
- 	--colorArcBorderDark: #262a33;
- }
+/***********************************************************************
+	SPLASH SCREEN
+***********************************************************************/
+body {
+	background-color: #2f343f !important;
+	--colorArcBorderLight: #d4d5db;
+	--colorArcBorderDark: #262a33;
+	--colorArcSidebar: #353945;
+}
 
- /***********************************************************************
-  SCROLLBARS
- ***********************************************************************/
+/***********************************************************************
+SCROLLBARS
+***********************************************************************/
 ::-webkit-scrollbar {
 	width: 10px !important;
 	height: 10px !important;
@@ -300,7 +301,7 @@ input.url.vivaldi-addressfield {
 /* Panel background */
 #switch,
 #panel_switch {
-	background-color: #353945;
+	background-color: var(--colorArcSidebar);
 	box-shadow: none !important;
 }
 
@@ -329,7 +330,7 @@ input.url.vivaldi-addressfield {
 
 #switch > button:focus:not(.active),
 #switch .addwebpanel-wrapper > button:focus:not(.active) {
-	background-color: #353945 !important;
+	background-color: var(--colorArcSidebar) !important;
 }
 
 #switch > button.active,
