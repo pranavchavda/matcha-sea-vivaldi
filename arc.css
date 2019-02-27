@@ -157,6 +157,11 @@ SCROLLBARS
 	background-color: var(--colorBgAlphaHeavier);
 }
 
+/* Tab text color */
+.theme-light.acc-dark.tabs-bottom .tab-position .tab.tab.tab:not(.active) {
+	color: #111111;
+}
+
 /* Tab trash icon vertical position */
 #browser.tabs-top button.button-tabbar.toggle-trash {
 	margin-top: -1px !important;
@@ -166,6 +171,11 @@ SCROLLBARS
 #browser.maximized.tabs-top button.button-tabbar.toggle-trash {
 	margin-top: -3px !important;
 	margin-bottom: 3px !important;
+}
+
+/* Tab button colors */
+.theme-light.acc-dark.tabs-bottom .button-tabbar {
+	fill: #111111 !important;
 }
 
 /* No border radius on new tab button */
@@ -249,8 +259,13 @@ SCROLLBARS
 	display: none;
 }
 
+/* Title text color */
+#browser.theme-light.acc-dark #pagetitle {
+	color: #d3dae3;
+}
+
 /* Address bar bottom */
-#browser.address-bottom:not(.tabs-bottom) .toolbar-addressbar.toolbar {
+#browser:not(.theme-light.acc-dark).address-bottom:not(.tabs-bottom) .toolbar-addressbar.toolbar {
 	background: var(--colorAccentBg);
 }
 
@@ -409,16 +424,16 @@ input.url.vivaldi-addressfield {
 	color: #ffffff !important;
 }
 
-#browser.theme-light.acc-dark.address-top .button-toolbar svg {
+#browser.theme-light.acc-dark.address-top:not(.tabs-top) .button-toolbar svg {
 	fill: #d1d8e3;
 }
 
-#browser.theme-light.acc-dark.address-top .button-toolbar:hover {
+#browser.theme-light.acc-dark.address-top:not(.tabs-top) .button-toolbar:hover {
 	background: #505666 !important;
 	border-color: #2b2e39 !important;
 }
 
-#browser.theme-light.acc-dark.address-top .button-toolbar:active {
+#browser.theme-light.acc-dark.address-top:not(.tabs-top) .button-toolbar:active {
 	background: #5294e2 !important;
 	border-color: 2b2e39 !important;
 	color: #ffffff !important;
