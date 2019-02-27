@@ -144,6 +144,17 @@ SCROLLBARS
 	margin-top: -1px;
 }
 
+/* Tab hover color (tabs top/bottom) */
+.theme-dark #tabs-container.top .tab-position .tab:hover:not(.active),
+.theme-dark #tabs-container.bottom .tab-position .tab:hover:not(.active) {
+	background-color: var(--colorBgAlpha);
+}
+
+.theme-light.acc-dark #tabs-container.top .tab-position .tab:hover:not(.active),
+.theme-light.acc-dark #tabs-container.bottom .tab-position .tab:hover:not(.active) {
+	background-color: var(--colorBgAlphaHeavier);
+}
+
 /* Tab trash icon vertical position */
 #browser.tabs-top button.button-tabbar.toggle-trash {
 	margin-top: -1px !important;
