@@ -403,6 +403,21 @@ input.url.vivaldi-addressfield {
 	color: #ffffff !important;
 }
 
+#browser.theme-light.acc-dark .button-toolbar svg {
+	fill: #d1d8e3;
+}
+
+#browser.theme-light.acc-dark .button-toolbar:hover {
+	background: #505666 !important;
+	border-color: #2b2e39 !important;
+}
+
+#browser.theme-light.acc-dark .button-toolbar:active {
+	background: #5294e2 !important;
+	border-color: 2b2e39 !important;
+	color: #ffffff !important;
+}
+
 /* Remove highlight on bookmark toolbar separator hover */
 #browser.theme-light .bookmark-bar button:hover:not([title]),
 #browser.theme-dark .bookmark-bar button:hover:not([title]) {
