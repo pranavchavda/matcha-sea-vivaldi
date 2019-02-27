@@ -82,7 +82,8 @@ SCROLLBARS
 	border-bottom: 1px solid var(--colorArcBorderLight) !important;
 }
 
-.theme-dark #tabs-container.top {
+.theme-dark #tabs-container.top,
+.theme-light.acc-dark #tabs-container.top {
 	border-bottom: 1px solid var(--colorArcBorderDark) !important;
 }
 
@@ -94,7 +95,8 @@ SCROLLBARS
 	border-top: 1px solid var(--colorArcBorderLight) !important;
 }
 
-.theme-dark #tabs-container.bottom {
+.theme-dark #tabs-container.bottom,
+.theme-light.acc-dark #tabs-container.bottom {
 	border-top: 1px solid var(--colorArcBorderDark) !important;
 }
 
@@ -110,7 +112,9 @@ SCROLLBARS
 }
 
 .theme-dark #tabs-container.top .tab-position .tab:hover,
-.theme-dark #tabs-container.top .tab-position .tab.active {
+.theme-dark #tabs-container.top .tab-position .tab.active,
+.theme-light.acc-dark #tabs-container.top .tab-position .tab:hover,
+.theme-light.acc-dark #tabs-container.top .tab-position .tab.active {
 	border: 1px solid var(--colorArcBorderDark);
 }
 
@@ -130,7 +134,9 @@ SCROLLBARS
 }
 
 .theme-dark #tabs-container.bottom .tab-position .tab:hover,
-.theme-dark #tabs-container.bottom .tab-position .tab.active {
+.theme-dark #tabs-container.bottom .tab-position .tab.active,
+.theme-light.acc-dark #tabs-container.bottom .tab-position .tab:hover,
+.theme-light.acc-dark #tabs-container.bottom .tab-position .tab.active {
 	border: 1px solid var(--colorArcBorderDark);
 }
 
@@ -275,7 +281,8 @@ input.url.vivaldi-addressfield {
 	border-bottom: 1px solid var(--colorArcBorderLight);
 }
 
-#browser.theme-dark:not(.address-top):not(.tabs-top) #header {
+#browser.theme-dark:not(.address-top):not(.tabs-top) #header,
+#browser.theme-light.acc-dark:not(.address-top):not(.tabs-top) #header {
 	border-bottom: 1px solid var(--colorArcBorderDark);
 }
 
@@ -284,7 +291,8 @@ input.url.vivaldi-addressfield {
 	border-bottom: 1px solid var(--colorArcBorderLight);
 }
 
-#browser.theme-dark.address-off.tabs-off.bookmark-bar-off #header {
+#browser.theme-dark.address-off.tabs-off.bookmark-bar-off #header,
+#browser.theme-light.acc-dark.address-off.tabs-off.bookmark-bar-off #header {
 	border-bottom: 1px solid var(--colorArcBorderDark);
 }
 
