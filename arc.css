@@ -25,54 +25,6 @@ body {
 }
 
 /***********************************************************************
-SCROLLBARS
-***********************************************************************/
-::-webkit-scrollbar {
-	width: 10px !important;
-	height: 10px !important;
-}
-
-::-webkit-scrollbar-button {
-	display: none !important;
-}
-
-::-webkit-scrollbar-track {
-	background-color: transparent !important;
-}
-
-#browser.theme-light ::-webkit-scrollbar-track:vertical { border-left: 1px solid #dcdfe3 !important; }
-#browser.theme-light ::-webkit-scrollbar-track:horizontal { border-top: 1px solid #dcdfe3 !important; }
-#browser.theme-dark ::-webkit-scrollbar-track:vertical { border-left: 1px solid #2b2e39 !important; }
-#browser.theme-dark ::-webkit-scrollbar-track:horizontal { border-top: 1px solid #2b2e39 !important; }
-#browser .settings-sidebar ::-webkit-scrollbar-track:vertical { border-left: 1px solid #2b2e39 !important; }
-#browser .settings-sidebar ::-webkit-scrollbar-track:horizontal { border-top: 1px solid #2b2e39 !important; }
-}
-
-::-webkit-scrollbar-thumb {
-	background-clip: padding-box !important;
-	border: 2px solid transparent !important;
-	-webkit-border-radius: 20px !important;
-}
-
-::-webkit-scrollbar-thumb:vertical {
-	border-width: 2px 2px 2px 3px !important;
-}
-
-::-webkit-scrollbar-thumb:horizontal {
-	border-width: 3px 2px 2px 2px !important;
-}
-
-#browser.theme-light ::-webkit-scrollbar-thumb { background-color: #cacaca !important; }
-#browser.theme-light ::-webkit-scrollbar-thumb:hover { background-color: #bebebe !important; }
-#browser.theme-light ::-webkit-scrollbar-thumb:active { background-color: #5294e2 !important; }
-#browser.theme-dark ::-webkit-scrollbar-thumb { background-color: #666666 !important; }
-#browser.theme-dark ::-webkit-scrollbar-thumb:hover { background-color: #757575 !important; }
-#browser.theme-dark ::-webkit-scrollbar-thumb:active { background-color: #5294e2 !important; }
-#browser .settings-sidebar ::-webkit-scrollbar-thumb { background-color: #666666 !important; }
-#browser .settings-sidebar ::-webkit-scrollbar-thumb:hover { background-color: #757575 !important; }
-#browser .settings-sidebar ::-webkit-scrollbar-thumb:active { background-color: #5294e2 !important; }
-
-/***********************************************************************
 	TABS
 ***********************************************************************/
 /* Tab strip on top */
@@ -342,7 +294,7 @@ input.url.vivaldi-addressfield {
 }
 
 /***********************************************************************
- PANEL
+	PANEL
 ***********************************************************************/
 /* Panel background */
 #switch,
@@ -389,7 +341,7 @@ input.url.vivaldi-addressfield {
 }
 
 /***********************************************************************
- TOOLBAR BUTTONS
+	TOOLBAR BUTTONS
 ***********************************************************************/
 .button-toolbar,
 .bookmark-bar button {
@@ -500,7 +452,7 @@ input.url.vivaldi-addressfield {
 }
 
 /***********************************************************************
- SETTINGS PAGE
+	SETTINGS PAGE
 ***********************************************************************/
 /* Category sidebar */
 .vivaldi-settings .settings-sidebar {
@@ -567,7 +519,7 @@ input.url.vivaldi-addressfield {
 }
 
 /***********************************************************************
- START PAGE
+	START PAGE
 ***********************************************************************/
 /* Start page background */
 .startpage {
@@ -607,7 +559,7 @@ button.button-startpage:after {
 }
 
 /***********************************************************************
- STATUS INFO OVERLAY
+	STATUS INFO OVERLAY
 ***********************************************************************/
 #status_info > span {
 	background: #5294e2;
@@ -618,3 +570,51 @@ button.button-startpage:after {
 #footer #status_info > span {
 	color: var(--colorFg);
 }
+
+/***********************************************************************
+	SCROLLBARS
+***********************************************************************/
+::-webkit-scrollbar {
+	width: 10px !important;
+	height: 10px !important;
+}
+
+::-webkit-scrollbar-button {
+	display: none !important;
+}
+
+::-webkit-scrollbar-track {
+	background-color: transparent !important;
+}
+
+#browser.theme-light ::-webkit-scrollbar-track:vertical { border-left: 1px solid #dcdfe3 !important; }
+#browser.theme-light ::-webkit-scrollbar-track:horizontal { border-top: 1px solid #dcdfe3 !important; }
+#browser.theme-dark ::-webkit-scrollbar-track:vertical { border-left: 1px solid #2b2e39 !important; }
+#browser.theme-dark ::-webkit-scrollbar-track:horizontal { border-top: 1px solid #2b2e39 !important; }
+#browser .settings-sidebar ::-webkit-scrollbar-track:vertical { border-left: 1px solid #2b2e39 !important; }
+#browser .settings-sidebar ::-webkit-scrollbar-track:horizontal { border-top: 1px solid #2b2e39 !important; }
+}
+
+::-webkit-scrollbar-thumb {
+	background-clip: padding-box !important;
+	border: 2px solid transparent !important;
+	-webkit-border-radius: 20px !important;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+	border-width: 2px 2px 2px 3px !important;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+	border-width: 3px 2px 2px 2px !important;
+}
+
+#browser.theme-light ::-webkit-scrollbar-thumb { background-color: #cacaca !important; }
+#browser.theme-light ::-webkit-scrollbar-thumb:hover { background-color: #bebebe !important; }
+#browser.theme-light ::-webkit-scrollbar-thumb:active { background-color: #5294e2 !important; }
+#browser.theme-dark ::-webkit-scrollbar-thumb { background-color: #666666 !important; }
+#browser.theme-dark ::-webkit-scrollbar-thumb:hover { background-color: #757575 !important; }
+#browser.theme-dark ::-webkit-scrollbar-thumb:active { background-color: #5294e2 !important; }
+#browser .settings-sidebar ::-webkit-scrollbar-thumb { background-color: #666666 !important; }
+#browser .settings-sidebar ::-webkit-scrollbar-thumb:hover { background-color: #757575 !important; }
+#browser .settings-sidebar ::-webkit-scrollbar-thumb:active { background-color: #5294e2 !important; }
