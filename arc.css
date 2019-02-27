@@ -218,6 +218,10 @@ SCROLLBARS
 	border-bottom: 1px solid var(--colorArcBorderDark);
 }
 
+#browser.theme-light.acc-dark.address-top:not(.tabs-top) .toolbar-addressbar.toolbar {
+	border-bottom: 1px solid var(--colorArcBorderDark);
+}
+
 .toolbar-addressbar:after {
 	display: none !important;
 }
