@@ -270,7 +270,7 @@
 #switch > button:focus:not(.active),
 #switch .addwebpanel-wrapper > button:focus:not(.active) {
     background-color: #353945 !important;
-}
+
 #switch > button.active,
 #switch > button.active:hover {
     background-color: var(--colorBgLightIntense) !important;
@@ -313,7 +313,7 @@
     box-shadow: inset 0 -2px 0 #2f343f;
 } */
 /* use arc colors for stats info overlay */
-#footer.footer > #status_info > span {
+/* #footer.footer > #status_info > span {
     border: initial;
     color: var(--colorFg);
     background: initial;
@@ -322,7 +322,7 @@
     border: 0;
     color: #fff;
     background: #5294e2;
-}
+} */
 /***********************************************************************
  SETTINGS PAGE
 ***********************************************************************/

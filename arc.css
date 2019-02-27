@@ -603,5 +603,18 @@ button.button-startpage:focus:not([tabindex='-1']) {
 
 /* Remove gradient on active navigation button */
 button.button-startpage:after {
-	background: none !important
-};
+	background: none !important;
+}
+
+/***********************************************************************
+ STATUS INFO OVERLAY
+***********************************************************************/
+#status_info > span {
+	background: #5294e2;
+	color: #ffffff;
+	border: 0px;
+}
+
+#footer #status_info > span {
+	color: var(--colorFg);
+}
