@@ -211,6 +211,24 @@ body {
 	display: none;
 }
 
+#browser.theme-light.acc-dark.address-top:not(.tabs-top) .addressfield {
+	background-color: #242836;
+	border-color: #222734;
+	color: #d3dae3;
+}
+
+#browser.theme-light.acc-dark.address-top:not(.tabs-top) .button-addressfield {
+	fill: #aeb5bd;
+}
+
+#browser.theme-light.acc-dark.address-top:not(.tabs-top) .addressfield .pageload {
+	color: #d3dae3;
+}
+
+#browser.theme-light.acc-dark.address-top:not(.tabs-top) .addressfield .pageload .pageload-indicator::-webkit-progress-value {
+	 background-color: #242836;
+}
+
 /* Title text color */
 #browser.theme-light.acc-dark #pagetitle {
 	color: #d3dae3;
