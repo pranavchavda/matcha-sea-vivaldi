@@ -293,6 +293,11 @@ input.url.vivaldi-addressfield {
 	top: 2px;
 }
 
+/* Vivaldi menu button color */
+#browser.theme-light.acc-dark.address-top:not(.tabs-top) .vivaldi {
+	fill: #d1d8e3;
+}
+
 /***********************************************************************
 	PANEL
 ***********************************************************************/
