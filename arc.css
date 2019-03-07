@@ -15,7 +15,7 @@
  *
  */
 /***********************************************************************
-	SPLASH SCREEN
+	SPLASH SCREEN / COLOR VARIABLES
 ***********************************************************************/
 body {
 	background-color: #2f343f !important;
@@ -25,21 +25,23 @@ body {
 }
 
 /***********************************************************************
-	TABS
+	TAB STRIP TOP
 ***********************************************************************/
-/* Tab strip on top */
 #tabs-container.top {
 	background-image: none !important;
 	padding-top: 5px !important;
 	border-bottom: 1px solid var(--colorArcBorderLight) !important;
 }
 
+/* Dark border for Dark/Darker themes */
 .theme-dark #tabs-container.top,
 .theme-light.acc-dark #tabs-container.top {
 	border-bottom: 1px solid var(--colorArcBorderDark) !important;
 }
 
-/* Tab strip on bottom */
+/***********************************************************************
+	TAB STRIP BOTTOM
+***********************************************************************/
 #tabs-container.bottom {
 	padding-bottom: 5px !important;
 	padding-left: 4px;
@@ -47,16 +49,21 @@ body {
 	border-top: 1px solid var(--colorArcBorderLight) !important;
 }
 
+/* Dark border for Dark theme */
 .theme-dark #tabs-container.bottom {
 	border-top: 1px solid var(--colorArcBorderDark) !important;
 }
 
+/* Light background/border for Darker theme */
 .theme-light.acc-dark #tabs-container.bottom {
 	background-color: #e7e8eb;
 	border-top: 1px solid var(--colorArcBorderLight) !important;
 }
 
-/* Border around active tab (tabs top) */
+/***********************************************************************
+	TABS TOP
+***********************************************************************/
+/* Border around hover/active tab */
 #tabs-container.top .tab-position .tab {
 	border: 1px solid transparent;
 	border-bottom-width: 0 !important;
@@ -67,6 +74,7 @@ body {
 	border: 1px solid var(--colorArcBorderLight);
 }
 
+/* Dark border around hover/active tab (Dark/Darker themes) */
 .theme-dark #tabs-container.top .tab-position .tab:hover,
 .theme-dark #tabs-container.top .tab-position .tab.active,
 .theme-light.acc-dark #tabs-container.top .tab-position .tab:hover,
@@ -74,11 +82,15 @@ body {
 	border: 1px solid var(--colorArcBorderDark);
 }
 
+/* Ensure active tab is on top of tab strip border */
 #tabs-container.top .tab-position .tab.active {
 	margin-bottom: -1px;
 }
 
-/* Border around active tab (tabs bottom) */
+/***********************************************************************
+	TABS BOTTOM
+***********************************************************************/
+/* Border around hover/active tab */
 #tabs-container.bottom .tab-position .tab {
 	border: 1px solid transparent;
 	border-top-width: 0 !important;
@@ -89,16 +101,26 @@ body {
 	border: 1px solid var(--colorArcBorderLight);
 }
 
+/* Dark border around hover/active tab (Dark theme only) */
 .theme-dark #tabs-container.bottom .tab-position .tab:hover,
 .theme-dark #tabs-container.bottom .tab-position .tab.active {
 	border: 1px solid var(--colorArcBorderDark);
 }
 
+/* Ensure active tab is on top of tab strip border */
 #tabs-container.bottom .tab-position .tab.active {
 	margin-top: -1px;
 }
 
-/* Tab hover color (tabs top/bottom) */
+/* Tab text color (Darker theme) */
+.theme-light.acc-dark.tabs-bottom .tab-position .tab.tab.tab:not(.active) {
+	color: #111111;
+}
+
+/***********************************************************************
+	TABS TOP/BOTTOM
+***********************************************************************/
+/* Tab hover color (Dark and Darker themes) */
 .theme-dark #tabs-container.top .tab-position .tab:hover:not(.active),
 .theme-dark #tabs-container.bottom .tab-position .tab:hover:not(.active) {
 	background-color: var(--colorBgAlpha);
@@ -109,12 +131,16 @@ body {
 	background-color: var(--colorBgAlphaHeavier);
 }
 
-/* Tab text color */
-.theme-light.acc-dark.tabs-bottom .tab-position .tab.tab.tab:not(.active) {
-	color: #111111;
+/* Tab title (right fade and vertical position) */
+.tab-position .tab .title {
+	-webkit-mask-image: -webkit-linear-gradient(180deg, transparent 8px, #fff 16px);
+	margin-top: 1px !important;
 }
 
-/* Tab trash icon vertical position */
+/***********************************************************************
+	TAB STRIP BUTTONS (TRASH/MENU/NEW TAB)
+***********************************************************************/
+/* Trash button vertical position */
 #browser.tabs-top button.button-tabbar.toggle-trash {
 	margin-top: -1px !important;
 	margin-bottom: 1px !important;
@@ -125,7 +151,7 @@ body {
 	margin-bottom: 3px !important;
 }
 
-/* Tab button colors */
+/* Tab strip button colors (Darker theme) */
 .theme-light.acc-dark.tabs-bottom .button-tabbar {
 	fill: #111111 !important;
 }
@@ -133,13 +159,10 @@ body {
 /* No border radius on new tab button */
 .newtab svg {border-radius: 0 !important;}
 
-/* Tab title (right fade and vertical position) */
-.tab-position .tab .title {
-	-webkit-mask-image: -webkit-linear-gradient(180deg, transparent 8px, #fff 16px);
-	margin-top: 1px !important;
-}
-
-/* Tab stack indicators */
+/***********************************************************************
+	TAB STACK INDICATORS
+***********************************************************************/
+/* Tab stack indicator colors */
 .stacks-on .tab-strip .tab .tab-group-indicator .tab-indicator {
 	background-color: #88B7F0 !important;
 	border-top-left-radius: var(--radiusHalf) !important;
@@ -154,6 +177,9 @@ body {
 	background-color: var(--colorHighlightBg) !important;
 }
 
+/***********************************************************************
+	SELECTED TABS
+***********************************************************************/
 /* Selected tab borders */
 .tab-position .tab.marked:after {
 	background-color: transparent;
