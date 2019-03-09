@@ -31,8 +31,8 @@ Settings for Vivaldi's built-in theme editor:
 
 | Arc Theme                         | Arc Dark Theme                    | Arc Darker Theme                  |
 | --------------------------------- | --------------------------------- | --------------------------------- |
-| Background: #f6f7f8               | Background: #383c4a               | Background: #f5f6f7               |
-| Foreground: #333333               | Foreground: #d3dae3               | Foreground: #7a8b94               |
+| Background: #f6f7f8               | Background: #383c4a               | Background: #f6f7f8               |
+| Foreground: #333333               | Foreground: #d3dae3               | Foreground: #333333               |
 | Highlight: #5294e2                | Highlight: #5294e2                | Highlight: #5294e2                |
 | Accent: #e7e8eb                   | Accent: #2f343f                   | Accent: #2f343f                   |
 | [ ] Accent Color from Active Page | [ ] Accent Color from Active Page | [ ] Accent Color from Active Page |
