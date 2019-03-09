@@ -33,9 +33,8 @@ body {
 	border-bottom: 1px solid var(--colorArcBorderLight) !important;
 }
 
-/* Dark border for Dark/Darker themes */
-.theme-dark #tabs-container.top,
-.theme-light.acc-dark #tabs-container.top {
+/* Dark border for Dark theme */
+.theme-dark #tabs-container.top {
 	border-bottom: 1px solid var(--colorArcBorderDark) !important;
 }
 
@@ -54,12 +53,6 @@ body {
 	border-top: 1px solid var(--colorArcBorderDark) !important;
 }
 
-/* Light background/border for Darker theme */
-.theme-light.acc-dark #tabs-container.bottom {
-	background-color: #e7e8eb;
-	border-top: 1px solid var(--colorArcBorderLight) !important;
-}
-
 /***********************************************************************
 	TABS TOP
 ***********************************************************************/
@@ -74,11 +67,9 @@ body {
 	border: 1px solid var(--colorArcBorderLight);
 }
 
-/* Dark border around hover/active tab (Dark/Darker themes) */
+/* Dark border around hover/active tab (Dark theme) */
 .theme-dark #tabs-container.top .tab-position .tab:hover,
-.theme-dark #tabs-container.top .tab-position .tab.active,
-.theme-light.acc-dark #tabs-container.top .tab-position .tab:hover,
-.theme-light.acc-dark #tabs-container.top .tab-position .tab.active {
+.theme-dark #tabs-container.top .tab-position .tab.active {
 	border: 1px solid var(--colorArcBorderDark);
 }
 
@@ -112,23 +103,13 @@ body {
 	margin-top: -1px;
 }
 
-/* Tab text color (Darker theme) */
-.theme-light.acc-dark.tabs-bottom .tab-position .tab.tab.tab:not(.active) {
-	color: #111111;
-}
-
 /***********************************************************************
 	TABS TOP/BOTTOM
 ***********************************************************************/
-/* Tab hover color (Dark and Darker themes) */
+/* Tab hover color (Dark theme) */
 .theme-dark #tabs-container.top .tab-position .tab:hover:not(.active),
 .theme-dark #tabs-container.bottom .tab-position .tab:hover:not(.active) {
 	background-color: var(--colorBgAlpha);
-}
-
-.theme-light.acc-dark #tabs-container.top .tab-position .tab:hover:not(.active),
-.theme-light.acc-dark #tabs-container.bottom .tab-position .tab:hover:not(.active) {
-	background-color: var(--colorBgAlphaHeavier);
 }
 
 /* Tab title (right fade and vertical position) */
@@ -149,11 +130,6 @@ body {
 #browser.maximized.tabs-top button.button-tabbar.toggle-trash {
 	margin-top: -3px !important;
 	margin-bottom: 3px !important;
-}
-
-/* Tab strip button colors (Darker theme) */
-.theme-light.acc-dark.tabs-bottom .button-tabbar {
-	fill: #111111 !important;
 }
 
 /* No border radius on new tab button */
@@ -208,10 +184,6 @@ body {
 	border-bottom: 1px solid var(--colorArcBorderDark);
 }
 
-#browser.theme-light.acc-dark.address-top:not(.tabs-top) .toolbar-addressbar.toolbar {
-	border-bottom: 1px solid var(--colorArcBorderDark);
-}
-
 .toolbar-addressbar:after {
 	display: none !important;
 }
@@ -237,31 +209,8 @@ body {
 	display: none;
 }
 
-#browser.theme-light.acc-dark.address-top:not(.tabs-top) .addressfield {
-	background-color: #242836;
-	border-color: #222734;
-	color: #d3dae3;
-}
-
-#browser.theme-light.acc-dark.address-top:not(.tabs-top) .button-addressfield {
-	fill: #aeb5bd;
-}
-
-#browser.theme-light.acc-dark.address-top:not(.tabs-top) .addressfield .pageload {
-	color: #d3dae3;
-}
-
-#browser.theme-light.acc-dark.address-top:not(.tabs-top) .addressfield .pageload .pageload-indicator::-webkit-progress-value {
-	 background-color: #242836;
-}
-
-/* Title text color */
-#browser.theme-light.acc-dark #pagetitle {
-	color: #d3dae3;
-}
-
 /* Address bar bottom */
-#browser:not(.theme-light.acc-dark).address-bottom:not(.tabs-bottom) .toolbar-addressbar.toolbar {
+#browser.address-bottom:not(.tabs-bottom) .toolbar-addressbar.toolbar {
 	background: var(--colorAccentBg);
 }
 
@@ -309,8 +258,7 @@ input.url.vivaldi-addressfield {
 	border-bottom: 1px solid var(--colorArcBorderLight);
 }
 
-#browser.theme-dark:not(.address-top):not(.tabs-top) #header,
-#browser.theme-light.acc-dark:not(.address-top):not(.tabs-top) #header {
+#browser.theme-dark:not(.address-top):not(.tabs-top) #header {
 	border-bottom: 1px solid var(--colorArcBorderDark);
 }
 
@@ -319,8 +267,7 @@ input.url.vivaldi-addressfield {
 	border-bottom: 1px solid var(--colorArcBorderLight);
 }
 
-#browser.theme-dark.address-off.tabs-off.bookmark-bar-off #header,
-#browser.theme-light.acc-dark.address-off.tabs-off.bookmark-bar-off #header {
+#browser.theme-dark.address-off.tabs-off.bookmark-bar-off #header {
 	border-bottom: 1px solid var(--colorArcBorderDark);
 }
 
@@ -335,11 +282,6 @@ input.url.vivaldi-addressfield {
 
 #browser:not(.address-top).tabs-off .vivaldi {
 	top: 2px;
-}
-
-/* Vivaldi menu button color */
-#browser.theme-light.acc-dark.address-top:not(.tabs-top) .vivaldi {
-	fill: #d1d8e3;
 }
 
 /***********************************************************************
@@ -420,21 +362,6 @@ input.url.vivaldi-addressfield {
 
 #browser.theme-dark .button-toolbar:active,
 #browser.theme-dark .bookmark-bar button:active {
-	background: #5294e2 !important;
-	border-color: 2b2e39 !important;
-	color: #ffffff !important;
-}
-
-#browser.theme-light.acc-dark.address-top:not(.tabs-top) .button-toolbar svg {
-	fill: #d1d8e3;
-}
-
-#browser.theme-light.acc-dark.address-top:not(.tabs-top) .button-toolbar:hover {
-	background: #505666 !important;
-	border-color: #2b2e39 !important;
-}
-
-#browser.theme-light.acc-dark.address-top:not(.tabs-top) .button-toolbar:active {
 	background: #5294e2 !important;
 	border-color: 2b2e39 !important;
 	color: #ffffff !important;
