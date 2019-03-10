@@ -132,6 +132,19 @@ body {
 	margin-bottom: 3px !important;
 }
 
+/* Vivaldi menu button vertical position */
+#browser.address-top:not(.tabs-top) .vivaldi {
+	top: 2px;
+}
+
+#browser.address-top.tabs-off .vivaldi {
+	top: 5.5px;
+}
+
+#browser:not(.address-top).tabs-off .vivaldi {
+	top: 2px;
+}
+
 /* No border radius on new tab button */
 .newtab svg {border-radius: 0 !important;}
 
@@ -168,14 +181,14 @@ body {
 }
 
 /***********************************************************************
-	ADDRESS BAR
+	ADDRESSBAR TOP
 ***********************************************************************/
-/* Address bar top */
+/* Make addressbar same color as header (i.e. darker) if tabs are not on top */
 #browser.address-top:not(.tabs-top) .toolbar-addressbar.toolbar {
 	background: var(--colorAccentBg);
 }
 
-/* Remove thick border under address bar (top) */
+/* Remove thick border under addressbar */
 #browser.address-top .toolbar-addressbar.toolbar {
 	border-bottom: 1px solid var(--colorArcBorderLight);
 }
@@ -188,7 +201,7 @@ body {
 	display: none !important;
 }
 
-/* Merge address bar top with header */
+/* Merge addressbar top with header if tabs are not on top */
 #browser.address-top:not(.tabs-top) #main {
 	margin-top: -24px;
 }
@@ -209,12 +222,18 @@ body {
 	display: none;
 }
 
-/* Address bar bottom */
+/***********************************************************************
+	ADDRESSBAR BOTTOM
+***********************************************************************/
+/* Make addressbar darker if tabs are not on bottom */
 #browser.address-bottom:not(.tabs-bottom) .toolbar-addressbar.toolbar {
 	background: var(--colorAccentBg);
 }
 
-/* Address bar + dropdown fonts and colors */
+/***********************************************************************
+	ADDRESSBAR FONT SIZE
+***********************************************************************/
+/* Increase addressbar font size */
 input.url.vivaldi-addressfield {
 	font-size: 1.05em;
 }
@@ -223,6 +242,9 @@ input.url.vivaldi-addressfield {
 	font-size: 0.95em;
 }
 
+/***********************************************************************
+	ADDRESSBAR DROPDOWN
+***********************************************************************/
 .theme-light .urlSearch {
 	background-color: #ffffff;
 }
@@ -269,19 +291,6 @@ input.url.vivaldi-addressfield {
 
 #browser.theme-dark.address-off.tabs-off.bookmark-bar-off #header {
 	border-bottom: 1px solid var(--colorArcBorderDark);
-}
-
-/* Vivaldi menu button position */
-#browser.address-top:not(.tabs-top) .vivaldi {
-	top: 2px;
-}
-
-#browser.address-top.tabs-off .vivaldi {
-	top: 5.5px;
-}
-
-#browser:not(.address-top).tabs-off .vivaldi {
-	top: 2px;
 }
 
 /***********************************************************************
