@@ -29,16 +29,16 @@ This custom CSS integrates settings in Vivaldi's built-in theme editor (the cust
 
 Settings for Vivaldi's built-in theme editor:
 
-| Arc Theme                         | Arc Dark Theme                    |
-| --------------------------------- | --------------------------------- |
-| Background: #f6f7f8               | Background: #383c4a               |
-| Foreground: #333333               | Foreground: #d3dae3               |
-| Highlight: #5294e2                | Highlight: #5294e2                |
-| Accent: #e7e8eb                   | Accent: #2f343f                   |
-| [ ] Accent Color from Active Page | [ ] Accent Color from Active Page |
-| [x] Apply Accent Color to Window  | [x] Apply Accent Color to Window  |
-| [x] Transparent Tabs              | [x] Transparent Tabs              |
-| Corner Rounding: 3px              | Corner Rounding: 3px              |
+| Arc Theme                         | Arc Dark Theme                    | Arc Darker Theme                  |
+| --------------------------------- | --------------------------------- | --------------------------------- |
+| Background: #f6f7f8               | Background: #383c4a               | Background: #f6f7f8               |
+| Foreground: #333333               | Foreground: #d3dae3               | Foreground: #333333               |
+| Highlight: #5294e2                | Highlight: #5294e2                | Highlight: #5294e2                |
+| Accent: #e7e8eb                   | Accent: #2f343f                   | Accent: #2f343f                   |
+| [ ] Accent Color from Active Page | [ ] Accent Color from Active Page | [ ] Accent Color from Active Page |
+| [x] Apply Accent Color to Window  | [x] Apply Accent Color to Window  | [x] Apply Accent Color to Window  |
+| [x] Transparent Tabs              | [x] Transparent Tabs              | [x] Transparent Tabs              |
+| Corner Rounding: 3px              | Corner Rounding: 3px              | Corner Rounding: 3px              |
 
 **Note**: *Arc's scrollbars only get applied to internal pages and, as far as I know, there's nothing that can be done about that from within a custom css file for Vivaldi. A userstyle by Tiamarth to apply Arc scrollbars on websites can be found [here](https://userstyles.org/styles/142645/arc-scrollbars)*.  
 
