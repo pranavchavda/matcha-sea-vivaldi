@@ -50,12 +50,11 @@ If you want to **use the Arc window buttons** instead of Vivaldi's default windo
 
 ### Custom Accent Color
 
-If you are using a custom verion of the Arc theme(s) that uses an accent color that is different from the standard Arc blue (#5294e2), just change the `Highlight` color in the table above to you preferred color.
+If you are using a custom version of the Arc theme(s) that uses an accent color that is different from the standard Arc blue (#5294e2), just change the `Highlight` color in the table above to your preferred color.
 
 ## Todo
 
 - [ ] Tab strip (tabs left/right)
-- [x] Settings page
 
 ----
 
