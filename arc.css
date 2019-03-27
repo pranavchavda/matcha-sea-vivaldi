@@ -343,42 +343,58 @@ input.url.vivaldi-addressfield {
 /***********************************************************************
 	TOOLBAR BUTTONS
 ***********************************************************************/
-.button-toolbar,
+/* Remove gray border below toolbars */
+.address-top .toolbar-mainbar:after {
+	background-color: transparent;
+}
+
+/* Toolbar buttons */
+.toolbar-mainbar > .button-toolbar > button,
+.toolbar-mainbar > .toolbar-group > .button-toolbar > button,
 .bookmark-bar button {
 	border: 1px solid transparent !important;
 	border-radius: 2px;
 	font-size: 1.1em;
 }
 
-#browser.theme-light .button-toolbar:hover,
+#browser.theme-light .toolbar-mainbar > .button-toolbar > button:hover,
+#browser.theme-light .toolbar-mainbar > .toolbar-group > .button-toolbar > button:hover,
 #browser.theme-light .bookmark-bar button:hover {
 	background: #ffffff !important;
 	border-color: #cfd6e6 !important;
 }
 
-#browser.theme-dark .button-toolbar:hover,
+#browser.theme-dark .toolbar-mainbar > .button-toolbar > button:hover,
+#browser.theme-dark .toolbar-mainbar > .toolbar-group > .button-toolbar > button:hover,
 #browser.theme-dark .bookmark-bar button:hover {
 	background: #505666 !important;
 	border-color: #2b2e39 !important;
 }
 
-#browser.theme-light .button-toolbar:active,
+#browser.theme-light .toolbar-mainbar > .button-toolbar > button:active,
+#browser.theme-light .toolbar-mainbar > .toolbar-group > .button-toolbar > button:active,
 #browser.theme-light .bookmark-bar button:active {
 	background: #5294e2 !important;
 	border-color: #5294e2 !important;
 	color: #ffffff !important;
 }
 
-#browser.theme-dark .button-toolbar:active,
+#browser.theme-dark .toolbar-mainbar > .button-toolbar > button:active,
+#browser.theme-dark .toolbar-mainbar > .toolbar-group > .button-toolbar > button:active,
 #browser.theme-dark .bookmark-bar button:active {
 	background: #5294e2 !important;
-	border-color: 2b2e39 !important;
+	border-color: #2b2e39 !important;
 	color: #ffffff !important;
 }
 
+/* Fix icon color in active addressbar buttons */
+.toolbar-mainbar > .button-toolbar > button:active,
+.toolbar-mainbar > .toolbar-group > .button-toolbar > button:active {
+	fill: white !important;
+}
+
 /* Remove highlight on bookmark toolbar separator hover */
-#browser.theme-light .bookmark-bar button:hover:not([title]),
-#browser.theme-dark .bookmark-bar button:hover:not([title]) {
+.bookmark-bar button:hover:not([title]) {
 	background: none !important;
 	border-color: transparent !important;
 }
@@ -403,12 +419,6 @@ input.url.vivaldi-addressfield {
 	stroke: rgb(246, 246, 246) !important;
 }
 
-/* Fix icon color in active addressbar buttons */
-.toolbar-addressbar .button-toolbar:active svg,
-.toolbar-mailbar .button-toolbar:active svg {
-	fill: white !important;
-}
-
 /* Fix icon/text alignment on bookmark toolbar buttons */
 .bookmark-bar button img, .bookmark-bar button svg {
 	margin: 4px 0 7px;
@@ -423,16 +433,13 @@ input.url.vivaldi-addressfield {
 }
 
 /* Hidden extension button background (when expanded) */
-.extensions-wrapper .actionVisibility-hidden {
-	background-color: transparent !important;
-}
-
-.toolbar-addressbar .button-toolbar.browserAction-button.popup-visible {
+.toolbar-mainbar > .button-toolbar.button-temporarily-visible > button,
+.toolbar-mainbar > .toolbar-group > .button-toolbar.button-temporarily-visible > button {
 	background-color: transparent !important;
 }
 
 /* Extension button badges */
-.extensions-wrapper .button-badge {
+.toolbar-extensions .button-badge {
 	background-color: rgb(120, 120, 120) !important;
 }
 
