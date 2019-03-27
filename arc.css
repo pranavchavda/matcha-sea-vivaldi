@@ -297,11 +297,17 @@ input.url.vivaldi-addressfield {
 	background: var(--colorAccentBg);
 }
 
+#browser.theme-light.acc-dark #header {
+	color: #d3dae3 !important;
+	fill: #d3dae3;
+}
+
 #browser:not(.address-top):not(.tabs-top) #header {
 	border-bottom: 1px solid var(--colorArcBorderLight);
 }
 
-#browser.theme-dark:not(.address-top):not(.tabs-top) #header {
+#browser.theme-dark:not(.address-top):not(.tabs-top) #header,
+#browser.theme-light.acc-dark:not(.address-top):not(.tabs-top) #header {
 	border-bottom: 1px solid var(--colorArcBorderDark);
 }
 
@@ -310,7 +316,8 @@ input.url.vivaldi-addressfield {
 	border-bottom: 1px solid var(--colorArcBorderLight);
 }
 
-#browser.theme-dark.address-off.tabs-off.bookmark-bar-off #header {
+#browser.theme-dark.address-off.tabs-off.bookmark-bar-off #header,
+#browser.theme-light.acc-dark.address-off.tabs-off.bookmark-bar-off #header {
 	border-bottom: 1px solid var(--colorArcBorderDark);
 }
 
