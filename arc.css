@@ -200,6 +200,13 @@ body {
 	border-bottom: 1px solid var(--colorArcBorderDark);
 }
 
+#browser.theme-light.acc-dark.address-top:not(.tabs-top) .addressfield {
+	background-color: #242836;
+	border-color: #242836;
+	color: #d3dae3;
+	fill: #d3dae3;
+}
+
 /* Remove thick border under addressbar */
 #browser.address-top .toolbar-addressbar.toolbar {
 	border-bottom: 1px solid var(--colorArcBorderLight);
