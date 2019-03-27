@@ -347,7 +347,7 @@ input.url.vivaldi-addressfield {
 .bookmark-bar button {
 	border: 1px solid transparent !important;
 	border-radius: 2px;
-	font-size: 1.05em;
+	font-size: 1.1em;
 }
 
 #browser.theme-light .button-toolbar:hover,
