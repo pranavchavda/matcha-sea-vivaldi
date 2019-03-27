@@ -442,22 +442,22 @@ input.url.vivaldi-addressfield {
 #browser.theme-light .toolbar-mainbar > .button-toolbar > button:active,
 #browser.theme-light .toolbar-mainbar > .toolbar-group > .button-toolbar > button:active,
 #browser.theme-light .bookmark-bar button:active {
-	background: #5294e2 !important;
-	border-color: #5294e2 !important;
+	background: var(--colorHighlightBg) !important;
+	border-color: var(--colorHighlightBg) !important;
 	color: #ffffff !important;
 }
 
 #browser.theme-dark .toolbar-mainbar > .button-toolbar > button:active,
 #browser.theme-dark .toolbar-mainbar > .toolbar-group > .button-toolbar > button:active,
 #browser.theme-dark .bookmark-bar button:active {
-	background: #5294e2 !important;
+	background: var(--colorHighlightBg) !important;
 	border-color: #2b2e39 !important;
 	color: #ffffff !important;
 }
 
 #browser.theme-light.acc-dark.address-top:not(.tabs-top) .toolbar-mainbar > .button-toolbar > button:active,
 #browser.theme-light.acc-dark.address-top:not(.tabs-top) .toolbar-mainbar > .toolbar-group > .button-toolbar > button:active {
-	background: #5294e2 !important;
+	background: var(--colorHighlightBg) !important;
 	border-color: #2b2e39 !important;
 }
 
@@ -540,7 +540,7 @@ input.url.vivaldi-addressfield {
 .vivaldi-settings .settings-sidebar .button-category.category-selected {
 	border-top-color: transparent;
 	border-bottom-color: transparent;
-	background-color: #5294e2;
+	background-color: var(--colorHighlightBg);
 	color: #ffffff;
 }
 
@@ -562,7 +562,7 @@ input.url.vivaldi-addressfield {
 }
 
 .vivaldi-settings .settings-sidebar .settings-navigation:focus-within .tree-row[data-selected] .button-category:not(.category-selected) {
-	background: #5294e2;
+	background: var(--colorHighlightBg);
 	box-shadow: none;
 	border-color: transparent;
 	color: #ffffff;
@@ -629,7 +629,7 @@ button.button-startpage:after {
 	STATUS INFO OVERLAY
 ***********************************************************************/
 #webview-container .status-info {
-	background-color: #5294e2;
+	background-color: var(--colorHighlightBg);
 	color: #ffffff;
 	border: 0px;
 }
@@ -674,10 +674,10 @@ button.button-startpage:after {
 
 #browser.theme-light ::-webkit-scrollbar-thumb { background-color: #cacaca !important; }
 #browser.theme-light ::-webkit-scrollbar-thumb:hover { background-color: #bebebe !important; }
-#browser.theme-light ::-webkit-scrollbar-thumb:active { background-color: #5294e2 !important; }
+#browser.theme-light ::-webkit-scrollbar-thumb:active { background-color: var(--colorHighlightBg) !important; }
 #browser.theme-dark ::-webkit-scrollbar-thumb { background-color: #666666 !important; }
 #browser.theme-dark ::-webkit-scrollbar-thumb:hover { background-color: #757575 !important; }
-#browser.theme-dark ::-webkit-scrollbar-thumb:active { background-color: #5294e2 !important; }
+#browser.theme-dark ::-webkit-scrollbar-thumb:active { background-color: var(--colorHighlightBg) !important; }
 #browser .settings-sidebar ::-webkit-scrollbar-thumb { background-color: #666666 !important; }
 #browser .settings-sidebar ::-webkit-scrollbar-thumb:hover { background-color: #757575 !important; }
-#browser .settings-sidebar ::-webkit-scrollbar-thumb:active { background-color: #5294e2 !important; }
+#browser .settings-sidebar ::-webkit-scrollbar-thumb:active { background-color: var(--colorHighlightBg) !important; }
