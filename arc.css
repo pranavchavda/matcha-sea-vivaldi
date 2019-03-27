@@ -121,24 +121,17 @@ body {
 /***********************************************************************
 	TAB STRIP BUTTONS (TRASH/MENU/NEW TAB)
 ***********************************************************************/
-/* Trash button vertical position */
-#browser.tabs-top button.button-tabbar.toggle-trash {
-	margin-top: -1px !important;
-	margin-bottom: 1px !important;
-}
-
-#browser.maximized.tabs-top button.button-tabbar.toggle-trash {
-	margin-top: -3px !important;
-	margin-bottom: 3px !important;
-}
-
 /* Vivaldi menu button vertical position */
-#browser.address-top:not(.tabs-top) .vivaldi {
+#browser.maximized.tabs-top .vivaldi {
 	top: 2px;
 }
 
+#browser.address-top:not(.tabs-top) .vivaldi {
+	top: 3px;
+}
+
 #browser.address-top.tabs-off .vivaldi {
-	top: 5.5px;
+	top: 7px;
 }
 
 #browser:not(.address-top).tabs-off .vivaldi {
