@@ -207,6 +207,18 @@ body {
 	fill: #d3dae3;
 }
 
+#browser.theme-light.acc-dark.address-top:not(.tabs-top) .addressfield .pageload {
+	color: #d3dae3;
+}
+
+#browser.theme-light.acc-dark.address-top:not(.tabs-top) .addressfield .pageload .pageload-indicator {
+	background-color: #2f343f;
+}
+
+#browser.theme-light.acc-dark.address-top:not(.tabs-top) .addressfield .pageload .pageload-indicator::-webkit-progress-value {
+	background-color: #242836;
+}
+
 /* Remove thick border under addressbar */
 #browser.address-top .toolbar-addressbar.toolbar {
 	border-bottom: 1px solid var(--colorArcBorderLight);
