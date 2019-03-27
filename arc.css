@@ -557,14 +557,10 @@ button.button-startpage:after {
 /***********************************************************************
 	STATUS INFO OVERLAY
 ***********************************************************************/
-#status_info > span {
-	background: #5294e2;
+#webview-container .status-info {
+	background-color: #5294e2;
 	color: #ffffff;
 	border: 0px;
-}
-
-#footer #status_info > span {
-	color: var(--colorFg);
 }
 
 /***********************************************************************
