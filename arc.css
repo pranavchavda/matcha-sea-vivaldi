@@ -210,6 +210,10 @@ body {
 }
 
 /* Merge addressbar top with header if tabs are not on top */
+#browser.address-top:not(.tabs-top) .toolbar-addressbar.toolbar {
+	border-bottom: 1px solid var(--colorArcBorderDark);
+}
+
 #browser.address-top:not(.tabs-top) #main {
 	margin-top: -24px;
 }
@@ -389,6 +393,11 @@ input.url.vivaldi-addressfield {
 	font-size: 1.1em;
 }
 
+.toolbar-mainbar > .button-toolbar > button,
+.toolbar-mainbar > .toolbar-group > .button-toolbar > button {
+	fill: #d3dae3;
+}
+
 #browser.theme-light .toolbar-mainbar > .button-toolbar > button:hover,
 #browser.theme-light .toolbar-mainbar > .toolbar-group > .button-toolbar > button:hover,
 #browser.theme-light .bookmark-bar button:hover {
@@ -399,6 +408,12 @@ input.url.vivaldi-addressfield {
 #browser.theme-dark .toolbar-mainbar > .button-toolbar > button:hover,
 #browser.theme-dark .toolbar-mainbar > .toolbar-group > .button-toolbar > button:hover,
 #browser.theme-dark .bookmark-bar button:hover {
+	background: #505666 !important;
+	border-color: #2b2e39 !important;
+}
+
+#browser.theme-light.acc-dark .toolbar-mainbar > .button-toolbar > button:hover,
+#browser.theme-light.acc-dark .toolbar-mainbar > .toolbar-group > .button-toolbar > button:hover {
 	background: #505666 !important;
 	border-color: #2b2e39 !important;
 }
@@ -417,6 +432,12 @@ input.url.vivaldi-addressfield {
 	background: #5294e2 !important;
 	border-color: #2b2e39 !important;
 	color: #ffffff !important;
+}
+
+#browser.theme-light.acc-dark .toolbar-mainbar > .button-toolbar > button:active,
+#browser.theme-light.acc-dark .toolbar-mainbar > .toolbar-group > .button-toolbar > button:active {
+	background: #5294e2 !important;
+	border-color: #2b2e39 !important;
 }
 
 /* Fix icon color in active addressbar buttons */
