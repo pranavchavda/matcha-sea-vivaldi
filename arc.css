@@ -54,6 +54,11 @@ body {
 	border-top: 1px solid var(--colorArcBorderDark) !important;
 }
 
+/* Light background for Darker theme */
+.theme-light.acc-dark #tabs-container.bottom {
+	background-color: #e7e8eb;
+}
+
 /***********************************************************************
 	TABS TOP
 ***********************************************************************/
@@ -99,6 +104,11 @@ body {
 .theme-dark #tabs-container.bottom .tab-position .tab:hover,
 .theme-dark #tabs-container.bottom .tab-position .tab.active {
 	border: 1px solid var(--colorArcBorderDark);
+}
+
+/* Dark text color on inactive tab (Darker theme) */
+.theme-light.acc-dark #tabs-container.bottom .tab-position .tab.tab.tab:not(.active) {
+	color: #111111;
 }
 
 /* Ensure active tab is on top of tab strip border */
