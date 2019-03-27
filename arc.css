@@ -33,8 +33,9 @@ body {
 	border-bottom: 1px solid var(--colorArcBorderLight) !important;
 }
 
-/* Dark border for Dark theme */
-.theme-dark #tabs-container.top {
+/* Dark border for Dark/Darker themes */
+.theme-dark #tabs-container.top,
+.theme-light.acc-dark #tabs-container.top {
 	border-bottom: 1px solid var(--colorArcBorderDark) !important;
 }
 
@@ -69,7 +70,9 @@ body {
 
 /* Dark border around hover/active tab (Dark theme) */
 .theme-dark #tabs-container.top .tab-position .tab:hover,
-.theme-dark #tabs-container.top .tab-position .tab.active {
+.theme-dark #tabs-container.top .tab-position .tab.active,
+.theme-light.acc-dark #tabs-container.top .tab-position .tab:hover,
+.theme-light.acc-dark #tabs-container.top .tab-position .tab.active {
 	border: 1px solid var(--colorArcBorderDark);
 }
 
