@@ -196,10 +196,12 @@ body {
 	background: var(--colorAccentBg);
 }
 
+/* Dark bottom border if tabs are not on top (Darker theme) */
 #browser.theme-light.acc-dark.address-top:not(.tabs-top) .toolbar-addressbar.toolbar {
 	border-bottom: 1px solid var(--colorArcBorderDark);
 }
 
+/* Addressbar colors when tabs are not on top (Darker theme) */
 #browser.theme-light.acc-dark.address-top:not(.tabs-top) .addressfield {
 	background-color: #242836;
 	border-color: #242836;
