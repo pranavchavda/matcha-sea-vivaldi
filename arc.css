@@ -230,6 +230,19 @@ body {
 	background: var(--colorAccentBg);
 }
 
+/* Remove box shadow and add top border */
+#browser.address-bottom .toolbar-mainbar {
+	box-shadow: none !important;
+}
+
+#browser.theme-light.address-bottom:not(.tabs-bottom) .toolbar-addressbar.toolbar {
+	border-top: 1px solid var(--colorArcBorderLight);
+}
+
+#browser.theme-dark.address-bottom:not(.tabs-bottom) .toolbar-addressbar.toolbar {
+	border-top: 1px solid var(--colorArcBorderDark);
+}
+
 /***********************************************************************
 	ADDRESSBAR FONT SIZE
 ***********************************************************************/
