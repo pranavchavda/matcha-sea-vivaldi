@@ -59,6 +59,11 @@ body {
 	background-color: #e7e8eb;
 }
 
+/* Dark buttons on tab strip (Darker theme) */
+.theme-light.acc-dark #tabs-container.bottom {
+	fill: #111111;
+}
+
 /***********************************************************************
 	TABS TOP
 ***********************************************************************/
