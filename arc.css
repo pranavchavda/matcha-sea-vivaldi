@@ -400,8 +400,8 @@ input.url.vivaldi-addressfield {
 	font-size: 1.1em;
 }
 
-#browser.theme-light.acc-dark .toolbar-mainbar > .button-toolbar > button,
-#browser.theme-light.acc-dark .toolbar-mainbar > .toolbar-group > .button-toolbar > button {
+#browser.theme-light.acc-dark.address-top:not(.tabs-top) .toolbar-mainbar > .button-toolbar > button,
+#browser.theme-light.acc-dark.address-top:not(.tabs-top) .toolbar-mainbar > .toolbar-group > .button-toolbar > button {
 	fill: #d3dae3;
 }
 
@@ -419,8 +419,8 @@ input.url.vivaldi-addressfield {
 	border-color: #2b2e39 !important;
 }
 
-#browser.theme-light.acc-dark .toolbar-mainbar > .button-toolbar > button:hover,
-#browser.theme-light.acc-dark .toolbar-mainbar > .toolbar-group > .button-toolbar > button:hover {
+#browser.theme-light.acc-dark.address-top:not(.tabs-top) .toolbar-mainbar > .button-toolbar > button:hover,
+#browser.theme-light.acc-dark.address-top:not(.tabs-top) .toolbar-mainbar > .toolbar-group > .button-toolbar > button:hover {
 	background: #505666 !important;
 	border-color: #2b2e39 !important;
 }
@@ -441,8 +441,8 @@ input.url.vivaldi-addressfield {
 	color: #ffffff !important;
 }
 
-#browser.theme-light.acc-dark .toolbar-mainbar > .button-toolbar > button:active,
-#browser.theme-light.acc-dark .toolbar-mainbar > .toolbar-group > .button-toolbar > button:active {
+#browser.theme-light.acc-dark.address-top:not(.tabs-top) .toolbar-mainbar > .button-toolbar > button:active,
+#browser.theme-light.acc-dark.address-top:not(.tabs-top) .toolbar-mainbar > .toolbar-group > .button-toolbar > button:active {
 	background: #5294e2 !important;
 	border-color: #2b2e39 !important;
 }
