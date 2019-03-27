@@ -145,9 +145,6 @@ body {
 	top: 2px;
 }
 
-/* No border radius on new tab button */
-.newtab svg {border-radius: 0 !important;}
-
 /***********************************************************************
 	TAB STACK INDICATORS
 ***********************************************************************/
