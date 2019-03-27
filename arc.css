@@ -233,9 +233,13 @@ body {
 /***********************************************************************
 	ADDRESSBAR BOTTOM
 ***********************************************************************/
-/* Make addressbar darker if tabs are not on bottom */
+/* Fix addressbar background color if tabs are not on bottom */
 #browser.address-bottom:not(.tabs-bottom) .toolbar-addressbar.toolbar {
 	background: var(--colorAccentBg);
+}
+
+#browser.theme-light.acc-dark.address-bottom:not(.tabs-bottom) .toolbar-addressbar.toolbar {
+	background: #e7e8eb;
 }
 
 /* Remove box shadow and add top border */
