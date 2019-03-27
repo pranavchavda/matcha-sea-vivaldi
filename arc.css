@@ -196,6 +196,10 @@ body {
 	background: var(--colorAccentBg);
 }
 
+#browser.theme-light.acc-dark.address-top:not(.tabs-top) .toolbar-addressbar.toolbar {
+	border-bottom: 1px solid var(--colorArcBorderDark);
+}
+
 /* Remove thick border under addressbar */
 #browser.address-top .toolbar-addressbar.toolbar {
 	border-bottom: 1px solid var(--colorArcBorderLight);
@@ -210,10 +214,6 @@ body {
 }
 
 /* Merge addressbar top with header if tabs are not on top */
-#browser.address-top:not(.tabs-top) .toolbar-addressbar.toolbar {
-	border-bottom: 1px solid var(--colorArcBorderDark);
-}
-
 #browser.address-top:not(.tabs-top) #main {
 	margin-top: -24px;
 }
@@ -393,8 +393,8 @@ input.url.vivaldi-addressfield {
 	font-size: 1.1em;
 }
 
-.toolbar-mainbar > .button-toolbar > button,
-.toolbar-mainbar > .toolbar-group > .button-toolbar > button {
+#browser.theme-light.acc-dark .toolbar-mainbar > .button-toolbar > button,
+#browser.theme-light.acc-dark .toolbar-mainbar > .toolbar-group > .button-toolbar > button {
 	fill: #d3dae3;
 }
 
