@@ -272,11 +272,11 @@ body {
 	box-shadow: none !important;
 }
 
-#browser.theme-light.address-bottom:not(.tabs-bottom) .toolbar-addressbar.toolbar {
+#browser.theme-light.address-bottom .toolbar-addressbar.toolbar {
 	border-top: 1px solid var(--colorArcBorderLight);
 }
 
-#browser.theme-dark.address-bottom:not(.tabs-bottom) .toolbar-addressbar.toolbar {
+#browser.theme-dark.address-bottom .toolbar-addressbar.toolbar {
 	border-top: 1px solid var(--colorArcBorderDark);
 }
 
