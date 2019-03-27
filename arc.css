@@ -397,7 +397,8 @@ input.url.vivaldi-addressfield {
 }
 
 /* Remove highlight on bookmark toolbar separator hover */
-.bookmark-bar button:hover:not([title]) {
+#browser.theme-light .bookmark-bar button:hover:not([title]),
+#browser.theme-dark .bookmark-bar button:hover:not([title]) {
 	background: none !important;
 	border-color: transparent !important;
 }
