@@ -208,6 +208,7 @@ body {
 	border-color: var(--colorBorderHighlight);
 }
 
+/* Addressbar page load indicators (Darker theme) */
 #browser.theme-light.acc-dark.address-top:not(.tabs-top) .addressfield .pageload {
 	color: #d3dae3;
 }
@@ -218,6 +219,27 @@ body {
 
 #browser.theme-light.acc-dark.address-top:not(.tabs-top) .addressfield .pageload .pageload-indicator::-webkit-progress-value {
 	background-color: #242836;
+}
+
+/* Addressbar site info warning for not secure site (Darker theme) */
+#browser.theme-light.acc-dark.address-top:not(.tabs-top) .addressfield .addressfield-siteinfo.warning {
+	color: #aeb5bd;
+}
+
+/* Buttons inside addressbar (Darker theme) */
+#browser.theme-light.acc-dark.address-top:not(.tabs-top) .toolbar-insideinput.toolbar-insideinput.toolbar-insideinput > .button-toolbar button:not(:hover):not(:active):not(:focus):not(.button-pressed),
+#browser.theme-light.acc-dark.address-top:not(.tabs-top) .toolbar-insideinput.toolbar-insideinput.toolbar-insideinput > .toolbar-group > .button-toolbar button:not(:hover):not(:active):not(:focus):not(.button-pressed) {
+	border-color: transparent;
+}
+
+#browser.theme-light.acc-dark.address-top:not(.tabs-top) .toolbar-insideinput.toolbar-insideinput.toolbar-insideinput > .button-toolbar button,
+#browser.theme-light.acc-dark.address-top:not(.tabs-top) .toolbar-insideinput.toolbar-insideinput.toolbar-insideinput > .toolbar-group > .button-toolbar button {
+	border-color: #222734;
+}
+
+#browser.theme-light.acc-dark.address-top:not(.tabs-top) .toolbar-insideinput.toolbar-insideinput.toolbar-insideinput > .button-toolbar button.button-pressed,
+#browser.theme-light.acc-dark.address-top:not(.tabs-top) .toolbar-insideinput.toolbar-insideinput.toolbar-insideinput > .toolbar-group > .button-toolbar button.button-pressed {
+	background-color: #383c4a;
 }
 
 /* Remove thick border under addressbar */
