@@ -189,6 +189,18 @@ body {
 }
 
 /***********************************************************************
+	ADDRESSBAR ANY
+***********************************************************************/
+/* Addressbar page load indicators (Darker theme) */
+#browser.theme-light.acc-dark .addressfield .pageload .pageload-indicator {
+	background-color: #e7e8eb;
+}
+
+#browser.theme-light.acc-dark .addressfield .pageload .pageload-indicator::-webkit-progress-value {
+	background-color: #ffffff;
+}
+
+/***********************************************************************
 	ADDRESSBAR TOP
 ***********************************************************************/
 /* Make addressbar same color as header if tabs are not on top */
