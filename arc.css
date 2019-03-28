@@ -242,6 +242,19 @@ body {
 	background-color: #383c4a;
 }
 
+/* Adressbar bookmark button icon (Darker theme) */
+#browser.theme-light.acc-dark.address-top:not(.tabs-top) .bookmark-outline {
+	fill: #d3dae3;
+}
+
+#browser.theme-light.acc-dark.address-top:not(.tabs-top) .button-on .bookmark-outline {
+	fill: rgba(0, 0, 0, 0.3);
+}
+
+#browser.theme-light.acc-dark.address-top:not(.tabs-top) .bookmark-animated-fill {
+	fill: #434854;
+}
+
 /* Remove thick border under addressbar */
 #browser.address-top .toolbar-addressbar.toolbar {
 	border-bottom: 1px solid var(--colorArcBorderLight);
