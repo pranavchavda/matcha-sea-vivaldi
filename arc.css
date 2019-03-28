@@ -130,6 +130,11 @@ body {
 	background-color: var(--colorBgAlpha);
 }
 
+.theme-light.acc-dark #tabs-container.top .tab-position .tab:hover:not(.active),
+.theme-light.acc-dark #tabs-container.bottom .tab-position .tab:hover:not(.active) {
+	background-color: #404452;
+}
+
 /* Tab title (right fade and vertical position) */
 .tab-position .tab .title {
 	-webkit-mask-image: -webkit-linear-gradient(180deg, transparent 8px, #fff 16px);
