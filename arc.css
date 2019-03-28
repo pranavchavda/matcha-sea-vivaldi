@@ -78,7 +78,7 @@ body {
 	border: 1px solid var(--colorArcBorderLight);
 }
 
-/* Dark border around hover/active tab (Dark theme) */
+/* Dark border around hover/active tab (Dark/Darker themes) */
 .theme-dark #tabs-container.top .tab-position .tab:hover,
 .theme-dark #tabs-container.top .tab-position .tab.active,
 .theme-light.acc-dark #tabs-container.top .tab-position .tab:hover,
@@ -191,14 +191,9 @@ body {
 /***********************************************************************
 	ADDRESSBAR TOP
 ***********************************************************************/
-/* Make addressbar same color as header (i.e. darker) if tabs are not on top */
+/* Make addressbar same color as header if tabs are not on top */
 #browser.address-top:not(.tabs-top) .toolbar-addressbar.toolbar {
 	background: var(--colorAccentBg);
-}
-
-/* Dark bottom border if tabs are not on top (Darker theme) */
-#browser.theme-light.acc-dark.address-top:not(.tabs-top) .toolbar-addressbar.toolbar {
-	border-bottom: 1px solid var(--colorArcBorderDark);
 }
 
 /* Addressbar colors when tabs are not on top (Darker theme) */
@@ -207,6 +202,10 @@ body {
 	border-color: #242836;
 	color: #d3dae3;
 	fill: #d3dae3;
+}
+
+#browser.theme-light.acc-dark.address-top:not(.tabs-top) .addressfield:focus-within {
+	border-color: var(--colorBorderHighlight);
 }
 
 #browser.theme-light.acc-dark.address-top:not(.tabs-top) .addressfield .pageload {
@@ -227,6 +226,10 @@ body {
 }
 
 #browser.theme-dark.address-top .toolbar-addressbar.toolbar {
+	border-bottom: 1px solid var(--colorArcBorderDark);
+}
+
+#browser.theme-light.acc-dark.address-top:not(.tabs-top) .toolbar-addressbar.toolbar {
 	border-bottom: 1px solid var(--colorArcBorderDark);
 }
 
@@ -326,11 +329,13 @@ input.url.vivaldi-addressfield {
 	background: var(--colorAccentBg);
 }
 
+/* Light text and button color (Darker theme) */
 #browser.theme-light.acc-dark #header {
 	color: #d3dae3 !important;
 	fill: #d3dae3;
 }
 
+/* Header bottom border */
 #browser:not(.address-top):not(.tabs-top) #header {
 	border-bottom: 1px solid var(--colorArcBorderLight);
 }
