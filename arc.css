@@ -200,6 +200,11 @@ body {
 	background-color: #ffffff;
 }
 
+/* Adressbar bookmark button icon (Darker theme) */
+#browser.theme-light.acc-dark .bookmark-animated-fill {
+	fill: #e7e8eb;
+}
+
 /***********************************************************************
 	ADDRESSBAR TOP
 ***********************************************************************/
