@@ -9,8 +9,6 @@ Arc for Vivaldi is a set of custom css files that integrate Vivaldi's UI with [A
 <div align="left"><img src="screenshots/dark.png" alt="Preview" /></div>
 <br>
 <div align="left"><img src="screenshots/darker.png" alt="Preview" /></div>
-<br>
-<div align="left"><img src="screenshots/darker2.png" alt="Preview" /></div>
 
 ## Features:
 
