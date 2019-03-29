@@ -50,9 +50,9 @@ Settings for Vivaldi's built-in theme editor:
 
 If you want to **use the Arc window buttons** instead of Vivaldi's default window buttons, save `arc-window.css` and the `arc` folder in `style` as well. Then open `browser.html` again and add `<link rel="stylesheet" href="style/arc-window.css" />` under the code from the first step.
 
-### Custom Accent Color
+### Custom Arc Color
 
-If you are using a custom version of the Arc theme(s) that uses an accent color that is different from the standard Arc blue (#5294e2), just change the `Highlight` color in the table above to your preferred color.
+If you are using a custom version of the Arc theme(s) that uses a color that is different from the standard Arc blue (#5294e2), just change the `Highlight` color in the table above to your preferred color.
 
 ## Todo
 
