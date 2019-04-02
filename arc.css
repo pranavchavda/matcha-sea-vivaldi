@@ -209,7 +209,7 @@ body {
 #browser.theme-light .bookmark-animated-fill,
 #browser.theme-dark .bookmark-animated-fill,
 #browser.theme-light.acc-dark .bookmark-animated-fill {
-	fill: var(--colorFgFaded);
+	fill: var(--colorFgFadedMore);
 }
 
 /***********************************************************************
@@ -276,7 +276,7 @@ body {
 }
 
 #browser.theme-light.acc-dark.address-top:not(.tabs-top) .bookmark-animated-fill {
-	fill: #aeb5bd;
+	fill: #8a9199;
 }
 
 /* Remove thick border under addressbar */
