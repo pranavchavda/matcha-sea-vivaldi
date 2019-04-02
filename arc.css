@@ -206,8 +206,10 @@ body {
 }
 
 /* Adressbar bookmark button icon (Darker theme) */
+#browser.theme-light .bookmark-animated-fill,
+#browser.theme-dark .bookmark-animated-fill,
 #browser.theme-light.acc-dark .bookmark-animated-fill {
-	fill: #e7e8eb;
+	fill: var(--colorFgFaded);
 }
 
 /***********************************************************************
@@ -274,7 +276,7 @@ body {
 }
 
 #browser.theme-light.acc-dark.address-top:not(.tabs-top) .bookmark-animated-fill {
-	fill: #434854;
+	fill: #aeb5bd;
 }
 
 /* Remove thick border under addressbar */
