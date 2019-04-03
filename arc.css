@@ -704,12 +704,12 @@ button.button-startpage:after {
 	-webkit-border-radius: 20px !important;
 }
 
-#browser.theme-light ::-webkit-scrollbar-thumb { background-color: #cacaca !important; }
-#browser.theme-light ::-webkit-scrollbar-thumb:hover { background-color: #bebebe !important; }
+#browser.theme-light ::-webkit-scrollbar-thumb { background-color: #abacb0 !important; }
+#browser.theme-light ::-webkit-scrollbar-thumb:hover { background-color: #bdbfc2 !important; }
 #browser.theme-light ::-webkit-scrollbar-thumb:active { background-color: var(--colorHighlightBg) !important; }
-#browser.theme-dark ::-webkit-scrollbar-thumb { background-color: #666666 !important; }
-#browser.theme-dark ::-webkit-scrollbar-thumb:hover { background-color: #757575 !important; }
+#browser.theme-dark ::-webkit-scrollbar-thumb { background-color: #767b87 !important; }
+#browser.theme-dark ::-webkit-scrollbar-thumb:hover { background-color: #676b78 !important; }
 #browser.theme-dark ::-webkit-scrollbar-thumb:active { background-color: var(--colorHighlightBg) !important; }
-#browser .settings-sidebar ::-webkit-scrollbar-thumb { background-color: #666666 !important; }
-#browser .settings-sidebar ::-webkit-scrollbar-thumb:hover { background-color: #757575 !important; }
+#browser .settings-sidebar ::-webkit-scrollbar-thumb { background-color: #767b87 !important; }
+#browser .settings-sidebar ::-webkit-scrollbar-thumb:hover { background-color: #676b78 !important; }
 #browser .settings-sidebar ::-webkit-scrollbar-thumb:active { background-color: var(--colorHighlightBg) !important; }
