@@ -335,7 +335,7 @@ body {
 
 /* Hide profile button */
 .address-off .button-circularimage.profile-popup {
-	display: none;
+	margin-top: 28px;
 }
 
 /***********************************************************************
