@@ -1,3 +1,7 @@
+/***********************************************************************
+	BUTTON GROUP
+***********************************************************************/
+/* Button group vertical position */
 .window-buttongroup {
 	margin-top: 7px;
 }
@@ -19,7 +23,10 @@
 	display: none;
 }
 
-/* Minimize button */
+/***********************************************************************
+	MINIMIZE BUTTON
+***********************************************************************/
+/* Button images */
 .window-minimize { background: url('arc/titlebutton-minimize.png') no-repeat; }
 .window-minimize:hover { background: url('arc/titlebutton-minimize-hover.png') no-repeat !important; }
 .window-minimize:hover:active { background: url('arc/titlebutton-minimize-active.png') no-repeat !important; }
@@ -33,7 +40,10 @@
 #browser.theme-light.acc-dark .window-minimize:hover:active { background: url('arc/titlebutton-minimize-active-dark.png') no-repeat !important; }
 #browser.theme-light.acc-dark .isblurred .window-minimize { background: url('arc/titlebutton-minimize-backdrop-dark.png') no-repeat; }
 
-/* Maximize button */
+/***********************************************************************
+	MAXIMIZE/UNMAXIMIZE BUTTON
+***********************************************************************/
+/* Horizontal position */
 .linux .window-maximize {
 	margin-left: 14px !important;
 }
@@ -42,6 +52,7 @@
 	margin-left: -45px !important;
 }
 
+/* Button images */
 .window-maximize { background: url('arc/titlebutton-maximize.png') no-repeat; }
 .window-maximize:hover { background: url('arc/titlebutton-maximize-hover.png') no-repeat !important; }
 .window-maximize:hover:active { background: url('arc/titlebutton-maximize-active.png') no-repeat !important; }
@@ -67,7 +78,10 @@
 #browser.theme-light.acc-dark.maximized .window-maximize:hover:active { background: url('arc/titlebutton-unmaximize-active-dark.png') no-repeat !important; }
 #browser.theme-light.acc-dark.maximized.isblurred .window-maximize { background: url('arc/titlebutton-unmaximize-backdrop-dark.png') no-repeat; }
 
-/* Close button */
+/***********************************************************************
+	CLOSE BUTTON
+***********************************************************************/
+/* Horizontal position */
 .linux .window-close {
 	margin-left: 13px !important;
 	margin-right: 5px !important;
@@ -78,6 +92,7 @@
 	margin-right: 40px !important;
 }
 
+/* Button images */
 .window-close { background: url('arc/titlebutton-close.png') no-repeat; }
 .window-close:hover { background: url('arc/titlebutton-close-hover.png') no-repeat !important; }
 .window-close:hover:active { background: url('arc/titlebutton-close-active.png') no-repeat !important; }
