@@ -715,9 +715,14 @@ button.button-startpage:after {
 
 /* Dialog buttons */
 .dialog-footer input[type=button] {
-	background: none;
-	border: 1px solid transparent;
+	background: var(--colorArcBtnHoverLight);
+	border: 1px solid var(--colorArcBtnBorderLight);
 	box-shadow: none !important;
+}
+
+.theme-dark .dialog-footer input[type=button] {
+	background: var(--colorArcBtnHoverDark);
+	border: 1px solid var(--colorArcBtnBorderDark);
 }
 
 .dialog-footer input[type=button]:focus {
@@ -768,9 +773,14 @@ button.button-startpage:after {
 }
 
 .dialog-footer button.webpage-button {
-	background: none;
-	border: 1px solid transparent;
+	background: var(--colorArcBtnHoverLight);
+	border: 1px solid var(--colorArcBtnBorderLight);
 	box-shadow: none !important;
+}
+
+.theme-dark .dialog-footer button.webpage-button {
+	background: var(--colorArcBtnHoverDark);
+	border: 1px solid var(--colorArcBtnBorderDark);
 }
 
 .dialog-footer button.webpage-button:focus {
