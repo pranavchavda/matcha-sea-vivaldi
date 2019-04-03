@@ -325,6 +325,20 @@ body {
 }
 
 /***********************************************************************
+	ADDRESSBAR HIDDEN (FULLSCREEN/MINIMAL UI)
+***********************************************************************/
+/* Thick border around addressbar when focused */
+.address-off .toolbar-mainbar .addressfield:focus-within {
+	box-shadow: 0 0 0 1px var(--colorBorderHighlight) inset;
+	border: 1px solid var(--colorBorderHighlight);
+}
+
+/* Hide profile button */
+.address-off .button-circularimage.profile-popup {
+	display: none;
+}
+
+/***********************************************************************
 	ADDRESSBAR FONT SIZE
 ***********************************************************************/
 /* Increase addressbar font size */
