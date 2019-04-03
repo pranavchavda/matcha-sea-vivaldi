@@ -125,7 +125,7 @@ body {
 
 /* Tab title right fade */
 .tab-position .tab .title {
-	-webkit-mask-image: -webkit-linear-gradient(180deg, transparent 8px, #fff 16px);
+	-webkit-mask-image: -webkit-linear-gradient(180deg, transparent 0px, transparent 6px, #fff 14px);
 }
 
 /***********************************************************************
