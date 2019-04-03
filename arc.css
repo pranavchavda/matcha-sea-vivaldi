@@ -696,6 +696,109 @@ button.button-startpage:after {
 }
 
 /***********************************************************************
+	MODAL DIALOGS
+***********************************************************************/
+/* Dialog background */
+#modal-bg > div {
+	background-color: var(--colorBgIntense);
+}
+
+.dialog-footer {
+	background-color: var(--colorBgIntense);
+	border-top: 0;
+}
+
+/* Dialog buttons */
+.dialog-footer input[type=button] {
+	background: none;
+	border: 1px solid transparent;
+	box-shadow: none !important;
+}
+
+.dialog-footer input[type=button]:focus {
+	border-color: #cfd6e6;
+}
+
+.theme-dark .dialog-footer input[type=button]:focus {
+	border-color: #2b2e39;
+}
+
+.dialog-footer input[type=button]:hover {
+	background-color: #ffffff;
+	border-color: #cfd6e6;
+}
+
+.theme-dark .dialog-footer input[type=button]:hover {
+	background-color: #505666;
+	border-color: #2b2e39;
+}
+
+.dialog-footer input[type=button]:active {
+	background-color: var(--colorHighlightBg);
+	border-color: var(--colorHighlightBg);
+	color: #ffffff;
+}
+
+.theme-dark .dialog-footer input[type=button]:active {
+	background-color: var(--colorHighlightBg);
+	border-color: #2b2e39;
+	color: #ffffff;
+}
+
+.dialog-footer input[type=submit] {
+	background: #4dadd4;
+	border: 1px solid #4dadd4;
+	box-shadow: none !important;
+	color: #ffffff;
+}
+
+.dialog-footer input[type=submit]:hover {
+	background-color: #76c0de !important;
+	border-color: #76c0de !important;
+}
+
+.dialog-footer input[type=submit]:active {
+	background-color: #2e96c0 !important;
+	border-color: #2e96c0 !important;
+}
+
+.dialog-footer button.webpage-button {
+	background: none;
+	border: 1px solid transparent;
+	box-shadow: none !important;
+}
+
+.dialog-footer button.webpage-button:focus {
+	border-color: #cfd6e6;
+}
+
+.theme-dark .dialog-footer button.webpage-button:focus {
+	border-color: #2b2e39;
+}
+
+.dialog-footer button.webpage-button:hover {
+	background-color: #ffffff;
+	border-color: #cfd6e6;
+}
+
+.theme-dark .dialog-footer button.webpage-button:hover {
+	background-color: #505666;
+	border-color: #2b2e39;
+}
+
+.dialog-footer button.webpage-button:active {
+	background-color: var(--colorHighlightBg);
+	border-color: var(--colorHighlightBg);
+	fill: #ffffff;
+}
+
+.theme-dark .dialog-footer button.webpage-button:active {
+	background-color: var(--colorHighlightBg);
+	border-color: #2b2e39;
+	fill: #ffffff;
+}
+
+/***********************************************************************
 	SCROLLBARS
 ***********************************************************************/
 ::-webkit-scrollbar {
