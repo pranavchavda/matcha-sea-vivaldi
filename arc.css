@@ -529,7 +529,7 @@ input.url.vivaldi-addressfield {
 /* Fix icon color in active addressbar buttons */
 .toolbar-mainbar > .button-toolbar > button:active,
 .toolbar-mainbar > .toolbar-group > .button-toolbar > button:active {
-	fill: white !important;
+	fill: var(--colorArcBtnActiveText) !important;
 }
 
 /* Remove highlight on bookmark toolbar separator hover */
