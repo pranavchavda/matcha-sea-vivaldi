@@ -10,6 +10,7 @@ body {
 	--colorArcBtnBorderDark: #2b2e39;
 	--colorArcBtnHoverLight: #ffffff;
 	--colorArcBtnHoverDark: #505666;
+	--colorArcBtnActiveText: #ffffff;
 }
 
 /***********************************************************************
@@ -508,7 +509,7 @@ input.url.vivaldi-addressfield {
 #browser.theme-light .bookmark-bar button:active {
 	background: var(--colorHighlightBg) !important;
 	border-color: var(--colorHighlightBg) !important;
-	color: #ffffff !important;
+	color: var(--colorArcBtnActiveText) !important;
 }
 
 #browser.theme-dark .toolbar-mainbar > .button-toolbar > button:active,
@@ -516,7 +517,7 @@ input.url.vivaldi-addressfield {
 #browser.theme-dark .bookmark-bar button:active {
 	background: var(--colorHighlightBg) !important;
 	border-color: var(--colorArcBtnBorderDark) !important;
-	color: #ffffff !important;
+	color: var(--colorArcBtnActiveText) !important;
 }
 
 #browser.theme-light.acc-dark.address-top:not(.tabs-top) .toolbar-mainbar > .button-toolbar > button:active,
@@ -740,20 +741,20 @@ button.button-startpage:after {
 .dialog-footer input[type=button]:active {
 	background-color: var(--colorHighlightBg);
 	border-color: var(--colorHighlightBg);
-	color: #ffffff;
+	color: var(--colorArcBtnActiveText);
 }
 
 .theme-dark .dialog-footer input[type=button]:active {
 	background-color: var(--colorHighlightBg);
 	border-color: var(--colorArcBtnBorderDark);
-	color: #ffffff;
+	color: var(--colorArcBtnActiveText);
 }
 
 .dialog-footer input[type=submit] {
 	background: #4dadd4;
 	border: 1px solid #4dadd4;
 	box-shadow: none !important;
-	color: #ffffff;
+	color: var(--colorArcBtnActiveText);
 }
 
 .dialog-footer input[type=submit]:hover {
@@ -793,13 +794,13 @@ button.button-startpage:after {
 .dialog-footer button.webpage-button:active {
 	background-color: var(--colorHighlightBg);
 	border-color: var(--colorHighlightBg);
-	fill: #ffffff;
+	fill: var(--colorArcBtnActiveText);
 }
 
 .theme-dark .dialog-footer button.webpage-button:active {
 	background-color: var(--colorHighlightBg);
 	border-color: var(--colorArcBtnBorderDark);
-	fill: #ffffff;
+	fill: var(--colorArcBtnActiveText);
 }
 
 /***********************************************************************
