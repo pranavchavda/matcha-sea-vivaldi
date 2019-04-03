@@ -118,10 +118,9 @@ body {
 	background-color: #404452;
 }
 
-/* Tab title (right fade and vertical position) */
+/* Tab title right fade */
 .tab-position .tab .title {
 	-webkit-mask-image: -webkit-linear-gradient(180deg, transparent 8px, #fff 16px);
-	margin-top: 1px !important;
 }
 
 /***********************************************************************
