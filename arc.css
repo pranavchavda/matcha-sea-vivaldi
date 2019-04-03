@@ -6,6 +6,10 @@ body {
 	--colorArcBorderLight: #d4d5db;
 	--colorArcBorderDark: #262a33;
 	--colorArcSidebar: #353945;
+	--colorArcBtnBorderLight: #cfd6e6;
+	--colorArcBtnBorderDark: #2b2e39;
+	--colorArcBtnHoverLight: #ffffff;
+	--colorArcBtnHoverDark: #505666;
 }
 
 /***********************************************************************
@@ -482,21 +486,21 @@ input.url.vivaldi-addressfield {
 #browser.theme-light .toolbar-mainbar > .button-toolbar > button:hover,
 #browser.theme-light .toolbar-mainbar > .toolbar-group > .button-toolbar > button:hover,
 #browser.theme-light .bookmark-bar button:hover {
-	background: #ffffff !important;
-	border-color: #cfd6e6 !important;
+	background: var(--colorArcBtnHoverLight) !important;
+	border-color: var(--colorArcBtnBorderLight) !important;
 }
 
 #browser.theme-dark .toolbar-mainbar > .button-toolbar > button:hover,
 #browser.theme-dark .toolbar-mainbar > .toolbar-group > .button-toolbar > button:hover,
 #browser.theme-dark .bookmark-bar button:hover {
-	background: #505666 !important;
-	border-color: #2b2e39 !important;
+	background: var(--colorArcBtnHoverDark) !important;
+	border-color: var(--colorArcBtnBorderDark) !important;
 }
 
 #browser.theme-light.acc-dark.address-top:not(.tabs-top) .toolbar-mainbar > .button-toolbar > button:hover,
 #browser.theme-light.acc-dark.address-top:not(.tabs-top) .toolbar-mainbar > .toolbar-group > .button-toolbar > button:hover {
-	background: #505666 !important;
-	border-color: #2b2e39 !important;
+	background: var(--colorArcBtnHoverDark) !important;
+	border-color: var(--colorArcBtnBorderDark) !important;
 }
 
 #browser.theme-light .toolbar-mainbar > .button-toolbar > button:active,
@@ -511,14 +515,14 @@ input.url.vivaldi-addressfield {
 #browser.theme-dark .toolbar-mainbar > .toolbar-group > .button-toolbar > button:active,
 #browser.theme-dark .bookmark-bar button:active {
 	background: var(--colorHighlightBg) !important;
-	border-color: #2b2e39 !important;
+	border-color: var(--colorArcBtnBorderDark) !important;
 	color: #ffffff !important;
 }
 
 #browser.theme-light.acc-dark.address-top:not(.tabs-top) .toolbar-mainbar > .button-toolbar > button:active,
 #browser.theme-light.acc-dark.address-top:not(.tabs-top) .toolbar-mainbar > .toolbar-group > .button-toolbar > button:active {
 	background: var(--colorHighlightBg) !important;
-	border-color: #2b2e39 !important;
+	border-color: var(--colorArcBtnBorderDark) !important;
 }
 
 /* Fix icon color in active addressbar buttons */
@@ -716,21 +720,21 @@ button.button-startpage:after {
 }
 
 .dialog-footer input[type=button]:focus {
-	border-color: #cfd6e6;
+	border-color: var(--colorArcBtnBorderLight);
 }
 
 .theme-dark .dialog-footer input[type=button]:focus {
-	border-color: #2b2e39;
+	border-color: var(--colorArcBtnBorderDark);
 }
 
 .dialog-footer input[type=button]:hover {
-	background-color: #ffffff;
-	border-color: #cfd6e6;
+	background-color: var(--colorArcBtnHoverLight);
+	border-color: var(--colorArcBtnBorderLight);
 }
 
 .theme-dark .dialog-footer input[type=button]:hover {
-	background-color: #505666;
-	border-color: #2b2e39;
+	background-color: var(--colorArcBtnHoverDark);
+	border-color: var(--colorArcBtnBorderDark);
 }
 
 .dialog-footer input[type=button]:active {
@@ -741,7 +745,7 @@ button.button-startpage:after {
 
 .theme-dark .dialog-footer input[type=button]:active {
 	background-color: var(--colorHighlightBg);
-	border-color: #2b2e39;
+	border-color: var(--colorArcBtnBorderDark);
 	color: #ffffff;
 }
 
@@ -769,21 +773,21 @@ button.button-startpage:after {
 }
 
 .dialog-footer button.webpage-button:focus {
-	border-color: #cfd6e6;
+	border-color: var(--colorArcBtnBorderLight);
 }
 
 .theme-dark .dialog-footer button.webpage-button:focus {
-	border-color: #2b2e39;
+	border-color: var(--colorArcBtnBorderDark);
 }
 
 .dialog-footer button.webpage-button:hover {
-	background-color: #ffffff;
-	border-color: #cfd6e6;
+	background-color: var(--colorArcBtnHoverLight);
+	border-color: var(--colorArcBtnBorderLight);
 }
 
 .theme-dark .dialog-footer button.webpage-button:hover {
-	background-color: #505666;
-	border-color: #2b2e39;
+	background-color: var(--colorArcBtnHoverDark);
+	border-color: var(--colorArcBtnBorderDark);
 }
 
 .dialog-footer button.webpage-button:active {
@@ -794,7 +798,7 @@ button.button-startpage:after {
 
 .theme-dark .dialog-footer button.webpage-button:active {
 	background-color: var(--colorHighlightBg);
-	border-color: #2b2e39;
+	border-color: var(--colorArcBtnBorderDark);
 	fill: #ffffff;
 }
 
