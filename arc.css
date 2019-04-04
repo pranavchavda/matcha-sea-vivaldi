@@ -705,21 +705,21 @@ button.button-startpage:after {
 ***********************************************************************/
 /* Dialog background */
 #modal-bg > div {
-	background-color: var(--colorBgIntense);
+	background-color: var(--colorBgLight);
 }
 
 .dialog-footer {
-	background-color: var(--colorBgIntense);
+	background-color: var(--colorBgLight);
 	border-top: 0;
 }
 
 .addressfield-popup-container .addressfield-popup {
-	background-color: var(--colorBgIntense);
+	background-color: var(--colorBgLight);
 }
 
 .addressfield-popup-container .addressfield-popup .addressfield-popup-header,
 .addressfield-popup-container .addressfield-popup .dialog-footer {
-	background-color: var(--colorBgIntense);
+	background-color: var(--colorBgLight);
 	border: 0;
 }
 
