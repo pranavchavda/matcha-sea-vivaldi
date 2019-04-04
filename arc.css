@@ -835,6 +835,17 @@ button.button-startpage:after {
 }
 
 /***********************************************************************
+	TAB SWITCHER
+***********************************************************************/
+.tabswitcher {
+	background-color: var(--colorBgLight);
+}
+
+.tabswitcher .visual-tabs {
+	border-color: var(--colorBgLight);
+}
+
+/***********************************************************************
 	SCROLLBARS
 ***********************************************************************/
 ::-webkit-scrollbar {
