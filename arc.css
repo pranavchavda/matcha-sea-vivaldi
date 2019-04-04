@@ -701,7 +701,7 @@ button.button-startpage:after {
 }
 
 /***********************************************************************
-	MODAL DIALOGS
+	POPUP DIALOGS
 ***********************************************************************/
 /* Dialog background */
 #modal-bg > div {
@@ -713,61 +713,82 @@ button.button-startpage:after {
 	border-top: 0;
 }
 
+.addressfield-popup-container .addressfield-popup {
+	background-color: var(--colorBgIntense);
+}
+
+.addressfield-popup-container .addressfield-popup .addressfield-popup-header,
+.addressfield-popup-container .addressfield-popup .dialog-footer {
+	background-color: var(--colorBgIntense);
+	border: 0;
+}
+
 /* Dialog buttons */
-.dialog-footer input[type=button] {
+.dialog-footer input[type=button],
+.addressfield-popup-content input[type=button] {
 	background: var(--colorArcBtnHoverLight);
 	border: 1px solid var(--colorArcBtnBorderLight);
 	box-shadow: none !important;
 }
 
-.theme-dark .dialog-footer input[type=button] {
+.theme-dark .dialog-footer input[type=button],
+.theme-dark .addressfield-popup-content input[type=button] {
 	background: var(--colorArcBtnHoverDark);
 	border: 1px solid var(--colorArcBtnBorderDark);
 }
 
-.dialog-footer input[type=button]:focus {
+.dialog-footer input[type=button]:focus,
+.addressfield-popup-content input[type=button]:focus {
 	border-color: var(--colorArcBtnBorderLight);
 }
 
-.theme-dark .dialog-footer input[type=button]:focus {
+.theme-dark .dialog-footer input[type=button]:focus,
+.theme-dark .addressfield-popup-content input[type=button]:focus {
 	border-color: var(--colorArcBtnBorderDark);
 }
 
-.dialog-footer input[type=button]:hover {
+.dialog-footer input[type=button]:hover,
+.addressfield-popup-content input[type=button]:hover {
 	background-color: var(--colorArcBtnHoverLight);
 	border-color: var(--colorArcBtnBorderLight);
 }
 
-.theme-dark .dialog-footer input[type=button]:hover {
+.theme-dark .dialog-footer input[type=button]:hover,
+.theme-dark .addressfield-popup-content input[type=button]:hover {
 	background-color: var(--colorArcBtnHoverDark);
 	border-color: var(--colorArcBtnBorderDark);
 }
 
-.dialog-footer input[type=button]:active {
+.dialog-footer input[type=button]:active,
+.addressfield-popup-content input[type=button]:active {
 	background-color: var(--colorHighlightBg);
 	border-color: var(--colorHighlightBg);
 	color: var(--colorArcBtnActiveText);
 }
 
-.theme-dark .dialog-footer input[type=button]:active {
+.theme-dark .dialog-footer input[type=button]:active,
+.theme-dark .addressfield-popup-content input[type=button]:active {
 	background-color: var(--colorHighlightBg);
 	border-color: var(--colorArcBtnBorderDark);
 	color: var(--colorArcBtnActiveText);
 }
 
-.dialog-footer input[type=submit] {
+.dialog-footer input[type=submit],
+.addressfield-popup-content input[type=button].primary {
 	background: #4dadd4;
 	border: 1px solid #4dadd4;
 	box-shadow: none !important;
 	color: var(--colorArcBtnActiveText);
 }
 
-.dialog-footer input[type=submit]:hover {
+.dialog-footer input[type=submit]:hover,
+.addressfield-popup-content input[type=button].primary:hover {
 	background-color: #76c0de !important;
 	border-color: #76c0de !important;
 }
 
-.dialog-footer input[type=submit]:active {
+.dialog-footer input[type=submit]:active,
+.addressfield-popup-content input[type=button].primary:active {
 	background-color: #2e96c0 !important;
 	border-color: #2e96c0 !important;
 }
