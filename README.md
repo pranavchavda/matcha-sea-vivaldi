@@ -52,7 +52,8 @@ If you want to **use the Arc window buttons** instead of Vivaldi's default windo
 
 ### Custom Arc Color
 
-If you are using a custom version of the Arc theme(s) that uses a color that is different from the standard Arc blue, just change the `Highlight` color in the table above from `#5294e2` to your preferred color.
+If you are using a custom version of the Arc theme(s) that uses a color that is different from the standard Arc blue, just change the `Highlight` color in the table above from `#5294e2` to your preferred color.  
+For example, to use Manjaro green, change the `Highlight` color to `#34be5b`.
 
 ## Todo
 
