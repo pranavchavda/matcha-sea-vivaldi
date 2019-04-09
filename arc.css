@@ -199,6 +199,15 @@ body {
 	fill: var(--colorFgFadedMore);
 }
 
+/* Searchfield engine selection button spacing */
+.searchfield {
+	padding-left: 8px;
+}
+
+.vivaldi-searchfield.searchfield-input {
+	margin-left: 8px;
+}
+
 /***********************************************************************
 	ADDRESSBAR TOP
 ***********************************************************************/
