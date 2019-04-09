@@ -219,6 +219,18 @@ body {
 	border-color: var(--colorBorderHighlight);
 }
 
+/* Searchfield colors when tabs are not on top (Darker theme) */
+#browser.theme-light.acc-dark.address-top:not(.tabs-top) .searchfield {
+	background-color: #242836;
+	border-color: #242836;
+	color: #d3dae3;
+	fill: #d3dae3;
+}
+
+#browser.theme-light.acc-dark.address-top:not(.tabs-top) .searchfield:focus-within {
+	border-color: var(--colorBorderHighlight);
+}
+
 /* Addressfield page load indicators (Darker theme) */
 #browser.theme-light.acc-dark.address-top:not(.tabs-top) .addressfield .pageload {
 	color: #d3dae3;
