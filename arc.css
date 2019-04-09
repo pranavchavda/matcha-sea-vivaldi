@@ -726,6 +726,7 @@ button.button-startpage:after {
 /***********************************************************************
 	BUTTONS
 ***********************************************************************/
+/* Normal button */
 input[type="button"] {
 	box-shadow: none !important;
 	background: var(--colorArcBtnHoverLight);
@@ -747,6 +748,28 @@ input[type="button"]:active {
 	color: var(--colorArcBtnActiveText);
 }
 
+.theme-dark input[type="button"] {
+	box-shadow: none !important;
+	background: var(--colorArcBtnHoverDark);
+	border: 1px solid var(--colorArcBtnBorderDark);
+}
+
+.theme-dark input[type=button]:focus:not([tabindex='-1']) {
+	border: 1px solid var(--colorArcBtnBorderDark);
+}
+
+.theme-dark input[type="button"]:hover {
+	background: var(--colorArcBtnHoverDark);
+	border: 1px solid var(--colorArcBtnBorderDark);
+}
+
+.theme-dark input[type="button"]:active {
+	background: var(--colorHighlightBg);
+	border: 1px solid var(--colorArcBtnBorderDark) !important;
+	color: var(--colorArcBtnActiveText);
+}
+
+/* Default button */
 input[type=button][type=submit],
 input[type=submit][type=submit],
 input[type=color][type=submit],
@@ -797,6 +820,7 @@ input[type=color].primary:active,
 	border: 1px solid #2e96c0 !important;
 }
 
+/* Danger button */
 input[type=button].danger,
 input[type=submit].danger,
 input[type=color].danger,
@@ -823,6 +847,7 @@ input[type=color].danger:active,
 	border: 1px solid #ec1b22 !important;
 }
 
+/* Hover button (e.g. close popup dialog) */
 .webpage-button {
 	box-shadow: none !important;
 	background: var(--colorArcBtnHoverLight);
@@ -842,6 +867,28 @@ input[type=color].danger:active,
 .webpage-button:active {
 	background: var(--colorHighlightBg) !important;
 	border: 1px solid var(--colorHighlightBg) !important;
+	fill: var(--colorArcBtnActiveText);
+}
+
+.theme-dark .webpage-button {
+	box-shadow: none !important;
+	background: var(--colorArcBtnHoverDark);
+	border: 1px solid var(--colorArcBtnBorderDark);
+}
+
+.theme-dark .webpage-button:focus:not([tabindex='-1']) {
+	background: var(--colorArcBtnHoverDark);
+	border: 1px solid var(--colorArcBtnBorderDark);
+}
+
+.theme-dark .webpage-button:hover {
+	background: var(--colorArcBtnHoverDark);
+	border: 1px solid var(--colorArcBtnBorderDark);
+}
+
+.theme-dark .webpage-button:active {
+	background: var(--colorHighlightBg) !important;
+	border: 1px solid var(--colorArcBtnBorderDark) !important;
 	fill: var(--colorArcBtnActiveText);
 }
 
