@@ -723,130 +723,125 @@ button.button-startpage:after {
 	border: 0;
 }
 
-/* Dialog buttons */
-.dialog-footer input[type=button],
-.addressfield-popup-content input[type=button] {
+/***********************************************************************
+	BUTTONS
+***********************************************************************/
+input[type="button"] {
+	box-shadow: none !important;
 	background: var(--colorArcBtnHoverLight);
 	border: 1px solid var(--colorArcBtnBorderLight);
+}
+
+input[type=button]:focus:not([tabindex='-1']) {
+	border: 1px solid var(--colorArcBtnBorderLight);
+}
+
+input[type="button"]:hover {
+	background: var(--colorArcBtnHoverLight);
+	border: 1px solid var(--colorArcBtnBorderLight);
+}
+
+input[type="button"]:active {
+	background: var(--colorHighlightBg);
+	border: 1px solid var(--colorHighlightBg) !important;
+	color: var(--colorArcBtnActiveText);
+}
+
+input[type=button][type=submit],
+input[type=submit][type=submit],
+input[type=color][type=submit],
+.webpage-button[type=submit],
+input[type=button].primary,
+input[type=submit].primary,
+input[type=color].primary,
+.webpage-button.primary {
 	box-shadow: none !important;
-}
-
-.theme-dark .dialog-footer input[type=button],
-.theme-dark .addressfield-popup-content input[type=button] {
-	background: var(--colorArcBtnHoverDark);
-	border: 1px solid var(--colorArcBtnBorderDark);
-}
-
-.dialog-footer input[type=button]:focus,
-.addressfield-popup-content input[type=button]:focus {
-	border-color: var(--colorArcBtnBorderLight);
-}
-
-.theme-dark .dialog-footer input[type=button]:focus,
-.theme-dark .addressfield-popup-content input[type=button]:focus {
-	border-color: var(--colorArcBtnBorderDark);
-}
-
-.dialog-footer input[type=button]:hover,
-.addressfield-popup-content input[type=button]:hover {
-	background-color: var(--colorArcBtnHoverLight);
-	border-color: var(--colorArcBtnBorderLight);
-}
-
-.theme-dark .dialog-footer input[type=button]:hover,
-.theme-dark .addressfield-popup-content input[type=button]:hover {
-	background-color: var(--colorArcBtnHoverDark);
-	border-color: var(--colorArcBtnBorderDark);
-}
-
-.dialog-footer input[type=button]:active,
-.addressfield-popup-content input[type=button]:active {
-	background-color: var(--colorHighlightBg);
-	border-color: var(--colorHighlightBg);
-	color: var(--colorArcBtnActiveText);
-}
-
-.theme-dark .dialog-footer input[type=button]:active,
-.theme-dark .addressfield-popup-content input[type=button]:active {
-	background-color: var(--colorHighlightBg);
-	border-color: var(--colorArcBtnBorderDark);
-	color: var(--colorArcBtnActiveText);
-}
-
-.dialog-footer input[type=submit],
-.addressfield-popup-content input[type=button].primary {
 	background: #4dadd4;
 	border: 1px solid #4dadd4;
+	color: var(--colorArcBtnActiveText);
+}
+
+input[type=button][type=submit]:focus:not([tabindex='-1']),
+input[type=submit][type=submit]:focus:not([tabindex='-1']),
+input[type=color][type=submit]:focus:not([tabindex='-1']),
+.webpage-button[type=submit]:focus:not([tabindex='-1']),
+input[type=button].primary:focus:not([tabindex='-1']),
+input[type=submit].primary:focus:not([tabindex='-1']),
+input[type=color].primary:focus:not([tabindex='-1']),
+.webpage-button.primary:focus:not([tabindex='-1']) {
+	background: #4dadd4;
+	border: 1px solid #4dadd4;
+}
+
+input[type=button][type=submit]:hover:not([disabled]),
+input[type=submit][type=submit]:hover:not([disabled]),
+input[type=color][type=submit]:hover:not([disabled]),
+.webpage-button[type=submit]:hover:not([disabled]),
+input[type=button].primary:hover:not([disabled]),
+input[type=submit].primary:hover:not([disabled]),
+input[type=color].primary:hover:not([disabled]),
+.webpage-button.primary:hover:not([disabled]) {
+	background: #76c0de;
+	border: 1px solid #76c0de;
+}
+
+input[type=button][type=submit]:active,
+input[type=submit][type=submit]:active,
+input[type=color][type=submit]:active,
+.webpage-button[type=submit]:active,
+input[type=button].primary:active,
+input[type=submit].primary:active,
+input[type=color].primary:active,
+.webpage-button.primary:active {
+	background: #2e96c0 !important;
+	border: 1px solid #2e96c0 !important;
+}
+
+input[type=button].danger,
+input[type=submit].danger,
+input[type=color].danger,
+.webpage-button.danger {
 	box-shadow: none !important;
-	color: var(--colorArcBtnActiveText);
-}
-
-.dialog-footer input[type=submit]:hover,
-.addressfield-popup-content input[type=button].primary:hover {
-	background-color: #76c0de !important;
-	border-color: #76c0de !important;
-}
-
-.dialog-footer input[type=submit]:active,
-.addressfield-popup-content input[type=button].primary:active {
-	background-color: #2e96c0 !important;
-	border-color: #2e96c0 !important;
-}
-
-.dialog-footer input[type=button].danger {
 	background: #f04a50;
-	border: 1px solid #f04a50;
+	border: 1px solid #f04a50 !important;
 	color: var(--colorArcBtnActiveText);
 }
 
-.dialog-footer input[type=button].danger:hover {
-	background-color: #f4797e;
-	border-color: #f4797e;
+input[type=button].danger:hover,
+input[type=submit].danger:hover,
+input[type=color].danger:hover,
+.webpage-button.danger:hover {
+	background: #f4797e;
+	border: 1px solid #f4797e !important;
 }
 
-.dialog-footer input[type=button].danger:active {
-	background-color: #ec1b22;
-	border-color: #ec1b22;
+input[type=button].danger:active,
+input[type=submit].danger:active,
+input[type=color].danger:active,
+.webpage-button.danger:active {
+	background: #ec1b22;
+	border: 1px solid #ec1b22 !important;
 }
 
-.dialog-footer button.webpage-button {
+.webpage-button {
+	box-shadow: none !important;
 	background: var(--colorArcBtnHoverLight);
 	border: 1px solid var(--colorArcBtnBorderLight);
-	box-shadow: none !important;
 }
 
-.theme-dark .dialog-footer button.webpage-button {
-	background: var(--colorArcBtnHoverDark);
-	border: 1px solid var(--colorArcBtnBorderDark);
+.webpage-button:focus:not([tabindex='-1']) {
+	background: var(--colorArcBtnHoverLight);
+	border: 1px solid var(--colorArcBtnBorderLight);
 }
 
-.dialog-footer button.webpage-button:focus {
-	border-color: var(--colorArcBtnBorderLight);
+.webpage-button:hover {
+	background: var(--colorArcBtnHoverLight);
+	border: 1px solid var(--colorArcBtnBorderLight);
 }
 
-.theme-dark .dialog-footer button.webpage-button:focus {
-	border-color: var(--colorArcBtnBorderDark);
-}
-
-.dialog-footer button.webpage-button:hover {
-	background-color: var(--colorArcBtnHoverLight);
-	border-color: var(--colorArcBtnBorderLight);
-}
-
-.theme-dark .dialog-footer button.webpage-button:hover {
-	background-color: var(--colorArcBtnHoverDark);
-	border-color: var(--colorArcBtnBorderDark);
-}
-
-.dialog-footer button.webpage-button:active {
-	background-color: var(--colorHighlightBg);
-	border-color: var(--colorHighlightBg);
-	fill: var(--colorArcBtnActiveText);
-}
-
-.theme-dark .dialog-footer button.webpage-button:active {
-	background-color: var(--colorHighlightBg);
-	border-color: var(--colorArcBtnBorderDark);
+.webpage-button:active {
+	background: var(--colorHighlightBg) !important;
+	border: 1px solid var(--colorHighlightBg) !important;
 	fill: var(--colorArcBtnActiveText);
 }
 
