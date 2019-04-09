@@ -796,7 +796,7 @@ button.button-startpage:after {
 .dialog-footer input[type=button].danger {
 	background: #f04a50;
 	border: 1px solid #f04a50;
-	color: #ffffff;
+	color: var(--colorArcBtnActiveText);
 }
 
 .dialog-footer input[type=button].danger:hover {
