@@ -793,6 +793,22 @@ button.button-startpage:after {
 	border-color: #2e96c0 !important;
 }
 
+.dialog-footer input[type=button].danger {
+	background: #f04a50;
+	border: 1px solid #f04a50;
+	color: #ffffff;
+}
+
+.dialog-footer input[type=button].danger:hover {
+	background-color: #f4797e;
+	border-color: #f4797e;
+}
+
+.dialog-footer input[type=button].danger:active {
+	background-color: #ec1b22;
+	border-color: #ec1b22;
+}
+
 .dialog-footer button.webpage-button {
 	background: var(--colorArcBtnHoverLight);
 	border: 1px solid var(--colorArcBtnBorderLight);
