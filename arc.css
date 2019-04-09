@@ -249,19 +249,19 @@ body {
 	color: #aeb5bd;
 }
 
-/* Buttons inside addressfield (Darker theme) */
-#browser.theme-light.acc-dark.address-top:not(.tabs-top) .toolbar-insideinput.toolbar-insideinput.toolbar-insideinput > .button-toolbar button:not(:hover):not(:active):not(:focus):not(.button-pressed),
-#browser.theme-light.acc-dark.address-top:not(.tabs-top) .toolbar-insideinput.toolbar-insideinput.toolbar-insideinput > .toolbar-group > .button-toolbar button:not(:hover):not(:active):not(:focus):not(.button-pressed) {
+/* Buttons inside addressfield/searchfield (Darker theme) - except for searchfield in start page */
+#browser.theme-light.acc-dark.address-top:not(.tabs-top) .toolbar-addressbar.toolbar .toolbar-insideinput.toolbar-insideinput.toolbar-insideinput > .button-toolbar button:not(:hover):not(:active):not(:focus):not(.button-pressed),
+#browser.theme-light.acc-dark.address-top:not(.tabs-top) .toolbar-addressbar.toolbar .toolbar-insideinput.toolbar-insideinput.toolbar-insideinput > .toolbar-group > .button-toolbar button:not(:hover):not(:active):not(:focus):not(.button-pressed) {
 	border-color: transparent;
 }
 
-#browser.theme-light.acc-dark.address-top:not(.tabs-top) .toolbar-insideinput.toolbar-insideinput.toolbar-insideinput > .button-toolbar button,
-#browser.theme-light.acc-dark.address-top:not(.tabs-top) .toolbar-insideinput.toolbar-insideinput.toolbar-insideinput > .toolbar-group > .button-toolbar button {
+#browser.theme-light.acc-dark.address-top:not(.tabs-top) .toolbar-addressbar.toolbar .toolbar-insideinput.toolbar-insideinput.toolbar-insideinput > .button-toolbar button,
+#browser.theme-light.acc-dark.address-top:not(.tabs-top) .toolbar-addressbar.toolbar .toolbar-insideinput.toolbar-insideinput.toolbar-insideinput > .toolbar-group > .button-toolbar button {
 	border-color: #222734;
 }
 
-#browser.theme-light.acc-dark.address-top:not(.tabs-top) .toolbar-insideinput.toolbar-insideinput.toolbar-insideinput > .button-toolbar button.button-pressed,
-#browser.theme-light.acc-dark.address-top:not(.tabs-top) .toolbar-insideinput.toolbar-insideinput.toolbar-insideinput > .toolbar-group > .button-toolbar button.button-pressed {
+#browser.theme-light.acc-dark.address-top:not(.tabs-top) .toolbar-addressbar.toolbar .toolbar-insideinput.toolbar-insideinput.toolbar-insideinput > .button-toolbar button.button-pressed,
+#browser.theme-light.acc-dark.address-top:not(.tabs-top) .toolbar-addressbar.toolbar .toolbar-insideinput.toolbar-insideinput.toolbar-insideinput > .toolbar-group > .button-toolbar button.button-pressed {
 	background-color: #383c4a;
 }
 
