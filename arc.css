@@ -729,6 +729,10 @@ button.button-startpage:after {
 	background-color: var(--colorBgLight);
 }
 
+.dialog-download {
+	background-color: var(--colorBgLight);
+}
+
 .dialog-footer {
 	background-color: var(--colorBgLight);
 	border-top: 0;
