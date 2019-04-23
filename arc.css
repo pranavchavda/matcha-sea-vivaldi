@@ -676,9 +676,9 @@ input.url.vivaldi-addressfield {
 	START PAGE
 ***********************************************************************/
 /* Start page background */
-.startpage {
+/* .startpage {
 	background-color: var(--colorBg) !important;
-}
+} */
 
 /* Start page toolbar */
 .startpage-navigation {

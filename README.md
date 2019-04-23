@@ -42,6 +42,12 @@ Settings for Vivaldi's built-in theme editor:
 | [x] Transparent Tabs              | [x] Transparent Tabs              | [x] Transparent Tabs              |
 | Corner Rounding: 3px              | Corner Rounding: 3px              | Corner Rounding: 3px              |
 
+Configure the start page background color (`Settings -> Start Page`) as follows:
+
+| Arc Theme                         | Arc Dark Theme                    | Arc Darker Theme                  |
+| --------------------------------- | --------------------------------- | --------------------------------- |
+| Background: #f6f7f8               | Background: #383c4a               | Background: #f6f7f8               |
+
 **Note**: *Arc's scrollbars only get applied to internal pages and, as far as I know, there's nothing that can be done about that from within a custom css file for Vivaldi. A userstyle by Tiamarth to apply Arc scrollbars on websites can be found [here](https://userstyles.org/styles/142645/arc-scrollbars)*.  
 
 **Need more help?** [Create an issue here on GitHub](https://github.com/drakkar1969/Arc-for-Vivaldi/issues/new)
