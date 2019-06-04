@@ -446,6 +446,10 @@ input.url.vivaldi-addressfield {
 	box-shadow: none !important;
 }
 
+#panels-container:after {
+	background-color: var(--colorArcSidebar);
+}
+
 /* Panel buttons */
 #switch > button,
 #switch .addwebpanel-wrapper > button {
