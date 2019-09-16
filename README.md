@@ -14,14 +14,14 @@ This is my first time using github, so please forgive the lack of commits, etc. 
 
 ## Installation
 
-Find the `style` folder in your Vivaldi install directory, which should be in the following location: `/opt/vivaldi/resources/vivaldi/style`.  
+Find the `style` directory in your Vivaldi install directory, which should be in the following location: `/opt/vivaldi/resources/vivaldi/style`.  
 
-To **integrate with Arc,** save `arc.css` in the `style` folder (you should be left with a folder structure like this: `resources/vivaldi/style/arc.css`). Then open `resources/vivaldi/browser.html` in a text and add the following to `<head>`  
+To **integrate with Arc,** save `arc.css` in the `style` directory (you should be left with a directory structure like this: `resources/vivaldi/style/arc.css`). Then open `resources/vivaldi/browser.html` in a text and add the following to `<head>`  
 `<link rel="stylesheet" href="style/arc.css" />`
 
 This custom CSS integrates settings in Vivaldi's built-in theme editor (the custom CSS is necessary to integrate with Arc because you cannot currently customize every aspect of Vivaldi from the editor).  
 
-Alternatively, clone this into any folder and specify the folder under tools->settings->appearance->custom ui modification. this feature may not be enabled by default, check vivaldi's settings.ini file to enable it
+Alternatively, clone this into any directory and specify the directory under tools->settings->appearance->custom ui modification. this feature may not be enabled by default, check vivaldi's settings.ini file to enable it
 
 Settings for Vivaldi's built-in theme editor:
 
