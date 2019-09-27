@@ -1,7 +1,9 @@
-# Vivaldi Arc Theme
+# Vivaldi Matcha Sea Theme
 
-Arc for Vivaldi is a set of custom css files that integrate Vivaldi's UI with [Arc](https://github.com/NicoHood/arc-theme), a popular GTK theme. Rework of Tiamarth's [original theme](https://github.com/Tiamarth/Arc-for-Vivaldi) for Vivaldi.
+
 The Matcha Sea theme (this one) is forked from https://github.com/drakkar1969/Vivaldi-Arc-Theme
+it is set of custom css files that integrate Vivaldi's UI with Manjaro 18.1's default gnome and xfce theme Rework of Tiamarth's [original theme](https://github.com/Tiamarth/Arc-for-Vivaldi) for Vivaldi.
+
 
 This is my first time using github, so please forgive the lack of commits, etc. I'll learn as I go.
 
