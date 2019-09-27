@@ -93,15 +93,15 @@
 }
 
 /* Button images */
-.window-close { background: url('arc/titlebutton-close.png') no-repeat; }
-.window-close:hover { background: url('arc/titlebutton-close-hover.png') no-repeat !important; }
-.window-close:hover:active { background: url('arc/titlebutton-close-active.png') no-repeat !important; }
+.window-close { background: url('arc/titlebutton-close.png') no-repeat; transition-timing-function: ease; }
+.window-close:hover { background: url('arc/titlebutton-close-hover.png') no-repeat !important; transform: scale(1.5,1.5);}
+.window-close:hover:active { background: url('arc/titlebutton-close-active.png') no-repeat !important; transform: scale(1.5,1.5); }
 .isblurred .window-close { background: url('arc/titlebutton-close-backdrop.png') no-repeat; }
-#browser.theme-dark .window-close { background: url('arc/titlebutton-close-dark.png') no-repeat; }
-#browser.theme-dark .window-close:hover { background: url('arc/titlebutton-close-hover-dark.png') no-repeat !important; }
-#browser.theme-dark .window-close:hover:active { background: url('arc/titlebutton-close-active-dark.png') no-repeat !important; }
+#browser.theme-dark .window-close { background: url('arc/titlebutton-close-dark.png') no-repeat; transition-timing-function: ease;}
+#browser.theme-dark .window-close:hover { background: url('arc/titlebutton-close-hover-dark.png') no-repeat !important; transform: scale(1.5,1.5); }
+#browser.theme-dark .window-close:hover:active { background: url('arc/titlebutton-close-active-dark.png') no-repeat !important; transform: scale(1.5,1.5); }
 #browser.theme-dark .isblurred .window-close { background: url('arc/titlebutton-close-backdrop-dark.png') no-repeat; }
-#browser.theme-light.acc-dark .window-close { background: url('arc/titlebutton-close-dark.png') no-repeat; }
-#browser.theme-light.acc-dark .window-close:hover { background: url('arc/titlebutton-close-hover-dark.png') no-repeat !important; }
-#browser.theme-light.acc-dark .window-close:hover:active { background: url('arc/titlebutton-close-active-dark.png') no-repeat !important; }
+#browser.theme-light.acc-dark .window-close { background: url('arc/titlebutton-close-dark.png') no-repeat; transition-timing-function: ease; }
+#browser.theme-light.acc-dark .window-close:hover { background: url('arc/titlebutton-close-hover-dark.png') no-repeat !important; transform: scale(1.5,1.5); }
+#browser.theme-light.acc-dark .window-close:hover:active { background: url('arc/titlebutton-close-active-dark.png') no-repeat !important; transform: scale(1.5,1.5); }
 #browser.theme-light.acc-dark .isblurred .window-close { background: url('arc/titlebutton-close-backdrop-dark.png') no-repeat; }
